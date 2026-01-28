@@ -3,6 +3,7 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   title: "yr-ui",
   description: "yr-ui 微信小程序组件库文档",
+  base: "/Yr-ui-weixin/",
 
   // 国际化配置
   locales: {
@@ -17,7 +18,10 @@ export default defineConfig({
             text: "相关链接",
             items: [
               { text: "官网", link: "https://www.yr-ui.cn" },
-              { text: "GitHub", link: "https://github.com/yr-ui/yr-ui-weixin" },
+              {
+                text: "GitHub",
+                link: "https://github.com/YouRen1320/Yr-ui-weixin",
+              },
             ],
           },
         ],
@@ -381,7 +385,10 @@ export default defineConfig({
             text: "Links",
             items: [
               { text: "Official Website", link: "https://www.yr-ui.cn" },
-              { text: "GitHub", link: "https://github.com/yr-ui/yr-ui-weixin" },
+              {
+                text: "GitHub",
+                link: "https://github.com/YouRen1320/Yr-ui-weixin",
+              },
             ],
           },
         ],
@@ -417,7 +424,7 @@ export default defineConfig({
 
     // Shared parts
     socialLinks: [
-      { icon: "github", link: "https://github.com/yr-ui/yr-ui-weixin" },
+      { icon: "github", link: "https://github.com/YouRen1320/Yr-ui-weixin" },
     ],
 
     footer: {
