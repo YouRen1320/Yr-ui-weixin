@@ -1,0 +1,22 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Message <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Message 消息提示，用于展现简短的提示信息，在窗口顶部显示。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="基础使用" bold margin="24rpx 0" bindclick="showMsg" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义背景色" bold bindclick="showMsg" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带图标提示" bold margin="24rpx 0" bindclick="showMsg" data-type="3">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="设置显示时间" bold bindclick="showMsg" data-type="4">
+    </yr-ui-button>
+  </view>
+  <yr-ui-message id="msg" background="{{background}}"></yr-ui-message>
+  <yr-ui-message id="tips">
+    <view class="yr-ui-icon__box">
+      <yr-ui-icon name="checkbox" color="#fff" size="{{48}}"></yr-ui-icon>
+    </view>
+  </yr-ui-message>
+</view>

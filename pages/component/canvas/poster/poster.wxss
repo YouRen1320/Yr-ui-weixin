@@ -1,0 +1,18 @@
+.yr-ui-page__bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-ani__box {
+  width: 580rpx;
+  border-radius: 24rpx;
+}
+
+.yr-ui-poster__img {
+  width: 100%;
+  border-radius: 24rpx;
+  margin-bottom: 30rpx;
+  display: block;
+}

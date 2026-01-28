@@ -1,0 +1,3 @@
+.yr-ui-movable__view {
+  position: fixed;
+}

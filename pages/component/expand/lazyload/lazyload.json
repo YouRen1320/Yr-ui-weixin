@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "图片懒加载",
+  "usingComponents": {
+    "yr-ui-lazyload":"/components/yr-ui/yr-ui-lazyload/yr-ui-lazyload"
+  }
+}

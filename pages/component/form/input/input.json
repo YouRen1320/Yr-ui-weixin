@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "输入框",
+  "usingComponents": {
+    "yr-ui-input": "/components/yr-ui/yr-ui-input/yr-ui-input"
+  }
+}

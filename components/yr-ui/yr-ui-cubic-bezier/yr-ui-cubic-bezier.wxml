@@ -1,0 +1,8 @@
+<view class="yr-ui-cubicbezier__wrap" catchtap="handleClick">
+			<view class="yr-ui-ani__cb-x" wx:if="{{animate}}" style="{{style_x}}">
+				<view class="yr-ui-ani__cb-y" style="{{style_y}}">
+					<slot name="badge"></slot>
+				</view>
+			</view>
+			<slot></slot>
+		</view>

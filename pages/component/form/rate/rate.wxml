@@ -1,0 +1,22 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Rate <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Rate 评分，对评价进行展示或对事物进行快速的评级操作。</view>
+		</view>
+		<view class="yr-ui-page__bd yr-ui-page__spacing">
+			<view class="yr-ui-section__title">基础使用</view>
+			<yr-ui-rate bindchange="change"></yr-ui-rate>
+			<view class="yr-ui-section__title">设置颜色</view>
+			<yr-ui-rate color="#888" activeColor="#465CFF" bindchange="change"></yr-ui-rate>
+			<view class="yr-ui-section__title">设置大小</view>
+			<yr-ui-rate size="{{48}}" bindchange="change"></yr-ui-rate>
+			<view class="yr-ui-section__title">设置最大评分数</view>
+			<yr-ui-rate max="{{8}}" score="{{5}}" bindchange="change"></yr-ui-rate>
+			<view class="yr-ui-section__title">支持半星</view>
+			<yr-ui-rate allowHalf bindchange="change"></yr-ui-rate>
+			<view class="yr-ui-section__title">仅展示，禁用操作</view>
+			<yr-ui-rate disabled score="{{3}}" bindchange="change"></yr-ui-rate>
+		</view>
+	</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上下间距",
+  "usingComponents": {
+    "yr-ui-white-space":"/components/yr-ui/yr-ui-white-space/yr-ui-white-space"
+  }
+}

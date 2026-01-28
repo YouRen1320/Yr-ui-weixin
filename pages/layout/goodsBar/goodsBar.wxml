@@ -1,0 +1,91 @@
+<view class="yr-ui-wrap">
+    <view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">GoodsBar <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">商品导航栏，常用的页面布局，可提升开发效率以及带来舒服的视觉效果！</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<!-- 布局内容 start -->
+			<view class="yr-ui-section__title">商品导航栏</view>
+			<view class="yr-ui-goods__bar-wrap yr-ui-goodsbar__flex">
+				<view class="yr-ui-goods__bar-left yr-ui-goodsbar__flex">
+					<view class="yr-ui-goodsbar__item">
+						<yr-ui-icon name="shop" size="{{40}}"></yr-ui-icon>
+						<text class="yr-ui-goodsbar__text">店铺</text>
+					</view>
+					<view class="yr-ui-goodsbar__item">
+						<yr-ui-icon name="message" size="{{40}}"></yr-ui-icon>
+						<text class="yr-ui-goodsbar__text">客服</text>
+					</view>
+					<view class="yr-ui-goodsbar__item">
+						<yr-ui-icon name="cart" size="{{40}}"></yr-ui-icon>
+						<text class="yr-ui-goodsbar__text">购物车</text>
+					</view>
+				</view>
+				<view class="yr-ui-goods__bar-right yr-ui-goodsbar__flex">
+					<view class="yr-ui-gb__btn-box">
+						<yr-ui-button text="加入购物车" type="warning" height="72rpx" size="{{28}}" radius="40rpx"></yr-ui-button>
+					</view>
+					<view class="yr-ui-gb__btn-box">
+						<yr-ui-button text="立即购买" type="danger" height="72rpx" size="{{28}}" radius="40rpx"></yr-ui-button>
+					</view>
+				</view>
+			</view>
+
+			<view class="yr-ui-section__title">商品导航栏</view>
+			<view class="yr-ui-goods__bar-wrap yr-ui-goodsbar__flex">
+				<view class="yr-ui-goods__bar-left yr-ui-goodsbar__flex">
+					<view class="yr-ui-goodsbar__item">
+						<yr-ui-icon name="message" size="{{40}}"></yr-ui-icon>
+						<text class="yr-ui-goodsbar__text">客服</text>
+					</view>
+					<view class="yr-ui-goodsbar__item">
+						<yr-ui-icon name="cart" size="{{40}}"></yr-ui-icon>
+						<text class="yr-ui-goodsbar__text">购物车</text>
+					</view>
+				</view>
+				<view class="yr-ui-goods__bar-right yr-ui-goodsbar__flex yr-ui-gb__right-width">
+					<view class="yr-ui-gb__btn-box">
+						<yr-ui-button text="加入购物车" type="warning" height="72rpx" size="{{28}}" radius="40rpx"></yr-ui-button>
+					</view>
+					<view class="yr-ui-gb__btn-box">
+						<yr-ui-button text="立即购买" type="danger" height="72rpx" size="{{28}}" radius="40rpx"></yr-ui-button>
+					</view>
+				</view>
+			</view>
+
+			<view class="yr-ui-goodsbar__fixed">
+				<view class="yr-ui-goods__bar-wrap yr-ui-goodsbar__flex">
+					<view class="yr-ui-goods__bar-left yr-ui-goodsbar__flex">
+						<view class="yr-ui-goodsbar__item">
+							<yr-ui-icon name="shop" size="{{40}}" color="#FF2B2B"></yr-ui-icon>
+							<text class="yr-ui-goodsbar__text">店铺</text>
+						</view>
+						<view class="yr-ui-goodsbar__item">
+							<yr-ui-icon name="message" size="{{40}}"></yr-ui-icon>
+							<text class="yr-ui-goodsbar__text">客服</text>
+						</view>
+						<view class="yr-ui-goodsbar__item">
+							<view class="yr-ui-gb__icon-box">
+								<yr-ui-icon name="cart" size="{{40}}"></yr-ui-icon>
+								<yr-ui-badge absolute value="{{2}}" type="danger" scaleRatio="{{0.8}}"></yr-ui-badge>
+							</view>
+							<text class="yr-ui-goodsbar__text">购物车</text>
+						</view>
+					</view>
+					<view class="yr-ui-goods__bar-right yr-ui-goodsbar__flex">
+						<view class="yr-ui-gb__btn-box">
+							<yr-ui-button text="加入购物车" type="warning" height="72rpx" size="{{28}}" radius="40rpx">
+							</yr-ui-button>
+						</view>
+						<view class="yr-ui-gb__btn-box">
+							<yr-ui-button text="立即购买" type="danger" height="72rpx" size="{{28}}" radius="40rpx"></yr-ui-button>
+						</view>
+					</view>
+				</view>
+				<yr-ui-safe-area></yr-ui-safe-area>
+			</view>
+			<!-- 布局内容 end -->
+		</view>
+	</view>

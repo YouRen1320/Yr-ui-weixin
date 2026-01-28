@@ -1,0 +1,106 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Form<image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Form 表单校验，提供了常用的表单校验方法（完整内容请查看文档），支持传入自定义校验方法。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-form id="form" top="0">
+        <view class="yr-ui-section__title">输入框</view>
+				<yr-ui-input required label="姓名" borderTop placeholder="请输入姓名" model:value="{{name}}"></yr-ui-input>
+				<yr-ui-input required label="手机号" placeholder="请输入手机号码" model:value="{{mobile}}"></yr-ui-input>
+        <yr-ui-input required padding="20rpx 32rpx" label="验证码" placeholder="请输入手机验证码"
+					model:value="{{code}}">
+					<yr-ui-button type="gray" bold width="200rpx" height="64rpx" size="{{28}}" text="获取验证码"></yr-ui-button>
+        </yr-ui-input>
+				<yr-ui-input required label="密码" password placeholder="请输入密码" model:value="{{password}}">
+				</yr-ui-input>
+				<yr-ui-input required label="确认密码" password placeholder="请再次输入密码" model:value="{{confirmPwd}}">
+				</yr-ui-input>
+				<yr-ui-input label="年龄" placeholder="请输入年龄" model:value="{{age}}"></yr-ui-input>
+				<yr-ui-input label="身份证" placeholder="请输入身份证号码" model:value="{{idCard}}"></yr-ui-input>
+				<yr-ui-input label="邮箱" placeholder="请输入邮箱" model:value="{{email}}"></yr-ui-input>
+				<yr-ui-input label="个人主页" placeholder="请输入个人主页" model:value="{{url}}">
+				</yr-ui-input>
+				<yr-ui-input label="商品金额" placeholder="请输入商品金额" model:value="{{amount}}">
+				</yr-ui-input>
+				<yr-ui-input label="微信号" bottomLeft="{{0}}" placeholder="自定义校验，6至20位，字母，数字..." model:value="{{wechatNo}}">
+				</yr-ui-input>
+        <view class="yr-ui-section__title">文本域</view>
+				<yr-ui-textarea isCounter placeholder="请输入内容" model:value="{{text}}"></yr-ui-textarea>
+				<view class="yr-ui-section__title">单选列表项</view>
+				<yr-ui-radio-group model:value="{{ageRange}}">
+					<yr-ui-label wx:for="{{radioItems}}" wx:key="index">
+						<yr-ui-list-cell>
+							<view class="yr-ui-list__cell">
+								<text>{{item.name}}</text>
+								<yr-ui-radio isCheckMark checkMarkColor="#465CFF" scaleRatio="{{1.3}}"
+									checked="{{item.checked}}" value="{{item.value}}">
+								</yr-ui-radio>
+							</view>
+						</yr-ui-list-cell>
+					</yr-ui-label>
+				</yr-ui-radio-group>
+				<view class="yr-ui-section__title">复选列表项</view>
+				<yr-ui-checkbox-group bindchange="checkboxChange">
+					<yr-ui-label wx:for="{{checkboxItems}}" wx:key="index">
+						<yr-ui-list-cell>
+							<view class="yr-ui-align__center">
+								<yr-ui-checkbox checked="{{item.checked}}" value="{{item.value}}">
+								</yr-ui-checkbox>
+								<text class="yr-ui-text">{{item.name}}</text>
+							</view>
+						</yr-ui-list-cell>
+					</yr-ui-label>
+				</yr-ui-checkbox-group>
+				<view class="yr-ui-section__title">开关</view>
+				<yr-ui-list-cell highlight="{{false}}">
+					<view class="yr-ui-list__cell">
+						<text>标题文字</text>
+						<yr-ui-switch scaleRatio="{{0.8}}" bindchange="switchChange"></yr-ui-switch>
+					</view>
+				</yr-ui-list-cell>
+				<view class="yr-ui-section__title">选择</view>
+				<yr-ui-list-cell arrow bindclick="areaPicker">
+					<view class="yr-ui-list__cell">
+						<text>地区/国家</text>
+						<yr-ui-input text-align="right" padding="0" borderBottom="{{false}}" backgroundColor="transparent" disabled
+							value="{{area}}"></yr-ui-input>
+					</view>
+				</yr-ui-list-cell>
+				<yr-ui-list-cell arrow bindclick="datePicker">
+					<view class="yr-ui-list__cell">
+						<text>日期时间</text>
+						<yr-ui-input placeholder="请选择" text-align="right" padding="0" borderBottom="{{false}}"
+							backgroundColor="transparent" disabled value="{{dateTime}}"></yr-ui-input>
+					</view>
+				</yr-ui-list-cell>
+				<view class="yr-ui-section__title">评分</view>
+				<yr-ui-list-cell highlight="{{false}}">
+					<yr-ui-rate bindchange="rateChange"></yr-ui-rate>
+				</yr-ui-list-cell>
+				<view class="yr-ui-section__title">上传图片</view>
+				<yr-ui-list-cell padding="32rpx 32rpx 12rpx" highlight="{{false}}">
+					<yr-ui-upload max="{{2}}" immediate url="{{uploadUrl}}" id="upload" bindsuccess="success" bindcomplete="complete">
+					</yr-ui-upload>
+				</yr-ui-list-cell>
+				<view class="yr-ui-clause--cell yr-ui-clause--wrap">
+					<yr-ui-label>
+					   <view class="yr-ui-clause--cell">
+              <yr-ui-checkbox scaleRatio="{{0.8}}" bindchange="agreeChange"></yr-ui-checkbox>
+					  	<text class="yr-ui-clause--text">阅读并同意</text>
+             </view>
+					</yr-ui-label>
+					<text class="yr-ui-color__link">《yr-ui 相关条款》</text>
+				</view>
+
+				<view class="yr-ui-btn__box">
+					<yr-ui-button text="Submit" bold bindclick="submit"></yr-ui-button>
+				</view>
+			</yr-ui-form>
+		</view>
+    <yr-ui-picker options="{{areaOptions}}" show="{{show}}" bindchange="change" bindcancel="areaCancel"></yr-ui-picker>
+    <yr-ui-date-picker type="{{5}}" show="{{dateShow}}" bindchange="dateChange" bindcancel="dateCancel">
+		</yr-ui-date-picker>
+	</view>

@@ -1,0 +1,87 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">LoadAni <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">LoadAni 加载动画，该组件是对Loading组件的扩展。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用、改变颜色</view>
+    <yr-ui-grid>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani color="#FFB703"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani color="-webkit-linear-gradient(top,#FF416C,#6831FF)"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="2"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="2" color="#6831FF"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="2" color="-webkit-linear-gradient(top,#FF416C,#FFB703)"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="3"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="3" color="#09BE4F"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="3" color="#B2B2B2"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="4"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="4" color="#FFB703"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="4" color="#B2B2B2"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="5"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="5" color="#7F7F7F"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item highlight="{{false}}">
+        <view class="yr-ui-load__item">
+          <yr-ui-load-ani type="5" color="-webkit-linear-gradient(top,#FF416C,#6831FF)"></yr-ui-load-ani>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<view class="yr-ui-wrap">
+  <swiper class="yr-ui-swiper__wrap" current="{{current}}" duration="{{300}}" bindchange="change">
+    <swiper-item class="yr-ui-swiper__item" wx:for="{{tabBar}}" wx:for-item="tab" wx:key="index">
+      <scroll-view scroll-y class="yr-ui-scroll__wrap">
+        <view class="yr-ui-text">{{texts[index]}}</view>
+        <view class="yr-ui-tabbar__h" style="height:{{height}}px"> </view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+
+  <yr-ui-tabbar tabBar="{{tabBar}}" current="{{current}}" bindinit="init" bindclick="itemClick"></yr-ui-tabbar>
+</view>

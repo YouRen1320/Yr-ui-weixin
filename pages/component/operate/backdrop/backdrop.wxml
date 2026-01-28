@@ -1,0 +1,12 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title">Backdrop</view>
+			<view class="yr-ui-page__desc">Backdrop 遮罩层，在组件中设置显示蒙层。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-button type="gray" width="400rpx" height="84rpx" text="打开遮罩层" bold margin="24rpx 0" bindclick="open">
+			</yr-ui-button>
+		</view>
+		<!--closable为true时click事件才生效-->
+		<yr-ui-backdrop show="{{show}}" closable bindclick="close"></yr-ui-backdrop>
+	</view>

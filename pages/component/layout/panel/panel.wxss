@@ -1,0 +1,9 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-text__link {
+  color: #465CFF;
+  font-size: 32rpx;
+}
+

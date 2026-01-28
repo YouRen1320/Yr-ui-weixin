@@ -1,0 +1,19 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center yr-ui-rect" bindtap="vip">Skeleton <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc yr-ui-rect">Skeleton 骨架屏，在需要等待加载内容的位置提供一个占位图形组合。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-sk__box yr-ui-rect">骨架节点</view>
+			<view class="yr-ui-sk__wrap yr-ui-round">骨架节点</view>
+			<view class="yr-ui-section__title yr-ui-rect">手动绘制骨架</view>
+			<view class="yr-ui-outer">
+				<!--手动绘制数据，外层设置relative定位节点-->
+				<yr-ui-skeleton outerClass="yr-ui-outer" preloadList="{{preloadList}}"></yr-ui-skeleton>
+			</view>
+		</view>
+		<!--查找骨架节点 yr-ui-rect、yr-ui-round-->
+		<yr-ui-skeleton bindchange="change" wx:if="{{show}}" background="#F1F4FA" outerClass="yr-ui-wrap"></yr-ui-skeleton>
+	</view>

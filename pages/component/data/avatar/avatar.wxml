@@ -1,0 +1,35 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Avatar</view>
+    <view class="yr-ui-page__desc">Avatar 头像，用图标、图片或者字符的形式展示用户或事物信息。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-avatar size="small" text="A"></yr-ui-avatar>
+    <yr-ui-avatar text="B"></yr-ui-avatar>
+    <yr-ui-avatar size="large" text="丁"></yr-ui-avatar>
+    <yr-ui-avatar text="刘" background="#FFB703"></yr-ui-avatar>
+    <yr-ui-avatar size="small" text="邹" background="#465CFF"></yr-ui-avatar>
+    <view class="yr-ui-section__title">改变圆角值</view>
+    <yr-ui-avatar size="small" text="A" shape="square" marginRight="24"></yr-ui-avatar>
+    <yr-ui-avatar text="B" shape="square" marginRight="24"></yr-ui-avatar>
+    <yr-ui-avatar size="large" text="丁" radius="30" marginRight="24"></yr-ui-avatar>
+    <yr-ui-avatar text="刘" background="#FFB703" radius="30" marginRight="24"></yr-ui-avatar>
+    <yr-ui-avatar size="small" text="邹" background="#465CFF" radius="0"></yr-ui-avatar>
+    <view class="yr-ui-section__title">使用图片</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-avatar size="small" src="/static/images/common/img_logo.png" shape="square"></yr-ui-avatar>
+      <yr-ui-avatar src="/static/images/common/img_logo.png" radius="0"></yr-ui-avatar>
+      <yr-ui-avatar size="large" src="/static/images/common/img_logo.png" radius="30"></yr-ui-avatar>
+      <yr-ui-avatar src="/static/images/common/img_logo.png"></yr-ui-avatar>
+      <yr-ui-avatar size="small" src="/static/images/common/img_logo.png"></yr-ui-avatar>
+    </view>
+    <view class="yr-ui-section__title">自定义图标</view>
+    <yr-ui-avatar marginRight="24">
+      <yr-ui-icon name="my" color="#fff"></yr-ui-icon>
+    </yr-ui-avatar>
+    <yr-ui-avatar>
+      <yr-ui-icon name="my-fill" color="#fff"></yr-ui-icon>
+    </yr-ui-avatar>
+  </view>
+</view>

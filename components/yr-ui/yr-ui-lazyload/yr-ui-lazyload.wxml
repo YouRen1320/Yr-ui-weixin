@@ -1,0 +1,8 @@
+<view  class="yr-ui-lazyload__wrap"
+		style="background:{{background}};width:{{width==-1?'100%':width+'rpx'}};height:{{(height==0 || height==-1)?'auto':height+'rpx'}};border-radius:{{radius}}rpx;margin-top: {{marginTop}}rpx;margin-right: {{marginRight}}rpx;margin-bottom: {{marginBottom}}rpx;margin-left: {{marginLeft}}rpx;"
+		bindtap="handleTap">
+		<image class="yr-ui-lazyload__img {{visible?'yr-ui-lazyload__visible':'yr-ui-lazyload__hidden'}}" lazy-load
+			style="width:{{width==-1?'100%':width+'rpx'}};height:{{(height==0 || height==-1)?'rpx':height+'rpx'}};border-radius:{{radius}}rpx"
+			src="{{show?src:placeholder}}" mode="{{(height==0 || height==-1)?'widthFix':mode}}" webp="{{webp}}" bindload="handleLoad" binderror="handleError" id="{{elId}}"></image>
+		<slot></slot>
+	</view>

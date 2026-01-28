@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "通告栏",
+  "usingComponents": {
+    "yr-ui-notice-bar":"/components/yr-ui/yr-ui-notice-bar/yr-ui-notice-bar"
+  }
+}

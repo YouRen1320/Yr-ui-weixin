@@ -1,0 +1,16 @@
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-col__item {
+  height: 84rpx;
+  border-radius: 16rpx;
+}
+
+.yr-ui-color__black {
+  background-color: #333333;
+}
+
+.yr-ui-color__yellow {
+  background-color: #FFB703;
+}

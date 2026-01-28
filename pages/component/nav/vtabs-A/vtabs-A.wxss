@@ -1,0 +1,36 @@
+page {
+  background: #fff;
+  font-weight: normal;
+}
+
+.yr-ui-vtabs-content__item {
+  width: 100%;
+  /* padding: 0 20rpx; */
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.yr-ui-img {
+  width: 100%;
+  height: 268rpx;
+  display: block;
+  margin-top: 24rpx;
+}
+
+.yr-ui-content--box {
+  width: 100%;
+  padding: 30rpx 24rpx 40rpx;
+  box-sizing: border-box;
+}
+
+.yr-ui-title {
+  display: block;
+  font-size: 32rpx;
+  font-weight: bold;
+}
+
+.yr-ui-descr {
+  display: block;
+  font-size: 24rpx;
+  padding-top: 24rpx;
+}

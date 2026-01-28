@@ -1,0 +1,6 @@
+<view class="yr-ui-text__wrap {{block?'yr-ui-text__block':'yr-ui-text__inline'}} {{'yr-ui-text__'+align}} {{highlight && !disable?'yr-ui-text__active':''}}" style="text-align:{{align}};padding:{{padding}}"	bindtap="handleTap">
+		<slot></slot>
+		<text class="yr-ui-text__content {{color?'':'yr-ui-text__'+type}} {{unShrink?'yr-ui-text__unshrink':''}}"
+			style="color:{{color}};font-size:{{(size || c_size) + (unit || c_unit)}};line-height: {{lineHeight?((size || c_size) + (unit || c_unit)):'auto'}};text-align:{{align}};text-decoration:{{decoration}};font-weight:{{fontWeight}}" userSelect="{{userSelect}}" decode="{{decode}}">{{textValue}}</text>
+		<slot name="right"></slot>
+	</view>

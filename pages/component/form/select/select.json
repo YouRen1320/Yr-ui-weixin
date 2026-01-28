@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "选择器",
+  "usingComponents": {
+    "yr-ui-select":"/components/yr-ui/yr-ui-select/yr-ui-select"
+  }
+}

@@ -1,0 +1,49 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">SwiperDot <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">SwiperDot 轮播图指示点，一般用于banner轮播图。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">默认使用</view>
+    <yr-ui-swiper-dot items="{{items}}" current="{{current}}">
+      <swiper class="yr-ui-banner__wrap" bindchange="change" circular indicator-dots="{{false}}" autoplay interval="{{4000}}" duration="{{150}}">
+        <swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="yr-ui-banner__item" style="background:{{item.background}}">Yr-ui 组件库</view>
+        </swiper-item>
+      </swiper>
+    </yr-ui-swiper-dot>
+    <view class="yr-ui-section__title">改变圆点大小</view>
+    <yr-ui-swiper-dot styles="{{styles}}" items="{{items}}" current="{{current2}}">
+      <swiper previous-margin="60rpx" next-margin="60rpx" class="yr-ui-banner__box" bindchange="change2" circular indicator-dots="{{false}}" autoplay interval="{{5000}}" duration="{{150}}">
+        <swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="yr-ui-banner__cell {{current2!==index?'yr-ui-item__scale':''}}" style="background:{{item.background}}">Yr-ui 组件库</view>
+        </swiper-item>
+      </swiper>
+    </yr-ui-swiper-dot>
+    <view class="yr-ui-section__title">数字索引</view>
+    <yr-ui-swiper-dot type="2" styles="{{styles2}}" items="{{items}}" current="{{current3}}">
+      <swiper class="yr-ui-banner__wrap" bindchange="change3" circular indicator-dots="{{false}}" autoplay interval="{{5000}}" duration="{{150}}">
+        <swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="yr-ui-banner__item" style="background:{{item.background}}">Yr-ui 组件库</view>
+        </swiper-item>
+      </swiper>
+    </yr-ui-swiper-dot>
+    <view class="yr-ui-section__title">展示标题</view>
+    <yr-ui-swiper-dot type="3" field="title" styles="{{styles3}}" items="{{items}}" current="{{current4}}">
+      <swiper class="yr-ui-banner__wrap" bindchange="change4" circular indicator-dots="{{false}}" autoplay interval="{{4500}}" duration="{{150}}">
+        <swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="yr-ui-banner__item" style="background:{{item.background}}">Yr-ui 组件库</view>
+        </swiper-item>
+      </swiper>
+    </yr-ui-swiper-dot>
+    <view class="yr-ui-section__title">固定于右侧</view>
+    <yr-ui-swiper-dot type="4" styles="{{styles4}}" items="{{items}}" current="{{current5}}">
+      <swiper class="yr-ui-banner__wrap" bindchange="change5" circular indicator-dots="{{false}}" autoplay interval="{{4000}}" duration="{{150}}">
+        <swiper-item wx:for="{{items}}" wx:key="index">
+          <view class="yr-ui-banner__item" style="background:{{item.background}}">Yr-ui 组件库</view>
+        </swiper-item>
+      </swiper>
+    </yr-ui-swiper-dot>
+  </view>
+</view>

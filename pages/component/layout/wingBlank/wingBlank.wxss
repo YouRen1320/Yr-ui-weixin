@@ -1,0 +1,13 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-block {
+  width: 100%;
+  height: 80rpx;
+  background-color: #fff;
+}

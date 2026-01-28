@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "长按复制",
+  "usingComponents": {
+    "yr-ui-copy-text": "/components/yr-ui/yr-ui-copy-text/yr-ui-copy-text"
+  }
+}

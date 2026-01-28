@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "横向滚动",
+  "usingComponents": {
+    "yr-ui-overflow-hidden":"/components/yr-ui/yr-ui-overflow-hidden/yr-ui-overflow-hidden",
+    "yr-ui-avatar":"/components/yr-ui/yr-ui-avatar/yr-ui-avatar",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text"
+  }
+}

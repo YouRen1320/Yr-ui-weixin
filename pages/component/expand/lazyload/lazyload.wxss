@@ -1,0 +1,17 @@
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-page__bd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-text {
+  font-weight: normal;
+  font-size: 30rpx;
+  padding: 96rpx 0;
+}

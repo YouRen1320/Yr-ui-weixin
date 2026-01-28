@@ -1,0 +1,12 @@
+<view class="yr-ui-filter__bar-wrap" style="height:{{height}}rpx;background:{{background}}">
+  <view class="yr-ui-filter__bar-item" style="height:{{height}}rpx" catchtap="handleClick" data-index="{{index}}" wx:for="{{itemList}}" wx:key="index">
+    <text class="yr-ui-filter__bar-text {{item.text.length>4?'yr-ui-fb__text-hidden':''}}" style="font-size:{{size}}rpx;line-height:{{size}}rpx;color:{{item.value?activeColor:color}}" wx:if="{{item.type!=='switch'}}">{{item.text}}</text>
+    <view wx:if="{{item.type==='dropdown'}}" class="yr-ui-filter__bar-icon {{item.active?'yr-ui-fb__icon-rotate':''}}">
+      <yr-ui-icon name="arrowdown" color="{{item.value?activeColor:color}}" size="{{item.size || 32}}"></yr-ui-icon>
+    </view>
+    <yr-ui-icon name="screen" size="{{item.size || 28}}" color="{{item.value?activeColor:color}}" wx:if="{{item.type==='filter'}}"></yr-ui-icon>
+    <yr-ui-icon wx:if="{{item.type==='switch'}}" name="{{item.switch===1?'classify':'list'}}" size="{{item.size || (item.switch===1?46:60)}}" color="{{item.active?activeColor:color}}"></yr-ui-icon>
+    <yr-ui-icon wx:if="{{item.type==='sort'}}" name="{{item.sort===1?'turningup':'turningdown'}}" color="{{item.value?activeColor:color}}" size="{{item.size || 28}}"></yr-ui-icon>
+  </view>
+  <view class="yr-ui-filter__bar-line" wx:if="{{isLine}}" style="background:{{lineColor}}"></view>
+</view>

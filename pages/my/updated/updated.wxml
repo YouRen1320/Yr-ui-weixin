@@ -1,0 +1,9 @@
+<view class="yr-ui-wrap yr-ui-page__bd">
+  <yr-ui-list-cell bottom-right="32" arrow wx:for="{{logs}}" wx:key="index" bindclick="detail" data-date="{{item.date}}"
+    data-version="{{item.version}}">
+    <view>
+      <view class="yr-ui-title">Yr-ui {{item.version}} 主要更新</view>
+      <view class="yr-ui-date">{{item.date}}</view>
+    </view>
+  </yr-ui-list-cell>
+</view>

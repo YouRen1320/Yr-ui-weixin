@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "滑块拼图验证",
+  "usingComponents": {
+    "yr-ui-slider-captcha": "/components/yr-ui/yr-ui-slider-captcha/yr-ui-slider-captcha"
+  }
+}

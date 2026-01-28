@@ -1,0 +1,15 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Qrcode <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Qrcode 二维码，主要用于存储网址、名片、文本信息、特定代码等信息。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-textarea__box">
+      <yr-ui-textarea model:value="{{val}}"></yr-ui-textarea>
+    </view>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="生成" bold margin="32rpx 0 64rpx" bindclick="qrcode">
+    </yr-ui-button>
+    <yr-ui-qrcode value="{{value}}"></yr-ui-qrcode>
+  </view>
+</view>

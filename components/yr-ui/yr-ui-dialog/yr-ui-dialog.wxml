@@ -1,0 +1,12 @@
+<view bindtap="maskClose" style="background:{{maskBackground}}" class="yr-ui-dialog__wrap {{show?'yr-ui-wrap__show':''}}" catchtouchmove="stop">
+  <view class="yr-ui-dialog__inner" style="background:{{background}};border-radius:{{radius}}rpx">
+    <text class="yr-ui-dialog__title" style="color:{{color}}" wx:if="{{title}}">{{title}}</text>
+    <view class="yr-ui-dialog__body {{title?'':'yr-ui-dialog__mtop'}}">
+      <text class="yr-ui-dialog__descr" style="color:{{contentColor}}" wx:if="{{content}}">{{content}}</text>
+      <slot></slot>
+    </view>
+    <view class="yr-ui-dialog__footer">
+      <text wx:for="{{buttons}}" wx:key="index" style="color:{{item.color || '#333333'}}" class="yr-ui-dialog__btn {{index===0?'yr-ui-dialog__btn-first':''}}" bindtap="handleClick" data-index="{{index}}">{{item.text}}</text>
+    </view>
+  </view>
+</view>

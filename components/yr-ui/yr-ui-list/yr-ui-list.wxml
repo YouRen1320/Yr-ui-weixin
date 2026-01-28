@@ -1,0 +1,15 @@
+<view class="yr-ui-list__wrap" style="margin-top:{{marginTop}}rpx">
+  <view class="yr-ui-list__title" style="padding:{{padding}};background:{{background}}" wx:if="{{title}}">
+    <text style="color:{{color}};font-size:{{size}}rpx">{{title}}</text>
+  </view>
+  <view class="yr-ui-list__container">
+    <view wx:if="{{topBorder}}" style="background:{{borderColor}};left:{{topLeft}}rpx;right:{{topRight}}rpx"
+      class="yr-ui-list__border-top {{borderColor?'':'yr-ui-list__border-color'}}"></view>
+    <slot></slot>
+    <view wx:if="{{bottomBorder}}" style="background:{{borderColor}};left:{{bottomLeft}}rpx;right:{{bottomRight}}rpx"
+      class="yr-ui-list__border-bottom {{borderColor?'':'yr-ui-list__border-color'}}"></view>
+  </view>
+  <view class="yr-ui-list__footer" style="{padding:footerPadding}" wx:if="{{footer}}">
+    <text style="color:{{footerColor}};font-size:{{footerSize}}rpx">{{footer}}</text>
+  </view>
+</view>

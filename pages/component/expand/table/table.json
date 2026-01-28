@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "表格",
+  "usingComponents": {
+    "yr-ui-table":"/components/yr-ui/yr-ui-table/yr-ui-table"
+  }
+}

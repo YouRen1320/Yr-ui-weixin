@@ -1,0 +1,41 @@
+.yr-ui-timer__wrap {
+  display: inline-flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.yr-ui-timer__item,
+.yr-ui-timer__colon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6rpx;
+  text-align: center;
+}
+
+.yr-ui-timer__ms {
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+
+.yr-ui-timer__ms-list {
+  animation: ani 1s steps(10) infinite;
+}
+
+@keyframes ani {
+  from {
+    transform: translateY(0);
+  }
+
+  to {
+    transform: translateY(-100%);
+  }
+}
+.yr-ui-timer__ms-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}

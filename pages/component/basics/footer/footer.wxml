@@ -1,0 +1,12 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Footer</view>
+    <view class="yr-ui-page__desc">Footer 页脚。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-footer text="Copyright © 2021 yr-ui.cn"></yr-ui-footer>
+    <yr-ui-footer navigate="{{navigate}}" text="Copyright © 2021 yr-ui.cn"></yr-ui-footer>
+    <yr-ui-footer navigate="{{navigate2}}" text="Copyright © 2021 yr-ui.cn"></yr-ui-footer>
+    <yr-ui-footer isFixed navigate="{{navigate}}" text="Copyright © 2021 yr-ui.cn"></yr-ui-footer>
+  </view>
+</view>

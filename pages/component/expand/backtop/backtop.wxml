@@ -1,0 +1,25 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Backtop <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Backtop 回到顶部，返回页面顶部的操作按钮。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-button type="gray" width="400rpx" height="84rpx" text="默认样式" bold margin="24rpx"
+				bindclick="onChange" data-type="1"></yr-ui-button>
+			<yr-ui-button type="gray" width="400rpx" height="84rpx" text="修改图标" bold bindclick="onChange" data-type="2">
+			</yr-ui-button>
+			<yr-ui-button type="gray" width="400rpx" height="84rpx" text="调整样式" bold margin="24rpx"
+				bindclick="onChange" data-type="3">
+			</yr-ui-button>
+		</view>
+		<yr-ui-backtop scrollTop="{{scrollTop}}" name="{{name}}" background="{{background}}" color="{{color}}"></yr-ui-backtop>
+
+		<!-- 自定义图标 设置custom 属性为true，然后在插槽内放置图标-->
+		<!-- <yr-ui-backtop custom scrollTop="{{scrollTop}}">
+			<yr-ui-icon name="up" size="52"></yr-ui-icon>
+		</yr-ui-backtop> -->
+
+		<view style="width: 2px;height: 1000px;"></view>
+	</view>

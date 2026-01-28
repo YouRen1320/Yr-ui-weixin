@@ -1,0 +1,14 @@
+{
+  "name": "yr-ui-docs",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "yr-ui 微信小程序组件库文档",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}

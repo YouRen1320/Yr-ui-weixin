@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "页脚",
+  "usingComponents": {
+    "yr-ui-footer":"/components/yr-ui/yr-ui-footer/yr-ui-footer"
+  }
+}

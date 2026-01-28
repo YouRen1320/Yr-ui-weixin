@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "索引列表",
+  "disableScroll": true,
+  "usingComponents": {
+    "yr-ui-index-list": "/components/yr-ui/yr-ui-index-list/yr-ui-index-list",
+    "yr-ui-search-bar":"/components/yr-ui/yr-ui-search-bar/yr-ui-search-bar",
+    "yr-ui-loadmore":"/components/yr-ui/yr-ui-loadmore/yr-ui-loadmore",
+    "yr-ui-divider":"/components/yr-ui/yr-ui-divider/yr-ui-divider"
+  }
+}

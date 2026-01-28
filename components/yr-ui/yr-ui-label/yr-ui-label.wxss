@@ -1,0 +1,11 @@
+.yr-ui-label__box {
+  box-sizing: border-box;
+}
+
+.yr-ui-label__full {
+  flex: 1;
+  width: 100%;
+}
+.yr-ui-label__inline {
+  display: inline-block;
+}

@@ -1,0 +1,31 @@
+.yr-ui-banner__box{
+  width: 100%;
+  height: 420rpx;
+  background: #EDF9FF;
+}
+.yr-ui-banner {
+  width: 100%;
+  height: 420rpx;
+  display: block;
+}
+
+.yr-ui-list__view {
+  width: 100%;
+  padding: 8rpx 32rpx 32rpx;
+  box-sizing: border-box;
+}
+
+.yr-ui-list__item {
+  width: 100%;
+  height: 112rpx;
+}
+
+.yr-ui-list__item text {
+  padding-left: 24rpx;
+  padding-right: 16rpx;
+}
+
+.yr-ui-item__icon {
+  width: 48rpx;
+  height: 48rpx;
+}

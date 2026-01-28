@@ -1,0 +1,33 @@
+<wxs src="./index.wxs" module="parse"></wxs>
+<view class="yr-ui-slider__captcha-wrap {{isShow?'yr-ui-sc__wrap-show':''}}" style="background:{{maskBgColor}};z-index:{{zIndex}}" bindtap="maskClose" catchtouchmove="stop">
+		<view class="yr-ui-slider__captcha" style="background:{{background}}" catchtap="stop">
+			<text class="yr-ui-sc__title"
+				style="width:{{width}}px;color:{{color}};font-size: {{size}}rpx">{{ title }}</text>
+			<text class="yr-ui-sc__descr"
+				style="width: {{width}}px;color:{{descrColor}}; font-size: {{descrSize}}rpx">拖动下方滑块完成拼图</text>
+			<view class="yr-ui-sc__img-box" style="width:{{width}}px">
+				<image class="yr-ui-sc__img" src="{{src}}" style="width:{{width}}px;height:{{height}}px" wx:if="{{src}}">
+				</image>
+        <view class="yr-ui-sc__slot-box yr-ui-sc__sb-bs {{!cutSrc?'yr-ui-sc__sb-hidden':''}}"
+					style="left:{{x}}px;top:{{y}}px">
+					<image src="{{cutSrc}}" class="yr-ui-sc__slot-img">
+					</image>
+				</view>
+			</view>
+			<view class="yr-ui-sc__sliderbar" style="width:{{width}}px;height:{{sliderH}}px">
+				<view class="yr-ui-sc__bar"
+					style="width:{{width}}px;height:{{sliderH/2}}px;border-radius:{{sliderH}}px">
+				</view>
+				<view class="yr-ui-sc__slider {{!sliderBgColor?'yr-ui-sc__slider-bg':''}}" 
+					style="width:{{sliderH * 2}}px;height:{{sliderH}}px;border-radius:{{sliderH}}px;background:{{sliderBgColor}}"
+					change:prop="{{parse.slidereset}}" prop="{{resetNum}}" data-width="{{width}}" data-start="{{x}}"
+					data-swidth="{{sliderH * 2}}" data-disabled="{{!cutSrc || isPass || disabled || !isShow?1:0}}"
+					bindtouchstart="{{parse.touchstart}}" catchtouchmove="{{parse.touchmove}}" bindtouchend="{{parse.touchend}}">
+          <yr-ui-icon name="slide" size="{{56}}" color="{{slideColor}}"></yr-ui-icon>
+				</view>
+			</view>
+			<view class="yr-ui-sc__close " catchtap="closeVerify">
+				<yr-ui-icon name="close" color="{{closeColor}}"></yr-ui-icon>
+			</view>
+		</view>
+	</view>

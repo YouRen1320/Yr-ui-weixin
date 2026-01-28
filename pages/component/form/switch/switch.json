@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "开关",
+  "usingComponents": {
+    "yr-ui-label":"/components/yr-ui/yr-ui-label/yr-ui-label",
+    "yr-ui-switch":"/components/yr-ui/yr-ui-switch/yr-ui-switch"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "折叠面板",
+  "usingComponents": {
+    "yr-ui-collapse": "/components/yr-ui/yr-ui-collapse/yr-ui-collapse",
+    "yr-ui-collapse-item": "/components/yr-ui/yr-ui-collapse-item/yr-ui-collapse-item"
+  }
+}

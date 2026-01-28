@@ -1,0 +1,20 @@
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-page__bd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-picker__result {
+  width: 100%;
+  padding: 64rpx 32rpx;
+  box-sizing: border-box;
+  font-size: 26rpx;
+  word-break: break-all;
+  font-weight: normal;
+}

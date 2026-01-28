@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "数字滚轮",
+  "usingComponents": {
+    "yr-ui-digital-roller": "/components/yr-ui/yr-ui-digital-roller/yr-ui-digital-roller"
+  }
+}

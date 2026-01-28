@@ -1,0 +1,209 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Sticky <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Sticky 吸顶容器，用于将标题栏在滚动时固定到页面顶部。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">小鸡 🐤</view>
+				<view slot="content">
+					<yr-ui-list-cell>你看哪里有个小鸡呦</yr-ui-list-cell>
+					<yr-ui-list-cell>你看哪里有个小鸡呦</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里他有小鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">母鸡 🐔</view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有母鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有母鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">公鸡 🐓</view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有公鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有公鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">火鸡 🦃 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有火鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有火鸡哟</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">鸽子 🕊 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有鸽子哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有鸽子哟</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">猫咪 🐱 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有猫咪哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有猫咪哟</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">小狗 🐶 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有小狗哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有小狗哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小狗旺旺旺旺旺-wang-</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">山羊 🐐 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有山羊哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有山羊哟</yr-ui-list-cell>
+					<yr-ui-list-cell>山羊咩-mie-</yr-ui-list-cell>
+					<yr-ui-list-cell>小狗旺旺旺旺旺-wang-</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">绵羊 🐑 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有绵羊哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有绵羊哟</yr-ui-list-cell>
+					<yr-ui-list-cell>绵羊咇-bie</yr-ui-list-cell>
+					<yr-ui-list-cell>山羊咩-mie</yr-ui-list-cell>
+					<yr-ui-list-cell>小狗旺旺旺旺旺-wang-</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">母牛 🐮 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有母牛哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有母牛哟</yr-ui-list-cell>
+					<yr-ui-list-cell>母牛萌-meng-</yr-ui-list-cell>
+					<yr-ui-list-cell>绵羊咇-bie</yr-ui-list-cell>
+					<yr-ui-list-cell>山羊咩-mie</yr-ui-list-cell>
+					<yr-ui-list-cell>小狗旺旺旺旺旺-wang-</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">公牛 🐂 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有公牛哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有公牛哟</yr-ui-list-cell>
+					<yr-ui-list-cell>公牛呣-mu-</yr-ui-list-cell>
+					<yr-ui-list-cell>母牛萌-meng-</yr-ui-list-cell>
+					<yr-ui-list-cell>绵羊咇-bie</yr-ui-list-cell>
+					<yr-ui-list-cell>山羊咩-mie</yr-ui-list-cell>
+					<yr-ui-list-cell>小狗旺旺旺旺旺-wang-</yr-ui-list-cell>
+					<yr-ui-list-cell>猫咪喵喵喵喵喵-miao-</yr-ui-list-cell>
+					<yr-ui-list-cell>鸽子图噜噜噜噜-lu-</yr-ui-list-cell>
+					<yr-ui-list-cell>火鸡嘟嘟嘟嘟嘟-du-</yr-ui-list-cell>
+					<yr-ui-list-cell>公鸡喔喔喔喔喔-wo-</yr-ui-list-cell>
+					<yr-ui-list-cell>母鸡咯咯咯咯咯咯-go-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡哔哔哔哔-bi-哟</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+
+			<yr-ui-sticky range>
+				<view class="yr-ui-title">拖拉机 🚜 </view>
+				<view slot="content">
+					<yr-ui-list-cell>你看那里又有拖拉机哟</yr-ui-list-cell>
+					<yr-ui-list-cell>你看那里又有拖拉机哟</yr-ui-list-cell>
+					<yr-ui-list-cell>拖拉机嗡-weng-</yr-ui-list-cell>
+					<yr-ui-list-cell>拖拉机嗡-weng-</yr-ui-list-cell>
+					<yr-ui-list-cell>拖拉机嗡-weng-</yr-ui-list-cell>
+					<yr-ui-list-cell>小鸡被撞 喔 啊喔</yr-ui-list-cell>
+				</view>
+			</yr-ui-sticky>
+		</view>
+	</view>

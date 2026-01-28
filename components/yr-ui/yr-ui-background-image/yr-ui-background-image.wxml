@@ -1,0 +1,6 @@
+<view class="yr-ui-background__image-wrap"
+		style="position:{{absolute?'absolute':'fixed'}};background:{{background}};z-index:{{zIndex}}">
+		<image src="{{src}}" class="yr-ui-background__image" mode="{{aspectFill?'aspectFill':'scaleToFill'}}" wx:if="{{src!=''}}">
+		</image>
+		<slot></slot>
+	</view>

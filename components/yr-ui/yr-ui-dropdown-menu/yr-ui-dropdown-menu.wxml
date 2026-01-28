@@ -1,0 +1,36 @@
+<view class="yr-ui-dropdown__menu">
+  <slot></slot>
+  <view class="yr-ui-dropdown__menu-list {{direction!=='up'?'yr-ui-ddm__down':''}} {{direction==='up'?'yr-ui-ddm__up':''}} {{isShow && direction!=='up'?'yr-ui-ddm__down-show':''}} {{isShow && direction==='up'?'yr-ui-ddm__up-show':''}}" style="{{parse.getStyles(radius, background, right,left)}}">
+    <scroll-view class="yr-ui-ddm__scroll" scroll-y style="max-height:{{maxHeight}}rpx;min-width:{{minWidth}}rpx">
+      <slot name="item"></slot>
+      <view class="yr-ui-dropdown__menu-item {{isReverse?'yr-ui-ddm__reverse':''}} {{splitLine && itemList.length-1!==index?'yr-ui-ddm__item-line':''}}" style="background:{{background}};padding:{{padding}}" wx:for="{{itemList}}" wx:for-item="model" wx:key="index" catchtap="itemClick" data-index="{{index}}">
+        <view class="yr-ui-ddm__checkbox {{isCheckMark?'yr-ui-is__checkmark':''}} {{(!checkboxColor || checkboxColor===true) && model[checkedKey] && !isCheckMark?'yr-ui-ddm__checkbox-color':''}}" style="background:{{model[checkedKey] && !isCheckMark ?checkboxColor:'transparent'}};border-color:{{model[checkedKey] && !isCheckMark ?checkboxColor:borderColor}}" wx:if="{{isCheckbox}}">
+          <view class="yr-ui-ddm__checkmark" style="border-bottom-color:{{checkmarkColor}};border-right-color:{{checkmarkColor}}" wx:if="{{model[checkedKey]}}"></view>
+        </view>
+        <view class="yr-ui-ddm__flex">
+          <view class="yr-ui-ddm__icon-box {{!isReverse && isCheckbox?'yr-ui-ddm__icon-ml':''}} {{isReverse?'yr-ui-ddm__icon-mr':''}}" style="width:{{iconWidth}}rpx;height:{{iconWidth}}rpx" wx:if="{{model[srcKey]}}">
+            <image src="{{model[srcKey]}}" style="width:{{iconWidth}}rpx;height:{{iconWidth}}rpx"></image>
+          </view>
+          <text class="yr-ui-ddm__item-text {{!isReverse && (isCheckbox || model[srcKey])?'yr-ui-ddm__text-pl':''}} {{isReverse && (isCheckbox || model[srcKey])?'yr-ui-ddm__text-pr':''}}" style="font-size:{{size}}rpx;color:{{selectedColor && model[checkedKey]?selectedColor:color}}">{{model[textKey]}}</text>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <view class="yr-ui-ddm__mask" style="background:{{maskBackground}}" wx:if="{{isShow && isMask}}" bindtap="close">
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getStyles: function (radius, background, right,left) {
+      var styles = "border-radius:" + radius + "rpx;background:" + background + ";"
+      var rightValue = parseInt(right || 0)
+      if (rightValue >= 0) {
+        styles += 'right:0;'
+      } else {
+        styles += 'left:' + (left || 0) + 'rpx;'
+      }
+      return styles
+    }
+  }
+</wxs>

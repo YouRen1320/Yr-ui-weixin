@@ -1,0 +1,9 @@
+{
+  "navigationBarTextStyle": "white",
+  "navigationBarBackgroundColor": "#303132",
+  "navigationBarTitleText": "图片裁剪",
+  "disableScroll": true,
+  "usingComponents": {
+    "yr-ui-image-cropper":"/components/yr-ui/yr-ui-image-cropper/yr-ui-image-cropper"
+  }
+}

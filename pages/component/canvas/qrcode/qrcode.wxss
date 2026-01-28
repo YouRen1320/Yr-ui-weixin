@@ -1,0 +1,14 @@
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-page__bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-textarea__box {
+  width: 100%;
+}

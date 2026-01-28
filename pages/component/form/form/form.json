@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "表单校验",
+  "usingComponents": {
+    "yr-ui-form":"/components/yr-ui/yr-ui-form/yr-ui-form",
+    "yr-ui-input":"/components/yr-ui/yr-ui-input/yr-ui-input",
+    "yr-ui-checkbox-group":"/components/yr-ui/yr-ui-checkbox-group/yr-ui-checkbox-group",
+    "yr-ui-checkbox":"/components/yr-ui/yr-ui-checkbox/yr-ui-checkbox",
+    "yr-ui-label":"/components/yr-ui/yr-ui-label/yr-ui-label",
+    "yr-ui-radio-group":"/components/yr-ui/yr-ui-radio-group/yr-ui-radio-group",
+    "yr-ui-radio":"/components/yr-ui/yr-ui-radio/yr-ui-radio",
+    "yr-ui-rate":"/components/yr-ui/yr-ui-rate/yr-ui-rate",
+    "yr-ui-switch":"/components/yr-ui/yr-ui-switch/yr-ui-switch",
+    "yr-ui-textarea":"/components/yr-ui/yr-ui-textarea/yr-ui-textarea",
+    "yr-ui-picker": "/components/yr-ui/yr-ui-picker/yr-ui-picker",
+    "yr-ui-date-picker":"/components/yr-ui/yr-ui-date-picker/yr-ui-date-picker",
+    "yr-ui-upload": "/components/yr-ui/yr-ui-upload/yr-ui-upload"
+  }
+}

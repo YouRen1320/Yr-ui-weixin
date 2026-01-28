@@ -1,0 +1,20 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Loading</view>
+    <view class="yr-ui-page__desc">Loading 加载。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用（type=row）</view>
+    <yr-ui-loading type="row" isFixed="{{false}}"></yr-ui-loading>
+    <view class="yr-ui-section__title">基础使用（type=col）</view>
+    <yr-ui-loading isFixed="{{false}}"></yr-ui-loading>
+    <!-- 居中且显示遮罩，仅 isFixed为true时生效-->
+		<!-- <yr-ui-loading isMask mask-bg-color="rgba(0,0,0,.3)"></yr-ui-loading> -->
+    <view class="yr-ui-section__title">更换图标（type=row）</view>
+    <yr-ui-loading type="row" isFixed="{{false}}" srcRow="/static/images/component/loading_gray.png" text="正在加载...">
+    </yr-ui-loading>
+    <view class="yr-ui-section__title">更换图标（type=col）</view>
+    <yr-ui-loading isFixed="{{false}}" srcCol="/static/images/component/loading_white.png" text="正在加载...">
+    </yr-ui-loading>
+  </view>
+</view>

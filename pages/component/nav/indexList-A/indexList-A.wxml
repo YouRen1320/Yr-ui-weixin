@@ -1,0 +1,10 @@
+<!--该组件支持抽象节点，使用 generic:item="组件名称" 可替换掉默认节点内容-->
+<!--关于抽象节点文档：https://developers.weixin.qq.com/miniprogram/dev/framework/custom-component/generics.html-->
+
+<yr-ui-index-list isSrc listData="{{lists}}" bindinit="init" bindclick="itemClick">
+		<yr-ui-search-bar bindsearch="search"></yr-ui-search-bar>
+		<view slot="footer">
+			<yr-ui-loadmore wx:if="{{!show}}"></yr-ui-loadmore>
+			<yr-ui-divider text="66个朋友及联系人" wx:if="{{show}}"></yr-ui-divider>
+		</view>
+	</yr-ui-index-list>

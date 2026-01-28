@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "分享海报",
+  "usingComponents": {
+    "yr-ui-poster": "/components/yr-ui/yr-ui-poster/yr-ui-poster"
+  }
+}

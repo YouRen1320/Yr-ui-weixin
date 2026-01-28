@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "消息提示",
+  "usingComponents": {
+    "yr-ui-message": "/components/yr-ui/yr-ui-message/yr-ui-message"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "分页器",
+  "usingComponents": {
+    "yr-ui-pagination": "/components/yr-ui/yr-ui-pagination/yr-ui-pagination"
+  }
+}

@@ -1,0 +1,17 @@
+.yr-ui-page__bd {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 64rpx;
+}
+
+.yr-ui-bubble-box {
+  width: 100%;
+  padding: 0 32rpx;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

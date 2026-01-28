@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "时间轴",
+  "usingComponents": {
+    "yr-ui-timeaxis": "/components/yr-ui/yr-ui-timeaxis/yr-ui-timeaxis",
+    "yr-ui-timeaxis-node": "/components/yr-ui/yr-ui-timeaxis-node/yr-ui-timeaxis-node"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "抽屉",
+  "usingComponents": {
+    "yr-ui-drawer": "/components/yr-ui/yr-ui-drawer/yr-ui-drawer"
+  }
+}

@@ -1,0 +1,35 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Cascader <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Cascader 级联选择器，用于一组相关联的数据集合进行选择，例如省市区等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-cascader bindcomplete="complete" options="{{options}}"></yr-ui-cascader>
+    <view class="yr-ui-section__title">默认选项</view>
+    <yr-ui-cascader id="cascader" bindcomplete="complete" options="{{options}}" value="{{value}}" activeColor="#FF2B2B">
+    </yr-ui-cascader>
+    <view class="yr-ui-flex__center">
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="重置选择" bold margin="48rpx 0 0" bindclick="btnReset"></yr-ui-button>
+    </view>
+    <view class="yr-ui-section__title">逐级请求数据</view>
+    <yr-ui-cascader id="cascader1" options="{{layer1}}" stepLoading bindchange="change" bindcomplete="complete">
+    </yr-ui-cascader>
+    <view class="yr-ui-section__title">逐级请求数据/默认选项</view>
+    <yr-ui-cascader id="cascader2" options="{{layerData}}" value="{{value2}}" stepLoading bindchange="change2" bindcomplete="complete">
+    </yr-ui-cascader>
+    <view class="yr-ui-flex__center">
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="底部弹出选择" bold margin="48rpx 0 0" bindclick="btnSelect"></yr-ui-button>
+    </view>
+  </view>
+  <yr-ui-bottom-popup show="{{show}}">
+    <view class="yr-ui-scroll__wrap">
+      <view class="yr-ui-title">请选择地区</view>
+      <yr-ui-cascader bindcomplete="complete2" options="{{options}}"></yr-ui-cascader>
+      <view class="yr-ui-icon__close" catchtap="closePopup">
+        <yr-ui-icon name="close" size="{{48}}"></yr-ui-icon>
+      </view>
+    </view>
+  </yr-ui-bottom-popup>
+</view>

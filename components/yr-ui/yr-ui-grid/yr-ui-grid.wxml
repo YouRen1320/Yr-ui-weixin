@@ -1,0 +1,6 @@
+<view class="yr-ui-grid__wrap {{isShow?'yr-ui-grid__wrap-show':'yr-ui-grid__wrap-hidden'}}">
+  <view id="{{elemId}}" class="yr-ui-grid {{showBorder?'yr-ui-grid__border':''}}"
+    style="border-left-color:{{borderColor}};border-top-color:{{borderColor}}">
+    <slot></slot>
+  </view>
+</view>

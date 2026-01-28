@@ -1,0 +1,146 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title">Layout</view>
+			<view class="yr-ui-page__desc">Layout 栅格布局，将整个屏幕宽度分为 24 单位，每个单位的大小，由当前屏幕尺寸决定。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">基础布局</view>
+			<yr-ui-row margin-bottom="24rpx">
+				<yr-ui-col>
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+			<yr-ui-row margin-bottom="24rpx">
+				<yr-ui-col span="{{12}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{12}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="24rpx">
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="24rpx">
+				<yr-ui-col span="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+			<yr-ui-row marginBottom="24rpx">
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<view class="yr-ui-section__title">混合布局</view>
+			<yr-ui-row marginBottom="24rpx" gutter="{{gutter}}">
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="24rpx" gutter="{{gutter}}">
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{16}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{4}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<view class="yr-ui-section__title">分栏偏移</view>
+			<yr-ui-row marginBottom="10px" gutter="{{gutter}}">
+				<yr-ui-col span="{{8}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{8}}" offset="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="10px" gutter="{{gutter}}">
+				<yr-ui-col span="{{6}}" offset="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{6}}" offset="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="10px" gutter="{{gutter}}">
+				<yr-ui-col span="{{12}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col span="{{6}}" pushLeft="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+
+			<yr-ui-row marginBottom="24rpx" gutter="{{gutter}}">
+				<yr-ui-col span="{{12}}" offset="{{6}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+			<view class="yr-ui-section__title">响应式布局</view>
+			<yr-ui-row marginBottom="24rpx" gutter="{{gutter}}">
+				<yr-ui-col xs="{{8}}" sm="{{6}}" md="{{4}}" lg="{{3}}" xl="{{1}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col xs="{{4}}" sm="{{6}}" md="{{8}}" lg="{{9}}" xl="{{11}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+				<yr-ui-col xs="{{4}}" sm="{{6}}" md="{{8}}" lg="{{9}}" xl="{{11}}">
+					<view class="yr-ui-col__item yr-ui-color__black"></view>
+				</yr-ui-col>
+				<yr-ui-col xs="{{8}}" sm="{{6}}" md="{{4}}" lg="{{3}}" xl="{{1}}">
+					<view class="yr-ui-col__item yr-ui-color__yellow"></view>
+				</yr-ui-col>
+			</yr-ui-row>
+		</view>
+	</view>

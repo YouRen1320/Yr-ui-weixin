@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "日历",
+  "usingComponents": {
+    "yr-ui-calendar": "/components/yr-ui/yr-ui-calendar/yr-ui-calendar",
+    "yr-ui-bottom-popup": "/components/yr-ui/yr-ui-bottom-popup/yr-ui-bottom-popup"
+  }
+}

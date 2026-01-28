@@ -1,0 +1,8 @@
+{
+  "navigationStyle": "custom",
+	"navigationBarTitleText": "背景图",
+  "usingComponents": {
+    "yr-ui-status-bar":"/components/yr-ui/yr-ui-status-bar/yr-ui-status-bar",
+    "yr-ui-background-image":"/components/yr-ui/yr-ui-background-image/yr-ui-background-image"
+  }
+}

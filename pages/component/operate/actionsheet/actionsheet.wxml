@@ -1,0 +1,16 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">ActionSheet</view>
+    <view class="yr-ui-page__desc">ActionSheet 上拉菜单，从底部弹出的模态框，提供和当前场景相关的操作菜单。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带提示" bold margin="24rpx 0" bindclick="showActionSheet" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="无提示操作" bold bindclick="showActionSheet" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="暗黑模式" margin="24rpx 0" bold bindclick="showActionSheet" data-type="3">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="无取消按钮" bold bindclick="showActionSheet" data-type="4">
+    </yr-ui-button>
+  </view>
+  <yr-ui-actionsheet show="{{show}}" tips="{{tips}}" itemList="{{itemList}}" isCancel="{{isCancel}}" theme="{{theme}}" bindclick="itemClick" bindcancel="cancel"></yr-ui-actionsheet>
+</view>

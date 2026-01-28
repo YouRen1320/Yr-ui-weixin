@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商品列表",
+  "usingComponents": {
+    "yr-ui-lazyload":"/components/yr-ui/yr-ui-lazyload/yr-ui-lazyload",
+    "yr-ui-overflow-hidden":"/components/yr-ui/yr-ui-overflow-hidden/yr-ui-overflow-hidden",
+    "yr-ui-tag":"/components/yr-ui/yr-ui-tag/yr-ui-tag",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text"
+  }
+}

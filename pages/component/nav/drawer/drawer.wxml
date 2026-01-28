@@ -1,0 +1,37 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Drawer</view>
+    <view class="yr-ui-page__desc">Drawer 抽屉，抽屉式导航，用于展示侧滑菜单，侧滑导航。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="从右往左开" bold margin="24rpx 0" bindclick="showDrawer" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="从左往右开" bold bindclick="showDrawer" data-type="2">
+    </yr-ui-button>
+  </view>
+  <yr-ui-drawer show="{{show}}" bindclose="closeDrawer" data-type="1">
+    <scroll-view scroll-y class="yr-ui-scroll__view">
+      <view>
+        <yr-ui-list-cell arrow wx:for="{{itemList}}" wx:key="index">
+          item{{index+1}}
+        </yr-ui-list-cell>
+      </view>
+    </scroll-view>
+  </yr-ui-drawer>
+
+  <yr-ui-drawer show="{{show2}}" radius="24" direction="left" maskClosable="{{false}}">
+    <view class="yr-ui-scroll__view">
+      <view class="yr-ui-title">左侧菜单栏</view>
+      <scroll-view scroll-y style="height: 720rpx;">
+        <view>
+          <yr-ui-list-cell wx:for="{{itemList}}" wx:key="index">
+            item{{index+1}}
+          </yr-ui-list-cell>
+        </view>
+      </scroll-view>
+      <view class="yr-ui-btn__box">
+        <yr-ui-button type="warning" width="400rpx" height="84rpx" text="关闭菜单栏" bold bindclick="closeDrawer" data-type="2">
+        </yr-ui-button>
+      </view>
+    </view>
+  </yr-ui-drawer>
+</view>

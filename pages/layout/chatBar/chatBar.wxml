@@ -1,0 +1,65 @@
+<view class="yr-ui-wrap">
+    <view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">ChatBar <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">聊天栏，常用的页面布局，可提升开发效率以及带来舒服的视觉效果！</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">聊天栏</view>
+			<!-- 布局内容 start -->
+			<view class="yr-ui-chatbar__wrap">
+				<view class="yr-ui-chatbar__icon-box" bindtap="change">
+					<yr-ui-icon name="{{isVoice?'voice':'keyboard'}}"></yr-ui-icon>
+				</view>
+				<view class="yr-ui-chatbar__input-box">
+					<textarea auto-height disable-default-padding  confirm-type="send" class="yr-ui-chatbar__input"></textarea>
+					<view class="yr-ui-chatbar__voice" wx:if="{{!isVoice}}">
+						<text class="yr-ui-chatbar__voice-text">按住 说话</text>
+					</view>
+				</view>
+				<view class="yr-ui-chatbar__icon-box">
+					<yr-ui-icon name="face"></yr-ui-icon>
+				</view>
+				<view class="yr-ui-chatbar__icon-box yr-ui-chatbar__pdl">
+					<yr-ui-icon name="plussign"></yr-ui-icon>
+				</view>
+			</view>
+
+			<view class="yr-ui-section__title">聊天栏</view>
+
+			<view class="yr-ui-chatbar__wrap">
+				<view class="yr-ui-chatbar__icon-box" bindtap="change">
+					<yr-ui-icon name="{{isVoice?'voice':'keyboard'}}"></yr-ui-icon>
+				</view>
+				<view class="yr-ui-chatbar__input-box">
+					<textarea auto-height disable-default-padding  confirm-type="send" class="yr-ui-chatbar__input"></textarea>
+					<view class="yr-ui-chatbar__voice" wx:if="{{!isVoice}}">
+						<text class="yr-ui-chatbar__voice-text">按住 说话</text>
+					</view>
+				</view>
+				<view class="yr-ui-chatbar__icon-box yr-ui-chatbar__send-box">
+					<text class="yr-ui-chatbar__send">发送</text>
+				</view>
+			</view>
+			
+			<view class="yr-ui-chatbar__fixed">
+				<view class="yr-ui-chatbar__wrap">
+					<view class="yr-ui-chatbar__icon-box" bindtap="change">
+						<yr-ui-icon name="{{isVoice?'voice':'keyboard'}}"></yr-ui-icon>
+					</view>
+					<view class="yr-ui-chatbar__input-box">
+						<textarea fixed auto-height disable-default-padding cursor-spacing="{{18}}" confirm-type="send" class="yr-ui-chatbar__input" bindfocus="focusChange" bindblur="blurChange"></textarea>
+						<view class="yr-ui-chatbar__voice" wx:if="{{!isVoice}}">
+							<text class="yr-ui-chatbar__voice-text">按住 说话</text>
+						</view>
+					</view>
+					<view class="yr-ui-chatbar__icon-box yr-ui-chatbar__send-box">
+						<text class="yr-ui-chatbar__send">发送</text>
+					</view>
+				</view>
+				<yr-ui-safe-area background="#f8f8f8" wx:if="{{!focus}}"></yr-ui-safe-area>
+			</view>
+			<!-- 布局内容 end -->
+		</view>
+	</view>

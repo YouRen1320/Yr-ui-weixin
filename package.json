@@ -1,0 +1,24 @@
+{
+  "name": "yr-ui-weixin",
+  "version": "1.0.0",
+  "description": "美观、灵活、高效的微信小程序 UI 组件库",
+  "main": "components/yr-ui/index.js",
+  "miniprogram": "components/yr-ui",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "yr-ui",
+    "wx",
+    "weixin",
+    "miniprogram",
+    "ui",
+    "component"
+  ],
+  "author": "Yr-ui Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yr-ui/yr-ui-weixin.git"
+  }
+}

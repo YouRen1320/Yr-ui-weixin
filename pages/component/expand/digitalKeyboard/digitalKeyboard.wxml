@@ -1,0 +1,34 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">DigitalKeyboard <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">DigitalKeyboard 数字键盘，一般用于数字输入，如金额、密码、验证码输入等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-single-input native="{{false}}" isFocus borderColor="#ccc" value="{{value}}" bindfocus="onFocus" id="fui_si">
+    </yr-ui-single-input>
+    <view class="yr-ui-flex__center yr-ui-flex__column">
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="默认键盘" bold bindclick="btnTap" data-type="0">
+      </yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="改变按钮背景色" bold margin="24rpx 0" bindclick="btnTap" data-type="1"></yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带小数点" bold bindclick="btnTap" data-type="2">
+      </yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带取消按钮" bold margin="24rpx 0" bindclick="btnTap" data-type="3"></yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带清空按钮" bold bindclick="btnTap" data-type="4"></yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="暗黑模式" bold margin="24rpx 0" bindclick="btnTap" data-type="5"></yr-ui-button>
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义插槽内容" bold bindclick="btnClick"></yr-ui-button>
+    </view>
+    <yr-ui-digital-keyboard id="" show="{{show}}" background="{{background}}" decimal="{{decimal}}" spareKey="{{spareKey}}" theme="{{theme}}" bindclick="keyClick" bindconfirm="confirm" bindbackspace="backspace" bindspare="spare">
+    </yr-ui-digital-keyboard>
+
+    <!--自定义插槽内容示例-->
+    <yr-ui-backdrop zIndex="{{9}}" show="{{visible}}"></yr-ui-backdrop>
+    <yr-ui-digital-keyboard zIndex="{{10}}" show="{{visible}}" spareKey="取消" background="#09BE4F" bindclick="keyClick2" bindconfirm="confirm2" bindbackspace="backspace2" bindspare="spare2">
+      <view class="yr-ui-dk__header">
+        <text class="yr-ui-title">请输入密码</text>
+        <yr-ui-single-input id="fui_si2" native="{{false}}" borderColor="#ccc" border="1" borderWidth="1" radius="16" activeColor="#09BE4F" cursorHeight="40" cursorColor="#09BE4F" length="{{6}}" width="80" height="80" size="24" password isFocus value="{{value2}}">
+        </yr-ui-single-input>
+      </view>
+    </yr-ui-digital-keyboard>
+  </view>
+</view>

@@ -1,0 +1,3 @@
+<view class="yr-ui-label__box {{full?'yr-ui-label__full':''}} {{inline?'yr-ui-label__inline':''}}" style="padding:{{padding}};margin:{{margin}}" catchtap="onClick">
+  <slot></slot>
+</view>

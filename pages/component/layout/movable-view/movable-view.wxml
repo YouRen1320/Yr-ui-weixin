@@ -1,0 +1,24 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center"  bindtap="vip">MovableView <image
+					src="/static/images/index/light/icon_member_3x.png"></image></view>
+			<view class="yr-ui-page__desc">MovableView 可移动的视图容器，在页面中可以拖拽滑动，暂不支持缩放。</view>
+		</view>
+		<yr-ui-movable-view bindchange="change">
+			<view class="yr-ui-fab--box" bindtap="handleClick">
+				<yr-ui-icon name="edit" color="#fff"></yr-ui-icon>
+			</view>
+		</yr-ui-movable-view>
+		
+		<yr-ui-movable-view top="200">
+			<view class="yr-ui-fab--box" bindtap="handleClick">
+				<yr-ui-icon name="share" color="#fff"></yr-ui-icon>
+			</view>
+		</yr-ui-movable-view>
+		
+		<yr-ui-movable-view left="80">
+			<view class="yr-ui-fab--box" bindtap="handleClick">
+				<yr-ui-icon name="plus" color="#fff"></yr-ui-icon>
+			</view>
+		</yr-ui-movable-view>
+	</view>

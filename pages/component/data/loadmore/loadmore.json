@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "加载更多",
+  "usingComponents": {
+    "yr-ui-loadmore": "/components/yr-ui/yr-ui-loadmore/yr-ui-loadmore"
+  }
+}

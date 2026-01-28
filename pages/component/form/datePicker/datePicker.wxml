@@ -1,0 +1,28 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">DatePicker <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">DatePicker 日期时间选择器，用于选择日期或时间。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="年月" bold margin="24rpx" bindclick="btnClick" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="年月日" bold bindclick="btnClick" data-type="3">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="年月日 时" bold margin="24rpx" bindclick="btnClick" data-type="4">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="年月日 时分" bold bindclick="btnClick" data-type="5">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="时分秒" bold bindclick="btnClick" data-type="7" margin="24rpx">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="日期区间选择" bold bindclick="btnClick" data-type="3" data-range="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="设置默认值" bold margin="24rpx" bindclick="btnClick" data-type="5" data-range="0" data-def="1">
+    </yr-ui-button>
+    <view class="yr-ui-picker__result">
+      选择的值为：{{result}}
+    </view>
+  </view>
+  <yr-ui-date-picker show="{{show}}" type="{{type}}" range="{{range}}" value="{{value}}" bindchange="change" bindcancel="cancel">
+  </yr-ui-date-picker>
+</view>

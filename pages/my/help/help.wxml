@@ -1,0 +1,68 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-header">
+    <image src="{{resUrl}}/help/light/img_banner_3x.png" class="yr-ui-banner" mode="widthFix"></image>
+    <view class="yr-ui-hd__content">
+      <view class="yr-ui-hd__title">Hi,很高兴为您服务</view>
+      <view class="yr-ui-hd__sub">已为您定制如下内容</view>
+    </view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-main__box">
+      <view class="yr-ui-search__box yr-ui-align__center" bindtap="search">
+        <image class="yr-ui-search__icon" src="/static/images/help/light/icon_search_3x.png" mode="widthFix">
+        </image>
+        <text class="yr-ui-search__text">请输入您遇到的问题</text>
+      </view>
+      <yr-ui-list-cell bottomLeft="0" padding="32rpx 0" highlight="{{false}}">
+        <text class="yr-ui-title">问题指南</text>
+      </yr-ui-list-cell>
+      <view class="yr-ui-menu__box">
+        <view class="yr-ui-menu__item" bindtap="href" data-type="1">
+          <image src="/static/images/help/light/icon_introduction_3x.png"></image>
+          <text>新手入门</text>
+        </view>
+        <view class="yr-ui-menu__item" bindtap="href" data-type="2">
+          <image src="/static/images/help/light/icon_introduce_3x.png"></image>
+          <text>功能介绍</text>
+        </view>
+        <view class="yr-ui-menu__item" bindtap="href" data-type="3">
+          <image src="/static/images/help/light/icon_member_3x.png"></image>
+          <text>会员权益</text>
+        </view>
+      </view>
+    </view>
+    <view class="yr-ui-title__box yr-ui-align__center">
+      <image src="/static/images/help/light/icon_assembly_3x.png"></image>
+      <text>常见问题</text>
+    </view>
+    <yr-ui-list-cell arrow bottomRight="32" wx:for="{{ques}}" wx:key="index" bindclick="detail" data-index="{{index}}"
+      data-title="{{item}}">
+      <text>{{item}}</text>
+    </yr-ui-list-cell>
+    <view class="yr-ui-title__box yr-ui-align__center">
+      <image src="/static/images/help/light/icon_bug_3x.png"></image>
+      <text>常见BUG</text>
+    </view>
+    <view>
+      <yr-ui-list-cell arrow bottomRight="32" wx:for="{{bugs}}" wx:key="idx" wx:for-index="idx" bindclick="detail" data-index="{{idx+5}}"
+        data-title="{{item}}">
+        <text>{{item}}</text>
+      </yr-ui-list-cell>
+    </view>
+    <view class="yr-ui-title__box yr-ui-align__center">
+      <image src="/static/images/help/light/icon_member_relevant_3x.png"></image>
+      <text>会员相关</text>
+    </view>
+    <view>
+      <yr-ui-list-cell arrow bottomRight="32" wx:for="{{members}}" wx:key="index" bindclick="detail"
+        data-index="{{index+9}}" data-title="{{item}}">
+        <text>{{item}}</text>
+      </yr-ui-list-cell>
+    </view>
+    <view class="yr-ui-footer yr-ui-flex__center">
+      找不到答案？
+      <yr-ui-button open-type="contact" width="144rpx" height="44rpx" type="link" color="#465CFF" size="{{24}}">
+        向我提问吧</yr-ui-button>
+    </view>
+  </view>
+</view>

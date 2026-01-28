@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "分享面板",
+  "usingComponents": {
+    "yr-ui-share-sheet": "/components/yr-ui/yr-ui-share-sheet/yr-ui-share-sheet"
+  }
+}

@@ -1,0 +1,25 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title">Lottie</view>
+			<view class="yr-ui-page__desc">Lottie 动画，通过读取json文件信息实现动画效果。</view>
+		</view>
+		<view class="yr-ui-page__bd yr-ui-page__spacing">
+			<view class="yr-ui-section__title">本地json数据</view>
+			<view class="yr-ui-flex__center">
+				<yr-ui-lottie options="{{options}}"></yr-ui-lottie>
+			</view>
+			<view class="yr-ui-section__title">网络地址</view>
+			<view class="yr-ui-flex__center">
+				<yr-ui-lottie options="{{option}}" action="{{action}}"></yr-ui-lottie>
+			</view>
+
+			<view class="yr-ui-flex__center yr-ui-flex__column">
+				<yr-ui-button type="gray" width="400rpx" height="84rpx" text="暂停播放" bold margin="24rpx 0" bindclick="ani" data-action="pause"></yr-ui-button>
+				<yr-ui-button type="gray" width="400rpx" height="84rpx" text="开始播放" bold bindclick="ani" data-action="play">
+				</yr-ui-button>
+				<yr-ui-button type="gray" width="400rpx" height="84rpx" text="停止播放" bold margin="24rpx 0" bindclick="ani" data-action="stop">
+				</yr-ui-button>
+			</view>
+
+		</view>
+	</view>

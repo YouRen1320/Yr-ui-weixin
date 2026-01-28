@@ -1,0 +1,28 @@
+<view class="yr-ui-cascader__wrap">
+  <view class="yr-ui-cascader__header-wrap">
+    <scroll-view scroll-x scroll-with-animation show-scrollbar="{{false}}" scroll-into-view="{{scrollViewId}}" style="background:{{headBackground}}" class="yr-ui-cascader__scroll">
+      <view class="yr-ui-cascader__header" style="height:{{headHeight}}rpx">
+        <view class="yr-ui-cascader__header-item" id="fui_cr_{{idx}}" wx:for-items="{{selectedArr}}" wx:for-index="idx" wx:key="idx" catchtap="swichTabs" data-idx="{{idx}}">
+          <text class="yr-ui-cascader__header-text {{item[textKey].length>6?'yr-ui-cascader__hi-width':''}} {{idx === current && !activeColor?'yr-ui-cascader__color':''}}" style="color: {{idx === current ? activeColor : color}};font-size:{{size}}rpx;font-weight:{{idx === current?'bold':'normal'}}">{{ item[textKey] }}</text>
+          <view class="yr-ui-cascader__header-line {{activeColor?'':'yr-ui-cascader__bg'}}" style="background:{{activeColor}}" wx:if="{{idx === current && showLine}}"></view>
+        </view>
+      </view>
+    </scroll-view>
+    <view class="yr-ui-cascader__border" style="background:{{borderColor}}" wx:if="{{showBorder}}"></view>
+  </view>
+
+  <swiper class="yr-ui-cascader__list" current="{{defCurrent}}" circular="{{false}}" duration="{{300}}" bindchange="{{switchTab}}" style="height:{{height}}rpx; background:{{background}}">
+    <swiper-item wx:for="{{selectedArr}}" wx:for-index="i" wx:key="i">
+      <scroll-view show-scrollbar="{{false}}" scroll-y scroll-into-view="{{item.scrollViewId}}" class="yr-ui-cascader__item-scroll" style="height:{{height}}rpx; background:{{background}}">
+        <view class="yr-ui-cascader__seat"></view>
+        <view class="yr-ui-cascader__cell" id="fui_c_{{subi}}" wx:for-items="{{item.data}}" wx:for-item="sub" wx:for-index="subi" wx:key="subi" catchtap="change" data-index="{{i}}" data-sub="{{sub}}" data-subi="{{subi}}">
+          <view class="yr-ui-cascader__checkmark {{activeColor?'':'yr-ui-cascader__icon-border'}}" style="border-bottom-color:{{checkMarkColor || activeColor}};border-right-color:{{checkMarkColor || activeColor}}" wx:if="{{item.index === subi}}"></view>
+          <image src="{{sub[srcKey]}}" wx:if="{{sub[srcKey]}}" class="yr-ui-cascader__img" style="width:{{imgWidth}}rpx;height:{{imgHeight}}rpx;border-radius:{{radius}}rpx">
+          </image>
+          <text class="yr-ui-cascader__text" style="color: {{item.index === subi ? textActiveColor : textColor}};font-size:{{textSize}}rpx;font-weight:{{item.index === subi?'bold':'normal'}}">{{ sub[textKey] }}</text>
+        </view>
+        <view class="yr-ui-cascader__seat"></view>
+      </scroll-view>
+    </swiper-item>
+  </swiper>
+</view>

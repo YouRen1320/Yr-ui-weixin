@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "视频上传",
+  "usingComponents": {
+    "yr-ui-upload-video":"/components/yr-ui/yr-ui-upload-video/yr-ui-upload-video"
+  }
+}

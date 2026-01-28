@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "滑动验证",
+  "usingComponents": {
+    "yr-ui-slide-verify":"/components/yr-ui/yr-ui-slide-verify/yr-ui-slide-verify"
+  }
+}

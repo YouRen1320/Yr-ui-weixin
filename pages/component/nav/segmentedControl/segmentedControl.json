@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "分段器",
+  "usingComponents": {
+    "yr-ui-segmented-control": "/components/yr-ui/yr-ui-segmented-control/yr-ui-segmented-control"
+  }
+}

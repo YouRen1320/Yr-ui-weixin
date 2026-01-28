@@ -1,0 +1,10 @@
+<view class="yr-ui-wrap">
+		<yr-ui-image-cropper height="{{400}}" src="{{src}}" id="cropper"></yr-ui-image-cropper>
+		<view class="yr-ui-cropper__tabbar">
+			<text class="yr-ui-text" catchtap="chooseImage">选择</text>
+			<view class="yr-ui-flex__center yr-ui-flex__1" catchtap="rotate">
+				<yr-ui-icon name="rotate" color="#fff" size="52"></yr-ui-icon>
+			</view>
+			<text class="yr-ui-text" catchtap="cutting">确定</text>
+		</view>
+	</view>

@@ -1,0 +1,28 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center yr-ui-rect" bindtap="vip">DataTag <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc yr-ui-rect">DataTag 标签选择，通过数据驱动的单选标签和复选标签。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">单选标签</view>
+    <yr-ui-data-tag options="{{options}}" bindchange="change"></yr-ui-data-tag>
+    <view class="yr-ui-section__title">单选标签/设置默认值/背景/边框</view>
+    <yr-ui-data-tag defaultBorderColor="#FBDA41" background="#F1F4FA" activeBgColor="#FEDF48" border-color="#FBDA41" active-color="#333" radius="20" value="{{defVal}}" options="{{options}}" bindchange="change"></yr-ui-data-tag>
+    <view class="yr-ui-section__title">复选标签/带角标</view>
+    <yr-ui-data-tag multiple mark options="{{options}}" bindchange="change2"></yr-ui-data-tag>
+    <view class="yr-ui-section__title">复选标签/设置默认值</view>
+    <yr-ui-data-tag multiple mark options="{{options}}" value="{{chkDefVal}}" bindchange="change2">
+    </yr-ui-data-tag>
+    <view class="yr-ui-section__title">单选标签/model:value/可全部取消</view>
+    <yr-ui-data-tag min="{{0}}" options="{{options}}" model:value="{{val}}"></yr-ui-data-tag>
+    <view class="yr-ui-section__title">多选标签/momodel:valuedel/max/圆角值</view>
+    <yr-ui-data-tag multiple max="{{2}}" radius="{{40}}" activeBgColor="#F1F4FA" options="{{options}}" model:value="{{vals}}">
+    </yr-ui-data-tag>
+    <view class="yr-ui-section__title">单选标签/带角标/调整颜色/默认值</view>
+    <yr-ui-data-tag options="{{options}}" model:value="{{val2}}" width="180" activeColor="#FFB703" borderColor="#FFB703" mark markColor="#FFB703"></yr-ui-data-tag>
+    <view class="yr-ui-section__title">复选标签/与全选标签互斥</view>
+    <yr-ui-data-tag multiple mark options="{{options2}}" bindchange="change2">
+    </yr-ui-data-tag>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd {{show?'yr-ui-notice__pt':''}}">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">NoticeBar <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">NoticeBar 通告栏，一般用作系统提醒、活动提醒等通知。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">单行展示</view>
+    <yr-ui-notice-bar padding="0 32rpx" content="{{content}}" single></yr-ui-notice-bar>
+    <view class="yr-ui-section__title">多行展示</view>
+    <yr-ui-notice-bar background="#fff8d5" color="#FFB703" padding="16rpx 32rpx" content="{{content}}">
+    </yr-ui-notice-bar>
+    <view class="yr-ui-section__title">文字滚动</view>
+    <yr-ui-notice-bar content="{{content}}" scrollable></yr-ui-notice-bar>
+    <view class="yr-ui-section__title">加图标/控制速度</view>
+    <yr-ui-notice-bar content="{{content}}" speed="{{200}}" scrollable activeMode="forwards">
+      <view class="yr-ui-icon__box">
+        <yr-ui-icon name="notice" size="{{36}}" color="#FF2B2B"></yr-ui-icon>
+      </view>
+    </yr-ui-notice-bar>
+    <view class="yr-ui-section__title">查看更多</view>
+    <yr-ui-notice-bar content="{{content}}" height="88" size="30" single background="#fff" color="#333">
+      <view class="yr-ui-icon__box">
+        <yr-ui-icon name="notice-fill" size="{{40}}" color="#465CFF"></yr-ui-icon>
+      </view>
+      <view class="yr-ui-more__wrap" slot="right">
+        <text class="yr-ui-more__text">查看更多</text>
+        <yr-ui-icon name="arrowright" size="{{36}}" color="#7F7F7F"></yr-ui-icon>
+      </view>
+    </yr-ui-notice-bar>
+  </view>
+  <!--顶部固定-->
+  <view class="yr-ui-notice__fixed" wx:if="{{show}}">
+    <yr-ui-notice-bar content="{{content}}" background="#fff8d5" color="#FF2B2B" scrollable>
+      <view class="yr-ui-icon__box">
+        <yr-ui-icon name="notice" size="{{36}}" color="#FF2B2B"></yr-ui-icon>
+      </view>
+      <view slot="right" class="yr-ui-more__wrap" catchtap="closeNotice">
+        <yr-ui-icon name="close" size="{{40}}" color="#FF2B2B"></yr-ui-icon>
+      </view>
+    </yr-ui-notice-bar>
+  </view>
+</view>

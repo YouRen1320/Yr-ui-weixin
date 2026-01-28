@@ -1,0 +1,12 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Clipboard<image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Clipboard 复制文本，主要针对H5做兼容。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="www.yr-ui.cn" bold margin="24rpx 0" bindclick="copy"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="doc.yr-ui.cn" bold bindclick="copyText" data-text="doc.yr-ui.cn">
+    </yr-ui-button>
+  </view>
+</view>

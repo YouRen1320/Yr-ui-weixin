@@ -1,0 +1,70 @@
+<view class="yr-ui-picker__wrap" bindtouchend="stop">
+  <view class="yr-ui-picker__mask {{isShow?'yr-ui-picker__mask-show':''}}" catchtouchmove="stop" style="{{parse.maskStyl(maskBackground, zIndex)}}" catchtap="maskClick"></view>
+  <view class="yr-ui-picker__content {{theme==='dark'?'yr-ui-picker__content-dark':''}} {{isShow?'yr-ui-picker__content-show':''}} {{radius?'yr-ui-picker__radius':''}}" style="z-index:{{zIndex}}">
+    <view class="yr-ui-picker__header {{theme==='dark'?'yr-ui-picker__header-dark':''}} {{radius?'yr-ui-picker__radius':''}}" style="{{parse.headerStyl(background)}}">
+      <text class="yr-ui-picker__btn-cancel {{theme==='dark'?'yr-ui-pk__cancel-color_dark':'yr-ui-pk__cancel-color'}}" style="{{parse.cancelStyl(btnSize, cancelColor)}}" catchtap="btnCancel">{{cancelText}}</text>
+      <text class="yr-ui-picker__title {{theme==='dark'?'yr-ui-pk__title-color_dark':'yr-ui-pk__title-color'}}" style="{{parse.titleStyl(titleSize, titleColor)}}" wx:if="{{!custom}}">{{title}}</text>
+      <slot></slot>
+      <text class="yr-ui-picker__btn-sure yr-ui-pk__sure-color" style="{{parse.confrimStyl(btnSize, confirmColor)}}" catchtap="btnConfirm">{{confirmText}}</text>
+    </view>
+    <view>
+      <picker-view mask-style="{{theme==='dark'?darkStyle:''}}" indicator-style="{{theme==='dark'?indicatorStyl:'height: 44px;border-top-width:0.5px;border-bottom-width:0.5px;'}}" indicator-class="{{theme==='dark'?'yr-ui-picker__indicator':''}}" class="yr-ui-picker__view" style="height:{{height}}rpx" value="{{vals}}" immediate-change="{{true}}" bindpickstart="pickerstart" bindchange="pickerChange">
+        <picker-view-column>
+          <text style="{{parse.contentStyl(size, color)}}" class="yr-ui-picker__text {{theme==='dark'?'yr-ui-picker__color-dark':''}}" wx:for="{{firstArr}}" wx:key="index">{{item}}</text>
+        </picker-view-column>
+        <picker-view-column wx:if="{{layer==2 || layer==3  || layer==4}}">
+          <text style="{{parse.contentStyl(size, color)}}" class="yr-ui-picker__text {{theme==='dark'?'yr-ui-picker__color-dark':''}}" wx:for="{{secondArr}}" wx:key="index">{{item}}</text>
+        </picker-view-column>
+        <picker-view-column wx:if="{{layer==3 || layer==4}}">
+          <text style="{{parse.contentStyl(size, color)}}" class="yr-ui-picker__text {{theme==='dark'?'yr-ui-picker__color-dark':''}}" wx:for="{{thirdArr}}" wx:key="index">{{item}}</text>
+        </picker-view-column>
+        <picker-view-column wx:if="{{layer==4}}">
+          <text style="{{parse.contentStyl(size, color)}}" class="yr-ui-picker__text {{theme==='dark'?'yr-ui-picker__color-dark':''}}" wx:for="{{fourthArr}}" wx:key="index">{{item}}</text>
+        </picker-view-column>
+      </picker-view>
+    </view>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    cancelStyl: function (btnSize, cancelColor) {
+      var styles = "font-size:" + btnSize + "rpx;"
+      if (cancelColor) {
+        styles += "color:" + cancelColor
+      }
+      return styles
+    },
+    confrimStyl: function (btnSize, confirmColor) {
+      var styles = "font-size:" + btnSize + "rpx;"
+      if (confirmColor) {
+        styles += "color:" + confirmColor
+      }
+      return styles
+    },
+    titleStyl: function (titleSize, titleColor) {
+      var styles = "font-size:" + titleSize + "rpx;"
+      if (titleColor) {
+        styles += "color:" + titleColor
+      }
+      return styles
+    },
+    contentStyl: function (size, color) {
+      var styles = "font-size:" + size + "px;"
+      if (this.color) {
+        styles += "color:" + color
+      }
+      return styles
+    },
+    headerStyl: function (background) {
+      var styles = ''
+      if (background) {
+        styles += "background:" + background
+      }
+      return styles
+    },
+    maskStyl: function (maskBackground, zIndex) {
+      return "background:" + maskBackground + ";z-index:" + (parseInt(zIndex) - 10)
+    }
+  }
+</wxs>

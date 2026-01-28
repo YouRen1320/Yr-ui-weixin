@@ -1,0 +1,53 @@
+<view class="yr-ui-wrap">
+    <view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">CardSwiper <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">卡片轮播，常用的页面布局，可提升开发效率以及带来舒服的视觉效果！</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">卡片轮播</view>
+			<!-- 布局内容 start -->
+			<yr-ui-swiper-dot items="{{items}}" current="{{current}}">
+				<swiper previous-margin="60rpx" next-margin="60rpx" class="yr-ui-card__swiper" bindchange="change" circular
+					indicator-dots="{{false}}" autoplay interval="{{5000}}" duration="{{150}}">
+					<swiper-item wx:for="{{items}}" wx:key="index" class="yr-ui-cs__swiper-item">
+						<view class="yr-ui-cardswiper__item {{current!==index?'yr-ui-cardswiper__scale':''}}">
+							<image src="{{item.src}}" class="yr-ui-cardswiper__img"></image>
+						</view>
+					</swiper-item>
+				</swiper>
+			</yr-ui-swiper-dot>
+
+			<view class="yr-ui-section__title">卡片轮播</view>
+			<yr-ui-swiper-dot items="{{items}}" current="{{current2}}" styles="{{styles}}">
+				<view class="yr-ui-cardswiper__box">
+					<swiper class="yr-ui-card__swiper-wrap" bindchange="change2" circular indicator-dots="{{false}}" autoplay
+						interval="{{5000}}" duration="{{150}}">
+            <swiper-item wx:for="{{items}}" wx:key="index" class="yr-ui-cs__swiper-item">
+							<view class="yr-ui-cardswiper__item">
+								<image src="{{item.src}}" class="yr-ui-cardswiper__img"></image>
+							</view>
+						</swiper-item>
+					</swiper>
+				</view>
+			</yr-ui-swiper-dot>
+
+			<view class="yr-ui-section__title">卡片轮播</view>
+			<view class="yr-ui-cardswiper__box">
+				<swiper class="yr-ui-card__swiper-wrap" circular indicator-dots="{{false}}" autoplay vertical
+					interval="{{5000}}" duration="{{150}}">
+					<swiper-item wx:for="{{items}}" wx:key="index" class="yr-ui-cs__swiper-item">
+						<view class="yr-ui-cardswiper__item">
+							<image src="{{item.src}}" class="yr-ui-cardswiper__img"></image>
+						</view>
+					</swiper-item>
+				</swiper>
+			</view>
+			<!-- 布局内容 end -->
+		</view>
+		<view class="yr-ui-btn__box">
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="More" bold margin="24rpx" bindclick="href">
+			</yr-ui-button>
+		</view>
+	</view>

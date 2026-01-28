@@ -1,0 +1,17 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">LoadMore</view>
+    <view class="yr-ui-page__desc">LoadMore 加载更多，主要使用场景如：上拉加载等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-loadmore></yr-ui-loadmore>
+    <yr-ui-loadmore activeColor="#FFB703"></yr-ui-loadmore>
+    <yr-ui-loadmore iconColor="rgba(255, 183, 3, .2)" activeColor="#FFB703" color="#FFB703"></yr-ui-loadmore>
+    <view class="yr-ui-section__title">direction:col</view>
+    <yr-ui-loadmore direction="col" text="加载中" color="#465CFF"></yr-ui-loadmore>
+    <view class="yr-ui-section__title">自定义图标</view>
+    <yr-ui-loadmore src="/static/images/component/loading_gray.png" iconWidth="{{36}}" text="加载中...">
+    </yr-ui-loadmore>
+  </view>
+</view>

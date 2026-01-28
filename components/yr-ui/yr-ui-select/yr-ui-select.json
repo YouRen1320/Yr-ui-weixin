@@ -1,0 +1,7 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-icon":"/components/yr-ui/yr-ui-icon/yr-ui-icon",
+    "yr-ui-list-cell":"/components/yr-ui/yr-ui-list-cell/yr-ui-list-cell"
+  }
+}

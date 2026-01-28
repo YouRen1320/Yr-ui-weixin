@@ -1,0 +1,18 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">BannerArc <image src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">BannerArc 横幅底部圆弧，常用的布局组件。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-section is-line title="纯背景色" margin-top="32"></yr-ui-section>
+			<yr-ui-banner-arc background="#465CFF" margin-top="32"></yr-ui-banner-arc>
+			<yr-ui-section is-line title="渐变背景/调整高度/弧度" margin-top="96"></yr-ui-section>
+			<!-- ratio 用于调整弧度大小，值越大弧度越小 -->
+			<yr-ui-banner-arc background="linear-gradient(#6831FF,#465CFF)" height="{{500}}" ratio="{{1.5}}" margin-top="32"></yr-ui-banner-arc>
+			<yr-ui-section is-line title="图片设置弧度" margin-top="96"></yr-ui-section>
+			<yr-ui-banner-arc margin-top="32" background="#EDF9FF" height="512" ratio="{{1.5}}">
+				<image class="yr-ui-banner" src="https://res.yr-ui.cn/static/images/my/light/img_banner_3x.png" mode="widthFix"></image>
+			</yr-ui-banner-arc>
+		</view>
+	</view>

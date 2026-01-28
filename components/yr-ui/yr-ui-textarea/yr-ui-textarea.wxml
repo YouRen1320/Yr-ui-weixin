@@ -1,0 +1,26 @@
+<view class="yr-ui-textarea__wrap {{flexStart?'yr-ui-textarea__flex-start':''}}" style="padding:{{padding}};background-color:{{backgroundColor}};border-radius: {{radius}}rpx;margin-top:{{marginTop}}rpx;" bindtap="fieldClick">
+  <view wx:if="{{borderTop && !textareaBorder && !isRadius}}" style="background:{{borderColor}};left:{{topLeft}}rpx;right:{{topRight}}rpx" class="yr-ui-textarea__border-top {{borderColor?'':'yr-ui-textarea__background'}}">
+  </view>
+  <view class="yr-ui-textarea__border {{borderColor?'':'yr-ui-textarea__bordercolor'}}" style="border-radius:{{parse.getRadius(radius)}}rpx;border-color:{{borderColor}}" wx:if="{{textareaBorder}}"></view>
+  <view class="yr-ui-textarea__required {{flexStart?'yr-ui-required__flex-start':''}}" style="color:{{requiredColor || c_dangerColor}};top:{{flexStart?requiredTop:'50%'}}" wx:if="{{required}}">*</view>
+  <view class="yr-ui-textarea__label" style="min-width:{{labelWidth}}rpx" wx:if="{{label}}">
+    <text style="font-size:{{labelSize}}rpx;color:{{labelColor}}">{{label}}</text>
+  </view>
+  <slot name="left"></slot>
+  <view class="yr-ui-textarea__flex-1">
+    <textarea class="yr-ui-textarea__self {{textRight?'yr-ui-text__right':''}} {{disabled && disabledStyle?'yr-ui-textarea__disabled-styl':''}}" style="height:{{height}};min-height:{{minHeight}};font-size:{{size}}rpx;color:{{color}}" placeholder-class="yr-ui-textarea-placeholder" name="{{name}}" model:value="{{val}}" placeholder="{{val?'':placeholder}}" placeholderStyle="{{placeholderStyl}}" disabled="{{disabled}}" cursor-spacing="{{cursorSpacing}}" maxlength="{{maxlength}}" focus="{{focused}}" auto-height="{{autoHeight}}" fixed="{{fixed}}" show-confirm-bar="{{showConfirmBar}}" cursor="{{cursor}}" selection-start="{{selectionStart}}" selection-end="{{selectionEnd}}" adjust-position="{{adjustPosition}}" hold-keyboard="{{holdKeyboard}}" disable-default-padding="{{disableDefaultPadding}}" enableNative="{{false}}" show-count="{{false}}" bindfocus="onFocus" bindblur="onBlur" bindinput="onInput" bindconfirm="onConfirm" bindlinechange="onLinechange" bindkeyboardheightchange="onKeyboardheightchange"></textarea>
+    <view class="yr-ui-textarea__counter" wx:if="{{isCounter}}">
+      <text style="font-size:{{counterSize}}rpx;color:{{counterColor}}">{{maxlength!=-1?count+'/'+maxlength:count}}</text>
+    </view>
+  </view>
+  <slot></slot>
+  <view wx:if="{{borderBottom  && !textareaBorder && !isRadius}}" style="background:{{borderColor}};left:{{bottomLeft}}rpx;right:{{bottomRight}}rpx" class="yr-ui-textarea__border-bottom {{borderColor?'':'yr-ui-textarea__background'}}"></view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getRadius: function (radius) {
+      return parseInt(radius) * 2
+    }
+  }
+</wxs>

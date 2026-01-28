@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "验证码输入",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-single-input": "/components/yr-ui/yr-ui-single-input/yr-ui-single-input"
+  }
+}

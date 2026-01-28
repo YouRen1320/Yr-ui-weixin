@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "浮动按钮",
+  "usingComponents": {
+    "yr-ui-fab": "/components/yr-ui/yr-ui-fab/yr-ui-fab"
+  }
+}

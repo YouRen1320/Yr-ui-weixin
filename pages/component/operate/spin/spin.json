@@ -1,0 +1,12 @@
+{
+  "navigationBarTitleText": "旋转动画",
+  "enablePullDownRefresh": false,
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-grid":"/components/yr-ui/yr-ui-grid/yr-ui-grid",
+    "yr-ui-grid-item":"/components/yr-ui/yr-ui-grid-item/yr-ui-grid-item",
+    "yr-ui-spin":"/components/yr-ui/yr-ui-spin/yr-ui-spin"
+  }
+}

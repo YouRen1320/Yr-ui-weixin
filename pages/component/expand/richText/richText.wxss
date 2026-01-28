@@ -1,0 +1,5 @@
+.yr-ui-page__bd {
+  width: 100%;
+  padding: 0 32rpx 96rpx;
+  box-sizing: border-box;
+}

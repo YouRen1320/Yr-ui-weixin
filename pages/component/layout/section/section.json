@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "标题栏",
+  "usingComponents": {
+    "yr-ui-section":"/components/yr-ui/yr-ui-section/yr-ui-section"
+  }
+}

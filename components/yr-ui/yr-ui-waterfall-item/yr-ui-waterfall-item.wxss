@@ -1,0 +1,25 @@
+.yr-ui-waterfall__item-wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .5s;
+  flex-direction: column;
+}
+
+.yr-ui-waterfall__item-show {
+  opacity: 1;
+}
+
+.yr-ui-waterfall__img-wrap {
+  background: #F1F4FA;
+  overflow: hidden;
+}
+
+.yr-ui-waterfall__img {
+  display: block;
+}

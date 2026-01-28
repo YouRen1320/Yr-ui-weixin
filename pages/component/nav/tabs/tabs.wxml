@@ -1,0 +1,19 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Tabs</view>
+    <view class="yr-ui-page__desc">Tabs 标签页，分隔内容上有关联但属于不同类别的数据集合。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-tabs tabs="{{tabs}}" bindchange="change"></yr-ui-tabs>
+    <view class="yr-ui-section__title">滑块居中显示</view>
+		<yr-ui-tabs tabs="{{tabs}}" center bindchange="change"></yr-ui-tabs>
+    <view class="yr-ui-section__title">改变颜色</view>
+    <yr-ui-tabs tabs="{{tabs}}" selectedColor="#FFB703" sliderBackground="#FFB703"></yr-ui-tabs>
+    <view class="yr-ui-section__title">滑块与内容同宽</view>
+    <yr-ui-tabs tabs="{{tabs}}" short="{{false}}"></yr-ui-tabs>
+    <view class="yr-ui-section__title">超出一屏，禁用（标签八）
+    </view>
+    <yr-ui-tabs tabs="{{tabs2}}" isDot scroll alignLeft></yr-ui-tabs>
+  </view>
+</view>

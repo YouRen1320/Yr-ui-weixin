@@ -1,0 +1,14 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Dialog</view>
+    <view class="yr-ui-page__desc">Dialog 对话框，在浮层中显示，引导用户进行相关操作。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="基础使用" bold margin="24rpx 0" bindclick="showDialog" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义按钮" bold bindclick="showDialog" data-type="2">
+    </yr-ui-button>
+  </view>
+  <yr-ui-dialog show="{{show}}" content="弹窗内容，告知当前状态、信息和解决方法，描述文字尽量控制在三行内" maskClosable bindclick="onClick" bindclose="onClose"></yr-ui-dialog>
+
+  <yr-ui-dialog show="{{visible}}" title="我是标题" content="我是自定义的对话框！" buttons="{{buttons}}" bindclick="onTap"></yr-ui-dialog>
+</view>

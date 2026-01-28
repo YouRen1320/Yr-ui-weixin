@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "底部弹出层",
+  "usingComponents": {
+    "yr-ui-bottom-popup": "/components/yr-ui/yr-ui-bottom-popup/yr-ui-bottom-popup"
+  }
+}

@@ -1,0 +1,30 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title">Text</view>
+			<view class="yr-ui-page__desc">Text 文本，用于包裹文本内容。</view>
+		</view>
+		<view class="yr-ui-page__bd yr-ui-page__spacing">
+			<view class="yr-ui-section__title">基本使用</view>
+			<yr-ui-text text="{{text}}" size="{{28}}"></yr-ui-text>
+			<view class="yr-ui-section__title">不同样式类型</view>
+			<yr-ui-text text="primary" type="primary"></yr-ui-text>
+			<yr-ui-text text="success" type="success"></yr-ui-text>
+			<yr-ui-text text="warning" type="warning"></yr-ui-text>
+			<yr-ui-text text="danger" type="danger"></yr-ui-text>
+			<yr-ui-text text="purple" type="purple"></yr-ui-text>
+			<yr-ui-text text="gray" type="gray"></yr-ui-text>
+			<yr-ui-text text="black" type="black"></yr-ui-text>
+			<view class="yr-ui-section__title">块状 | 自定义颜色</view>
+			<yr-ui-text text="block" color="brown" block></yr-ui-text>
+			<yr-ui-text text="yellow" color="yellow" block></yr-ui-text>
+			<view class="yr-ui-section__title">数据脱敏-姓名</view>
+			<yr-ui-text text="张三" text-type="name" format block></yr-ui-text>
+			<yr-ui-text text="王小仙" text-type="name" format block></yr-ui-text>
+			<view class="yr-ui-section__title">数据脱敏-手机号</view>
+			<yr-ui-text text="13544339908" text-type="mobile" format></yr-ui-text>
+			<view class="yr-ui-section__title">金额格式化</view>
+			<yr-ui-text text="20000" text-type="amount" format>￥</yr-ui-text>
+			<view class="yr-ui-section__title">点击效果</view>
+			<yr-ui-text text="https://yr-ui.cn" highlight bindclick="handleClick"></yr-ui-text>
+		</view>
+	</view>

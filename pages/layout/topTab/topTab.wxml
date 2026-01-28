@@ -1,0 +1,20 @@
+<view class="yr-ui-top__tabs">
+		<view>
+			<yr-ui-tabs tabs="{{tabs}}" scroll alignLeft current="{{tabIndex}}" bindchange="change"></yr-ui-tabs>
+		</view>
+		<swiper current="{{tabIndex}}" class="yr-ui-swiper__box" duration="{{300}}" bindchange="tabChange">
+			<swiper-item class="yr-ui-swiper__item" wx:for-item="tab" wx:for="{{newsList}}" wx:key="index">
+				<scroll-view enable-flex class="yr-ui-scroll__list" refresher-enabled refresher-triggered="{{tab.refreshing}}"
+					refresher-background="#F1F4FA" enable-back-to-top refresher-threshold="{{100}}" scroll-y
+					bindscrolltolower="loadMore" data-index="{{index}}" bindrefresherrefresh="onrefresh">
+					<view style="min-height:101%">
+						<view wx:for-index="idx" wx:for="{{tab.data}}" wx:key="idx">
+							<f-news-item item="{{item}}" bindclick="detail"></f-news-item>
+						</view>
+						<yr-ui-loadmore wx:if="{{tab.isLoading}}"></yr-ui-loadmore>
+						<yr-ui-divider text="已加载全部数据" wx:if="{{!tab.isLoading && tab.pageIndex > 3}}"></yr-ui-divider>
+					</view>
+				</scroll-view>
+			</swiper-item>
+		</swiper>
+	</view>

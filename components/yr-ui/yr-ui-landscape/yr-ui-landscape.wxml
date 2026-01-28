@@ -1,0 +1,23 @@
+<view class="yr-ui-landscape__wrap {{absolute?'yr-ui-landscape__absolute':'yr-ui-landscape__fixed'}} {{show?'yr-ui-landscape__show':''}}" style="background:{{maskBackground}};z-index:{{zIndex}}" catchtap="closeWin">
+  <view class="yr-ui-landscape__inner" style="margin-top: {{top}}rpx;">
+    <slot></slot>
+    <view class="yr-ui-landscape__icon {{position==2?'yr-ui-landscape__icon-rt':''}} {{position==3?'yr-ui-landscape__icon-def':''}}" style="{{parse.getStyles(distance, position)}}" wx:if="{{closable}}">
+      <view catchtap="close">
+        <icon type="{{type}}" size="{{size}}" color="{{color}}"></icon>
+      </view>
+    </view>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getStyles: function (distance, position) {
+      var distance = Math.abs(parseInt(distance))
+      var styles = "bottom:-" + distance + "rpx;"
+      if (position != 3) {
+        styles = "top: -" + distance + "rpx;"
+      }
+      return styles
+    }
+  }
+</wxs>

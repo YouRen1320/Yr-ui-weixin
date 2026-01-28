@@ -1,0 +1,17 @@
+<scroll-view class="yr-ui-tabs__scrollbox {{isFixed && !isSticky?'yr-ui-tabs__fixed':''}} {{isSticky?'yr-ui-tabs__sticky':''}}" scroll-with-animation scroll-x="{{scroll}}" scroll-into-view="{{scrollInto}}" style="background:{{background}};z-index:{{isFixed || isSticky?zIndex:1}};top:{{isFixed || isSticky ? top + 'px' : 'auto'}}">
+  <view class="yr-ui-scroll__view {{alignLeft?'':'yr-ui-tabs__full'}}">
+    <view wx:for="{{vals}}" wx:for-item="tab" wx:key="index" class="yr-ui-tabs__item {{alignLeft?'':'yr-ui-tabs__full'}}" style="padding-left: {{itemPadding}}rpx;padding-right: {{itemPadding}}rpx;" id="{{tab.fui_s_id}}" bindtap="switchTab" data-index="{{index}}">
+      <view class="yr-ui-tabs__text-wrap {{tab[disabledKey]?'yr-ui-tabs__wrap-disabled':''}} {{direction==='column' && tab.icon?'yr-ui-tabs__item-column':''}}" style="height:{{height}}rpx">
+        <view class="yr-ui-tabs__line-wrap {{center?'yr-ui-tabs__line-center':''}}"	style="bottom:{{bottom}}rpx;left:-{{padding}}rpx;right:-{{padding}}rpx" wx:if="{{isSlider}}">
+						<view class="yr-ui-tabs__ac-line {{short?'yr-ui-tabs__line-short':'yr-ui-tabs__full'}} {{!sliderBackground?'yr-ui-tabs__slider-color':''}}" style="height:{{sliderHeight}}rpx;background:{{sliderBackground}};border-radius:{{sliderRadius==-1?sliderHeight:sliderRadius}}rpx;transform:scale({{tabIndex===index?scale:0}})">
+						</view>
+					</view>
+        <!-- <view class="yr-ui-tabs__ac-line {{short?'yr-ui-tabs__line-short':''}} {{sliderBackground?'':'yr-ui-tabs__slider-color'}}" style="height:{{sliderHeight}}rpx;background:{{sliderBackground}};border-radius:{{sliderRadius==-1?sliderHeight+'rpx':sliderRadius+'rpx'}};bottom:{{bottom}}rpx;left:-{{padding}}rpx;right:-{{padding}}rpx;transform: scale({{tabIndex===index?scale:0}})" wx:if="{{isSlider}}">
+        </view> -->
+        <image class="yr-ui-tabs__icon {{direction==='column'?'yr-ui-tabs__icon-column':''}}" src="{{tabIndex===index && tab.selectedIcon?tab.selectedIcon:tab.icon}}" wx:if="{{tab.icon}}">
+        </image>
+        <text class="yr-ui-tabs__text {{!selectedColor && tabIndex===index?'yr-ui-tabs__selected-color':''}} {{!color && tabIndex!==index?'yr-ui-tabs__text-color':''}}" style="font-size:{{size}}rpx;color:{{tabIndex===index?selectedColor:color}};font-weight:{{tabIndex===index?selectedFontWeight:fontWeight}};transform:scale({{tabIndex===index?scale:1}})">{{tab[nameKey]}}<text class="{{badgeBackground?'':'yr-ui-tabs__badge-color'}} {{isDot?'yr-ui-tabs__badge-dot':'yr-ui-tabs__badge'}}" style="color:{{badgeColor}};background:{{badgeBackground}}" wx:if="{{tab[badgeKey]}}">{{isDot?'':tab[badgeKey]}}</text></text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

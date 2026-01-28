@@ -1,0 +1,9 @@
+<view class="yr-ui-wrap">
+	<view class="yr-ui-page__wrap" style="padding-bottom:{{height}}px">
+		<page-a wx:if="{{current===0}}"></page-a>
+		<page-b wx:if="{{current===1}}"></page-b>
+		<page-c wx:if="{{current===2}}"></page-c>
+		<page-d wx:if="{{current===3}}"></page-d>
+	</view>
+	<yr-ui-tabbar tabBar="{{tabBar}}" current="{{current}}" bindinit="init" bindclick="itemClick"></yr-ui-tabbar>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "图片上传",
+  "usingComponents": {
+    "yr-ui-upload": "/components/yr-ui/yr-ui-upload/yr-ui-upload"
+  }
+}

@@ -1,0 +1,36 @@
+/* 全局样式中包含 yr-ui-section 避免影响*/
+.yr-ui-sections__wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yr-ui-sections__title {
+  position: relative;
+  display: flex;
+  word-break: break-all;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-sections__title-text {
+  word-break: break-all;
+}
+
+.yr-ui-sections__line {
+  position: absolute;
+  left: 0;
+}
+
+.yr-ui-sections__descr {
+  word-break: break-all;
+}
+
+.yr-ui-sections__descr-text {
+  word-break: break-all;
+  font-weight: 400;
+}
+
+.yr-ui-sections__line-color {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}

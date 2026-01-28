@@ -1,0 +1,13 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-content__box">
+    <view class="yr-ui-img__box">
+      <image src="{{resUrl}}/common/img_coding_3x.png" class="yr-ui-img" mode="widthFix"></image>
+    </view>
+    <view class="yr-ui-title">开发中</view>
+    <view class="yr-ui-sub__title">功能开发中，敬请期待！</view>
+    <view class="yr-ui-btn__box">
+      <yr-ui-button text="返回首页" size="{{28}}" width="336rpx" height="84rpx" radius="100rpx" background="#fff"
+        borderColor="#465CFF" color="#465CFF" bindclick="goIndex"></yr-ui-button>
+    </view>
+  </view>
+</view>

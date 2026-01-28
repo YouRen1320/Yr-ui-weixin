@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "头像",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-avatar": "/components/yr-ui/yr-ui-avatar/yr-ui-avatar"
+  }
+}

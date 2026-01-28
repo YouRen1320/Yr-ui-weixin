@@ -1,0 +1,37 @@
+<view class="yr-ui-table__wrap" style="height:{{height>0 || height!=0?height+'rpx':'auto'}};width:{{width}}px">
+  <scroll-view enhanced bounces="{{bounces}}" show-scrollbar="{{showScrollbar}}" scroll-x scroll-y="{{height>0 && height!=0}}" style="width:{{width}}px;height:{{height>0 || height!=0?height+'rpx':'auto'}}" class="yr-ui-table__scroll-view {{!height || height==0?'yr-ui-table__flex-row':''}}" bindscrolltolower="scrolltolower">
+    <view class="yr-ui-table--inner" style="width:{{totalW}}px">
+      <view class="yr-ui-table--tr {{horBorder?'yr-ui-table__border-bottom':''}} {{horBorder && show?'yr-ui-table__border-top':''}} {{fixed?'yr-ui-table--header-fixed':''}}" style="border-bottom-color:{{horBorder?borderColor:'transparent'}};border-top-color:{{horBorder && show?borderColor:'transparent'}}" wx:if="{{show}}">
+        <view class="yr-ui-table--td {{border?'yr-ui-table__border-right':''}} {{border && index===0?'yr-ui-table__border-left':''}} {{(item.align || align)==='center'?'yr-ui-table__center':''}} {{(item.align || align)==='right'?'yr-ui-table__right':''}} {{item.fixed?'yr-ui-table--col-fixed':''}}" style="border-right-color:{{border?borderColor:'transparent'}};border-left-color:{{border && index===0?borderColor:'transparent'}};background:{{item.background || headerBgColor}};width:{{item.width+divideW}}px;padding-top:{{padding}}rpx;padding-bottom:{{padding}}rpx;left:{{item.fixed && item.fixed!=='right'?item.left+'px':'auto'}};right:{{item.fixed==='right'?item.right+'px':'auto'}}" wx:for="{{hData}}" wx:key="index" catchtap="handleTableSort" data-index="{{index}}">
+          <view class="yr-ui-table__checkbox {{(!checkboxColor || checkboxColor===true) && chkAll?'yr-ui-table__checkbox-color':''}}" style="background:{{chkAll ?checkboxColor:'transparent'}};border-color:{{chkAll ?checkboxColor:checkboxBorderColor}}" wx:if="{{item.type==='selection'}}" catchtap="selectionAll">
+            <view class="yr-ui-table__checkmark" style="border-bottom-color:{{checkmarkColor}};border-right-color:{{checkmarkColor}}"></view>
+          </view>
+          <text wx:else class="yr-ui-table--td-text {{(item.align || align)==='center'?'yr-ui-text__center':''}} {{(item.align || align)==='right'?'yr-ui-text__right':''}} {{ellipsis?'yr-ui-td__ellipsis':''}}" style="width:{{item.width+divideW}}px;color:{{item.color || color}};font-size:{{item.size || size}}rpx;font-weight:{{fontWeight}}">{{item.label || item.prop}}</text>
+          <view class="yr-ui-table__sort-icon" style="right:{{item.sortRight || 40}}rpx" wx:if="{{item.sortable}}">
+            <yr-ui-icon name="{{item.sort==='descending'?'turningdown':'turningup'}}" size="{{item.sortSize || 28}}" color="{{item.sort?(item.sortColor || '#333'):(item.color || color)}}"></yr-ui-icon>
+          </view>
+          <view class="yr-ui-table__td-sk" style="background-color:{{borderColor}}" wx:if="{{border && item.fixed==='right'}}"></view>
+        </view>
+      </view>
+      <view class="yr-ui-table--tr {{horBorder?'yr-ui-table__border-bottom':''}} {{horBorder && !show && index===0?'yr-ui-table__border-top':''}}" style="border-bottom-color:{{horBorder?borderColor:'transparent'}};border-top-color:{{horBorder && !show && index===0?borderColor:'transparent'}}" wx:for="{{tableData}}" wx:key="index" data-index="{{index}}">
+        <view class="yr-ui-table--td {{border?'yr-ui-table__border-right':''}} {{border && idx===0?'yr-ui-table__border-left':''}} {{(model.align || align)==='center'?'yr-ui-table__center':''}} {{(model.align || align)==='right'?'yr-ui-table__right':''}} {{model.type===3?'yr-ui-table__td-wrap':''}} {{model.fixed?'yr-ui-table--col-fixed':''}}" wx:for-item="model" wx:for-index="idx" wx:for="{{hData}}" wx:key="idx" style="border-right-color:{{border?borderColor:'transparent'}};border-left-color:{{border && idx===0?borderColor:'transparent'}};background:{{item.background || ((index+1)%2===0 && stripe?stripeColor:background)}};width:{{model.width+divideW}}px;padding-top:{{padding}}rpx;padding-bottom:{{padding}}rpx;left:{{model.fixed && model.fixed!=='right' ?model.left+'px':'auto'}};right:{{model.fixed==='right'?model.right+'px':'auto'}}" catchtap="tdClick" data-index="{{index}}" data-idx="{{idx}}" data-prop="{{model.prop}}">
+          <block wx:if="{{model.type!==3}}">
+            <view class="yr-ui-table__checkbox {{(!checkboxColor || checkboxColor===true) && item.is_selected?'yr-ui-table__checkbox-color':''}} {{item.is_disabled?'yr-ui-table__disabled':''}}" style="background:{{item.is_selected ?checkboxColor:'transparent'}};border-color:{{item.is_selected ?checkboxColor:checkboxBorderColor}}" wx:if="{{model.type==='selection'}}" catchtap="selectionChangeView" data-index="{{index}}">
+              <view class="yr-ui-table__checkmark" style="border-bottom-color:{{checkmarkColor}};border-right-color:{{checkmarkColor}}">
+              </view>
+            </view>
+            <image class="yr-ui-table--td-img" src="{{item[model.prop] || ''}}" mode="widthFix" wx:elif="{{model.type===2}}" style="width:{{model.imgWidth}}rpx;height:{{model.imgHeight?model.imgHeight+'rpx':'auto'}}"></image>
+            <text class="yr-ui-table--td-text {{(model.align || align)==='center'?'yr-ui-text__center':''}} {{(model.align || align)==='right'?'yr-ui-text__right':''}}{{ellipsis?'yr-ui-td__ellipsis':'yr-ui-td__wrap'}}" wx:else style="color:{{model.textColor || textColor}};font-size:{{model.textSize || textSize}}rpx;width:{{model.width+divideW}}px">{{item[model.prop]==0?item[model.prop]:(item[model.prop] || '')}}</text>
+          </block>
+          <block wx:else>
+            <text class="yr-ui-table--btn {{j>0?'yr-ui-td__btn-ml':''}}" style="font-size:{{btn.size || textSize}}rpx;color:{{btn.color}};font-weight:{{btn.fontWeight || 'normal'}}" wx:for-item="btn" wx:for-index="j" wx:for="{{model.buttons}}" wx:key="j" catchtap="handleTap" data-index="{{index}}" data-idx="{{j}}">{{btn.text}}</text>
+          </block>
+          <view class="yr-ui-table__td-sk" style="background-color:{{borderColor}}" wx:if="{{border && model.fixed==='right'}}"></view>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+  <view class="yr-ui-table--empty {{totalW>width && (height>0 && height!=0)?'yr-ui-table__empty-ab':''}}" style="width:{{width}}px" wx:if="{{itemList.length===0 && emptyText!==true && emptyText!==''}}">
+    <text class="yr-ui-table__empty-text" style="font-size:{{emptySize}}rpx;color:{{emptyColor}}">{{emptyText}}</text>
+  </view>
+</view>

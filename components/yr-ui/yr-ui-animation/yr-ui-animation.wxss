@@ -1,0 +1,20 @@
+.yr-ui-popup__animation {
+  transition-timing-function: ease;
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+  position: relative;
+  z-index: 99;
+}
+
+.yr-ui-popup__fade-out {
+  opacity: 0;
+}
+
+.yr-ui-popup__fade-in {
+  opacity: 1;
+}
+
+.yr-ui-popup__unshow{
+  opacity: 0;
+  visibility: hidden;
+}

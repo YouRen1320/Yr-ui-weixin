@@ -1,0 +1,9 @@
+.yr-ui-fab--box{
+  width: 108rpx;
+  height: 108rpx;
+  border-radius: 50%;
+  background: #465CFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

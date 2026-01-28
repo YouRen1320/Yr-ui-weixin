@@ -1,0 +1,55 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">CountDown <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">CountDown 倒计时，用于倒计时场景，可手动控制。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down value="{{30}}" bindend="end"></yr-ui-count-down>
+    </view>
+    <view class="yr-ui-section__title">冒号显示为文字</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down isColon="{{false}}" borderColor="transparent" background="transparent" value="{{3600}}" bindend="end"></yr-ui-count-down>
+    </view>
+    <view class="yr-ui-section__title">显示天</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down isDays isColon="{{false}}" borderColor="transparent" background="transparent" value="{{244800}}" bindend="end"></yr-ui-count-down>
+    </view>
+    <view class="yr-ui-section__title">仅显示秒</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down isHours="{{false}}" isMinutes="{{false}}" isColon="{{false}}" unitEn borderColor="transparent" background="transparent" value="{{180}}" bindend="end"></yr-ui-count-down>
+    </view>
+    <view class="yr-ui-section__title">更换样式，显示毫秒</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down background="#465CFF" color="#fff" colonColor="#465CFF" borderColor="#465CFF" isMs msWidth="40" value="{{3600}}" bindend="end">
+      </yr-ui-count-down>
+    </view>
+    <view class="yr-ui-section__title">手动控制</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-count-down background="#333" color="#fff" colonColor="#333" isMs msWidth="36" value="{{30}}" autoStart="{{false}}" bindend="end" id="countdown">
+      </yr-ui-count-down>
+    </view>
+    <yr-ui-grid bindclick="handleClick">
+      <yr-ui-grid-item backgroundColor="#fff">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="play"></yr-ui-icon>
+          <text>开始</text>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item backgroundColor="#fff" index="{{1}}">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="suspend"></yr-ui-icon>
+          <text>暂停</text>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item backgroundColor="#fff" index="{{2}}">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="refresh"></yr-ui-icon>
+          <text>重置</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+  </view>
+</view>

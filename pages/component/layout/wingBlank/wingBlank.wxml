@@ -1,0 +1,26 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title">WingBlank</view>
+			<view class="yr-ui-page__desc">左右间距，布局组件，主要用于设置元素内容两侧空白间距。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">size = small（16rpx）</view>
+			<yr-ui-wing-blank size="small">
+				<view class="yr-ui-block"></view>
+			</yr-ui-wing-blank>
+			<view class="yr-ui-section__title">size = default（24rpx）</view>
+			<yr-ui-wing-blank size="default">
+				<view class="yr-ui-block"></view>
+			</yr-ui-wing-blank>
+
+			<view class="yr-ui-section__title">size = large（32rpx）</view>
+			<yr-ui-wing-blank size="large">
+				<view class="yr-ui-block"></view>
+			</yr-ui-wing-blank>
+
+			<view class="yr-ui-section__title">自定义间距（64rpx）</view>
+			<yr-ui-wing-blank gap="64">
+				<view class="yr-ui-block"></view>
+			</yr-ui-wing-blank>
+		</view>
+	</view>

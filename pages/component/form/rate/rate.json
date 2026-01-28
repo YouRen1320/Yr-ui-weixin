@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "评分",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-rate":"/components/yr-ui/yr-ui-rate/yr-ui-rate"
+  }
+}

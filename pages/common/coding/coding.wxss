@@ -1,0 +1,41 @@
+page{
+	background-color: #fff;
+	font-weight: normal;
+}
+.yr-ui-content__box{
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+.yr-ui-img__box{
+	width: 100%;
+	height: 320rpx;
+	padding: 0 87rpx;
+	box-sizing: border-box;
+}
+.yr-ui-img{
+	width: 100%;
+	height: 318rpx;
+	display: block;
+}
+.yr-ui-title{
+	text-align: center;
+	font-weight: 500;
+	color: #333333;
+	padding-top: 48rpx;
+}
+.yr-ui-sub__title{
+	text-align: center;
+	font-size: 24rpx;
+	font-weight: 400;
+	color: #B2B2B2;
+	padding-top: 8rpx;
+}
+.yr-ui-btn__box{
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	padding-top: 64rpx;
+}

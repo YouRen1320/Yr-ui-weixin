@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "顶部选项卡",
+  "enablePullDownRefresh": false,
+  "disableScroll": true,
+  "usingComponents": {
+    "f-news-item":"./fNewsItem/fNewsItem",
+    "yr-ui-loadmore":"/components/yr-ui/yr-ui-loadmore/yr-ui-loadmore",
+    "yr-ui-divider":"/components/yr-ui/yr-ui-divider/yr-ui-divider",
+    "yr-ui-tabs":"/components/yr-ui/yr-ui-tabs/yr-ui-tabs"
+  }
+}

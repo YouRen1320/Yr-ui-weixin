@@ -1,0 +1,29 @@
+<view class="yr-ui-wrap">
+		<map class="yr-ui-map" latitude="{{latitude}}" longitude="{{longitude}}" scale="{{15}}" show-location enable-rotate
+			style="height:{{mapHeight}}px" polyline="{{polyline}}" markers="{{markers}}" circles="{{circles}}">
+			<cover-image class="yr-ui-icon__back" src="/static/images/layout/icon_back_3x.png" catchtap="back" />
+		</map>
+		<view class="yr-ui-content__box">
+			<view class="yr-ui-content__inner">
+				<view class="yr-ui-content__title">
+					<yr-ui-text text="预计" size="36" fontWeight="500"></yr-ui-text>
+					<yr-ui-text text="{{time}}分钟后" size="36" fontWeight="500" color="#465CFF"></yr-ui-text>
+					<yr-ui-text text="送达" size="36" fontWeight="500"></yr-ui-text>
+				</view>
+				<yr-ui-text text="距你还有{{distance}}，由yr-ui专送配送" size="24" color="#7F7F7F" padding="12rpx 0 24rpx">
+				</yr-ui-text>
+				<yr-ui-list>
+					<view class="yr-ui-tel__box">
+						<view class="yr-ui-tel__item">
+							<yr-ui-lazyload src="/static/images/layout/icon_tel_3x.png" background="transparent" width="26" height="26"></yr-ui-lazyload>
+							<yr-ui-text text="联系商家" size="26" padding="0 0 0 16rpx"></yr-ui-text>
+						</view>
+						<view class="yr-ui-tel__item">
+							<yr-ui-lazyload block src="/static/images/layout/icon_tel_3x.png" background="transparent" width="26" height="26"></yr-ui-lazyload>
+              <yr-ui-text text="联系骑手" size="26" padding="0 0 0 16rpx"></yr-ui-text>
+						</view>
+					</view>
+				</yr-ui-list>
+			</view>
+		</view>
+	</view>

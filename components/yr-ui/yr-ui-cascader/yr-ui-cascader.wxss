@@ -1,0 +1,112 @@
+.yr-ui-cascader__wrap {
+  width: 100%;
+}
+
+.yr-ui-cascader__scroll {
+  width: 100%;
+}
+
+.yr-ui-cascader__header-wrap {
+  width: 100%;
+  position: relative;
+}
+
+.yr-ui-cascader__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-cascader__header-item {
+  padding: 24rpx 32rpx;
+  flex-shrink: 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.yr-ui-cascader__header-text {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  text-align: center;
+}
+
+.yr-ui-cascader__hi-width {
+  width: 240rpx;
+}
+
+.yr-ui-cascader__header-line {
+  height: 6rpx;
+  border-radius: 4rpx;
+  position: absolute;
+  bottom: 0;
+  left: 32rpx;
+  right: 32rpx;
+  z-index: 2;
+}
+
+.yr-ui-cascader__border {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  transform-origin: 0 100%;
+  z-index: 1;
+}
+
+.yr-ui-cascader__list {
+  width: 100%;
+}
+
+.yr-ui-cascader__seat {
+  width: 100%;
+  height: 24rpx;
+}
+
+.yr-ui-cascader__cell {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  padding: 20rpx 32rpx;
+}
+
+.yr-ui-cascader__checkmark {
+  width: 24rpx;
+  height: 48rpx;
+  border-bottom-style: solid;
+  border-bottom-width: 3px;
+  border-bottom-color: #FFFFFF;
+  border-right-style: solid;
+  border-right-width: 3px;
+  border-right-color: #FFFFFF;
+  flex-shrink: 0;
+  box-sizing: border-box;
+  transform: rotate(45deg) scale(0.5) translateZ(0);
+  transform-origin: 54% 48%;
+  margin-right: 16rpx;
+}
+
+.yr-ui-cascader__img {
+  margin-right: 16rpx;
+  flex-shrink: 0;
+}
+
+.yr-ui-cascader__color {
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-cascader__bg {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-cascader__icon-border {
+  border-bottom-color: var(--yr-ui-color-primary, #465CFF) !important;
+  border-right-color: var(--yr-ui-color-primary, #465CFF) !important;
+}

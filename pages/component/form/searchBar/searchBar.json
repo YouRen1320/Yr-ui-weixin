@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "搜索栏",
+  "usingComponents": {
+    "yr-ui-search-bar":"/components/yr-ui/yr-ui-search-bar/yr-ui-search-bar"
+  }
+}

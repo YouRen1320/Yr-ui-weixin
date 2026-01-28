@@ -1,0 +1,16 @@
+<view class="yr-ui-collapse__item" style="margin-top: {{marginTop}}rpx;margin-bottom: {{marginBottom}}rpx;">
+  <view catchtap="onClick" class="yr-ui-collapse-item__title {{disabled?'yr-ui-collapse__disabled':''}}" style="background:{{background}}">
+    <view class="yr-ui-collapse__title">
+      <slot></slot>
+    </view>
+    <view wx:if="{{arrow}}" class="yr-ui-collapse__arrow {{isOpen?'yr-ui-collapse__arrow-active':''}} {{animation?'yr-ui-collapse__item-ani':''}}" style="margin-right:{{arrowRight}}rpx">
+      <view class="yr-ui-collapse__arrow-inner" style="border-color:{{arrowColor}}"></view>
+    </view>
+    <view wx:if="{{isBorder}}" style="background:{{borderColor}};left:{{borderLeft}}rpx" class="yr-ui-collapse__border {{!borderColor?'yr-ui-collapse__border-color':''}}"></view>
+  </view>
+  <view class="yr-ui-collapse__content-wrap {{animation?'yr-ui-collapse-__content-ani':''}}" style="height:{{isOpen?height:0}}px;background:{{contentBg}}">
+    <view id="{{elId}}" class="yr-ui-collapse__content {{isHeight?'yr-ui-collapse__content-open':''}}">
+      <slot name="content"></slot>
+    </view>
+  </view>
+</view>

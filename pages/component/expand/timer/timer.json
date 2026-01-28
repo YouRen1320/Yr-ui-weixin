@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "计时器",
+  "usingComponents": {
+    "yr-ui-timer": "/components/yr-ui/yr-ui-timer/yr-ui-timer",
+    "yr-ui-grid": "/components/yr-ui/yr-ui-grid/yr-ui-grid",
+    "yr-ui-grid-item": "/components/yr-ui/yr-ui-grid-item/yr-ui-grid-item"
+  }
+}

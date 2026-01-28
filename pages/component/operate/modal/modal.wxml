@@ -1,0 +1,35 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Modal <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Modal 模态框，在浮层中显示，引导用户进行相关操作。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="基础使用" bold margin="24rpx 0" bindclick="showModal" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="单个按钮" bold bindclick="showModal" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="多个按钮" bold margin="24rpx 0" bindclick="showModal" data-type="3">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="设置按钮圆角" bold bindclick="showModal" data-type="4">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="点遮罩可关闭" bold margin="24rpx 0" bindclick="showModal" data-type="5">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义内容" bold bindclick="showModal" data-type="6">
+    </yr-ui-button>
+  </view>
+  <!--type=1-->
+  <yr-ui-modal show="{{show}}" title="提示" descr="确定关注 yr-ui 吗？" bindclick="onClick"></yr-ui-modal>
+  <!--type=2~5-->
+  <yr-ui-modal show="{{show2}}" descr="{{descr}}" buttons="{{buttons}}" radius="{{radius}}" maskClosable="{{maskClosable}}" direction="{{direction}}" bindclick="onClick2" bindcancel="onCancel2"></yr-ui-modal>
+  <!--type=6-->
+  <yr-ui-modal buttons="{{[]}}" width="600" show="{{show3}}">
+    <yr-ui-icon name="checkbox-fill" size="{{108}}" color="#09BE4F"></yr-ui-icon>
+    <text class="yr-ui-title">购买成功</text>
+    <text class="yr-ui-descr">成功购买一张月卡，可免费阅读30天</text>
+    <yr-ui-button text="我知道了" width="240rpx" height="72rpx" size="{{28}}" radius="36rpx" background="#FFB703" borderWidth="0" margin="0 0 24rpx" bindclick="onCancel3">
+    </yr-ui-button>
+    <view class="yr-ui-icon__close" bindtap="onCancel3">
+      <yr-ui-icon name="close" color="#B2B2B2" size="{{48}}"></yr-ui-icon>
+    </view>
+  </yr-ui-modal>
+</view>

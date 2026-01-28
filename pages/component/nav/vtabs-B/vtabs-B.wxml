@@ -1,0 +1,15 @@
+<view class="yr-ui-wrap">
+		<yr-ui-vtabs vtabs="{{vtabs}}" activeTab="{{activeTab}}" linkage="{{false}}" bindclick="onTabClick">
+			<view class="yr-ui-vtabs-content__item">
+				<view class="yr-ui-content--box">
+					<text class="yr-ui-title">{{content.title}}</text>
+					<image class="yr-ui-img" src="{{content.img}}" mode="widthFix"></image>
+					<view wx:if="{{content.title==='FAQ'}}">
+						<image class="yr-ui-img" src="{{item.img}}" mode="widthFix" wx:for="{{contents}}"
+							wx:key="index"></image>
+					</view>
+					<text class="yr-ui-descr">{{content.descr}}</text>
+				</view>
+			</view>
+		</yr-ui-vtabs>
+	</view>

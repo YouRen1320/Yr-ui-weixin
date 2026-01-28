@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "富文本解析",
+  "usingComponents": {
+    "yr-ui-parse":"/components/yr-ui/yr-ui-parse/yr-ui-parse"
+  }
+}

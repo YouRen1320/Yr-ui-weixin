@@ -1,0 +1,121 @@
+.yr-ui-slider__captcha-wrap {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  transition-property: all;
+  transition-timing-function: ease-in;
+  transition-duration: 0.2s;
+  display: flex;
+  transform: scale3d(1, 1, 0);
+  visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+}
+
+.yr-ui-sc__wrap-show {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  visibility: visible;
+}
+.yr-ui-slider__captcha {
+  padding: 60rpx 32rpx;
+  text-align: center;
+  border-radius: 24rpx;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-sc__title {
+  text-align: left;
+  display: flex;
+  font-weight: normal;
+}
+
+.yr-ui-sc__descr {
+  display: flex;
+  text-align: left;
+  padding-bottom: 36rpx;
+  font-weight: 600;
+  padding-top: 12rpx;
+}
+
+.yr-ui-sc__img-box {
+  position: relative;
+  background: #F1F4FA;
+}
+
+.yr-ui-sc__img {
+  display: block;
+}
+
+.yr-ui-sc__slot-bs {
+  box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.2);
+}
+
+.yr-ui-sc__sb-bs {
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+.yr-ui-sc__slot-box {
+  position: absolute;
+  width: 44px;
+  height: 44px;
+  opacity: 1;
+  z-index: 5;
+}
+
+.yr-ui-sc__sb-hidden {
+  opacity: 0;
+}
+
+.yr-ui-sc__slot-img {
+  width: 44px;
+  height: 44px;
+  display: block;
+}
+
+.yr-ui-sc__close {
+  position: absolute;
+  padding: 16rpx 16rpx 0 0;
+  right: 12rpx;
+  top: 12rpx;
+}
+
+.yr-ui-sc__sliderbar {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 48rpx;
+}
+
+.yr-ui-sc__bar {
+  background: #EEEEEE;
+}
+
+.yr-ui-sc__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-sc__slider-bg {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-sc__reset-ani {
+  transition: transform 0.2s;
+}

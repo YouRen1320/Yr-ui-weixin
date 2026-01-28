@@ -1,0 +1,23 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">NavBar<image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">NavBar 导航栏，用于提供页面的导航能力，若上方出现空白位置，则为状态栏高度。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-nav-bar title="标题" splitLine></yr-ui-nav-bar>
+    <view class="yr-ui-section__title">样式调整，不含状态栏高度</view>
+    <yr-ui-nav-bar title="标题" statusBar="{{false}}" background="linear-gradient(300deg, #6831FF, #465CFF)" color="#fff"></yr-ui-nav-bar>
+    <view class="yr-ui-section__title">左右显示内容</view>
+    <yr-ui-nav-bar title="标题内容" bindleftClick="leftClick" bindrightClick="rightClick">
+      <yr-ui-icon name="arrowleft"></yr-ui-icon>
+      <yr-ui-icon name="plus" slot="right"></yr-ui-icon>
+    </yr-ui-nav-bar>
+    <view class="yr-ui-section__title">自定义导航栏内容</view>
+    <yr-ui-nav-bar custom padding="12">
+      <view class="yr-ui-nav__city">深圳市</view>
+      <view class="yr-ui-search__box">请输入搜索关键词</view>
+    </yr-ui-nav-bar>
+  </view>
+</view>

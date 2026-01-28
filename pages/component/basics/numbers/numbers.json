@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "数字",
+  "usingComponents": {
+    "yr-ui-number":"/components/yr-ui/yr-ui-number/yr-ui-number"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "超链接",
+  "usingComponents": {
+    "yr-ui-link":"/components/yr-ui/yr-ui-link/yr-ui-link"
+  }
+}

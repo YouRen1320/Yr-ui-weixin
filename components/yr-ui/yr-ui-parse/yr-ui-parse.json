@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-audio":"./yr-ui-audio/yr-ui-audio",
+    "yr-ui-code":"./yr-ui-code/yr-ui-code",
+    "yr-ui-parse":"../yr-ui-parse/yr-ui-parse"
+  }
+}

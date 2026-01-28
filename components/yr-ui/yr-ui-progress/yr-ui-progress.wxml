@@ -1,0 +1,9 @@
+<view class="yr-ui-progress__wrap">
+  <view class="yr-ui-progress__bar-bg" style="height:{{height}}rpx;border-radius:{{radius}}rpx;background:{{background}}">
+    <view class="yr-ui-progress__bar {{!activeColor?'yr-ui-progress__active-color':''}}" style="background: {{activeColor}};transform:translate3d(-{{translateX}},0,0);transition-duration:{{time}}s;">
+    </view>
+  </view>
+  <text class="yr-ui-progress__percent" style="width:{{percentWidth}}rpx; font-size:{{size}}rpx;color:{{color}}" wx:if="{{showInfo}}">
+    {{ percentage }}%
+  </text>
+</view>

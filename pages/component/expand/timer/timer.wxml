@@ -1,0 +1,45 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Timer <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Timer 计时器，可累加计时。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">20s自动结束</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-timer maxTime="{{20}}" bindend="end"></yr-ui-timer>
+    </view>
+    <view class="yr-ui-section__title">冒号显示为文字</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-timer isColon="{{false}}" maxTime="{{40}}" bindend="end"></yr-ui-timer>
+    </view>
+    <view class="yr-ui-section__title">更换样式，显示毫秒</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-timer background="#465CFF" color="#fff" colonColor="#465CFF" isMs msWidth="40" maxTime="{{180}}" bindend="end"></yr-ui-timer>
+    </view>
+    <view class="yr-ui-section__title">手动控制</view>
+    <view class="yr-ui-timer__box">
+      <yr-ui-timer id="timer" isMs autoStart="{{false}}" bindend="end"></yr-ui-timer>
+    </view>
+    <yr-ui-grid bindclick="handleClick">
+      <yr-ui-grid-item backgroundColor="#fff">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="play"></yr-ui-icon>
+          <text>开始</text>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item backgroundColor="#fff" index="{{1}}">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="suspend"></yr-ui-icon>
+          <text>暂停</text>
+        </view>
+      </yr-ui-grid-item>
+      <yr-ui-grid-item backgroundColor="#fff" index="{{2}}">
+        <view class="yr-ui-grid__cell">
+          <yr-ui-icon name="refresh"></yr-ui-icon>
+          <text>重置</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+  </view>
+</view>

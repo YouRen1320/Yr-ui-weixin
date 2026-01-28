@@ -1,0 +1,148 @@
+
+.yr-ui-tabs__scrollbox {
+  width: 100%;
+  flex: 1;
+  flex-direction: row;
+  overflow: hidden;
+}
+
+.yr-ui-tabs__fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+}
+
+.yr-ui-tabs__sticky {
+  position: sticky;
+  left: 0;
+  right: 0;
+}
+
+.yr-ui-scroll__view {
+  min-width: 100%;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.yr-ui-tabs__item {
+  display: flex;
+  flex-shrink: 0;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.yr-ui-tabs__full {
+  flex: 1;
+}
+
+.yr-ui-tabs__text-wrap {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 3;
+}
+
+.yr-ui-tabs__wrap-disabled {
+  opacity: 0.5;
+}
+
+.yr-ui-tabs__icon {
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 12rpx;
+}
+
+.yr-ui-tabs__item-column {
+  flex-direction: column !important;
+}
+
+.yr-ui-tabs__icon-column {
+  margin-right: 0 !important;
+  margin-bottom: 8rpx;
+}
+
+.yr-ui-tabs__text {
+  white-space: nowrap;
+  display: block;
+  transition: transform 0.2s linear;
+  /* transform-origin: center center; */
+  position: relative;
+  z-index: 3;
+}
+
+.yr-ui-tabs__badge {
+  height: 36rpx;
+  padding: 0 12rpx;
+  color: #FFFFFF;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  border-radius: 100px;
+  min-width: 36rpx !important;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: -32rpx;
+  top: -18rpx;
+  transform: scale(0.9);
+  z-index: 10;
+}
+
+.yr-ui-tabs__badge-dot {
+  height: 8px !important;
+  width: 8px !important;
+  display: inline-block;
+  background-color: red;
+  border-radius: 50%;
+  position: absolute;
+  right: -6px;
+  top: -3px;
+  z-index: 10;
+}
+
+.yr-ui-tabs__line-wrap {
+  position: absolute;
+  border-radius: 2px;
+  z-index: 2;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+}
+
+.yr-ui-tabs__line-center {
+  justify-content: center;
+  left: 0;
+}
+
+.yr-ui-tabs__ac-line {
+  transition: transform 0.2s linear;
+}
+
+.yr-ui-tabs__line-short {
+  width: 45rpx !important;
+}
+
+.yr-ui-tabs__selected-color {
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-tabs__text-color {
+  color: var(--yr-ui-color-subtitle, #7F7F7F) !important;
+}
+
+.yr-ui-tabs__slider-color {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-tabs__badge-color {
+  background: var(--yr-ui-color-danger, #FF2B2B) !important;
+}

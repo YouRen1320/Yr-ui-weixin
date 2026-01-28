@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "横向滚动容器",
+  "usingComponents": {
+    "yr-ui-horizontal-scroll":"/components/yr-ui/yr-ui-horizontal-scroll/yr-ui-horizontal-scroll",
+    "yr-ui-lazyload":"/components/yr-ui/yr-ui-lazyload/yr-ui-lazyload",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text"
+  }
+}

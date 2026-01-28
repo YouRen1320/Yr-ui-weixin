@@ -1,0 +1,39 @@
+.yr-ui-progress__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-progress__bar-bg {
+  width: 100%;
+  transform: translateZ(0);
+  flex: 1;
+  position: relative;
+  overflow: hidden;
+}
+
+.yr-ui-progress__bar {
+  width: 100%;
+  z-index: 2;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  transform: translate3d(-100%, 0, 0);
+  transition-delay: 0s;
+  transition-property: transform;
+  transition-timing-function: linear;
+  transition-duration: 0s;
+}
+
+.yr-ui-progress__percent {
+  text-align: center;
+  display: block;
+  flex-shrink: 0;
+}
+
+.yr-ui-progress__active-color {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}

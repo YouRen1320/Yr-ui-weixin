@@ -1,0 +1,4 @@
+<view class="yr-ui-skeleton__wrap " style="background:{{background}};height:{{height}}px">
+  <view class="yr-ui-skeleton__item {{theme==='dark'?'yr-ui-skeleton__dark':''}} {{active && theme==='dark'?'yr-ui-skeleton__dark-ani':''}} {{active && theme!=='dark'?'yr-ui-skeleton__light-ani':''}}" style="width: {{item.width}}px;height:{{item.height}}px; left:{{item.left}}px;top:{{item.top-top}}px;border-radius:{{item.type==='round'?'50%':'6rpx'}}" wx:for="{{elList}}" wx:key="index">
+  </view>
+</view>

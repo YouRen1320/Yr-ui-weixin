@@ -1,0 +1,14 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Poster <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Poster 分享海报 ，传入JSON数据生成海报。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="基本使用" bold margin="24rpx 0" bindclick="poster" data-type="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="生成商品海报" bold bindclick="poster" data-type="2"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="Yr-ui分享海报" bold margin="24rpx 0" bindclick="share"></yr-ui-button>
+  </view>
+  <yr-ui-poster id="generator" width="{{560}}" height="{{980}}" bindready="ready"></yr-ui-poster>
+</view>

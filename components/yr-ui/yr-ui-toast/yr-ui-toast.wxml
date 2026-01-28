@@ -1,0 +1,10 @@
+<view class="yr-ui-toast__wrap {{visible?'yr-ui-toast__show':''}}">
+  <view class="yr-ui-toast__inner" style="padding:{{padding}};background:{{background}};z-index:{{zIndex}}">
+    <slot></slot>
+    <view class="yr-ui-toast__icon-box" wx:if="{{src}}" style="width:{{width}}rpx;height:{{width}}rpx">
+      <image class="yr-ui-toast__icon" src="{{src}}" style="width:{{width}}rpx;height:{{width}}rpx">
+      </image>
+    </view>
+    <text class="yr-ui-toast__text" style="font-size:{{size}}rpx;color:{{color}}" wx:if="{{text}}">{{text}}</text>
+  </view>
+</view>

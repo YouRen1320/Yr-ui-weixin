@@ -1,0 +1,15 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Preview <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Preview 表单预览，常用的布局组件。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-preview previewData="{{previewData}}"></yr-ui-preview>
+    <!-- 标签文本两端对齐 -->
+    <yr-ui-preview labelAlign="justify" labelWidth="112" previewData="{{previewData2}}" marginTop="24" bindclick="btnClick"></yr-ui-preview>
+    <!-- 内容文本左对齐 -->
+		<yr-ui-preview bd-align="left" labelWidth="{{136}}" hdLabelWidth="{{136}}" previewData="{{previewData}}"
+				marginTop="24"></yr-ui-preview>
+  </view>
+</view>

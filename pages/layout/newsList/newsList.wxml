@@ -1,0 +1,42 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-align__center" bindtap="vip">
+				<text class="yr-ui-page__title">NewsList</text>
+				<image src="/static/images/index/light/icon_member_3x.png" class="yr-ui-vip__icon"></image>
+			</view>
+			<text class="yr-ui-page__desc">新闻列表，常用的页面布局，可提升开发效率以及带来舒服的视觉效果！</text>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">标题列表</view>
+			<view class="yr-ui-news__list">
+				<view class="yr-ui-news__item" wx:for="{{newsList}}" wx:key="index">
+					<yr-ui-overflow-hidden text="{{item.title || ''}}" size="36" rows="{{1}}"></yr-ui-overflow-hidden>
+					<view class="yr-ui-news__info">
+						<yr-ui-text wx:if="{{item.isTop}}" padding="0 20rpx 0 0" text="置顶" size="25"
+							color="#FF2B2B"></yr-ui-text>
+						<yr-ui-text padding="0 20rpx 0 0" text="{{item.source || ''}}" size="25" color="#7F7F7F">
+						</yr-ui-text>
+						<yr-ui-text text="{{item.comment}}评论" size="25" color="#7F7F7F"></yr-ui-text>
+					</view>
+				</view>
+			</view>
+
+			<view class="yr-ui-section__title">带图片列表</view>
+			<view class="yr-ui-news__list">
+				<yr-ui-list topBorder="{{false}}" bottomBorder bottomLeft="32" bottomRight="32"	wx:for="{{newsList}}" wx:key="index">
+					<view class="yr-ui-news__item">
+						<yr-ui-overflow-hidden text="{{item.title}}" size="36" rows="3"></yr-ui-overflow-hidden>
+						<view class="yr-ui-image__list" wx:if="{{item.imageList && item.imageList.length}}">
+							<yr-ui-lazyload src="{{src}}" wx:for-item="src" wx:for-index="idx" wx:for="{{item.imageList}}" wx:key="idx"	width="{{item.imageList.length>1?200:400}}" height="{{item.imageList.length>1?200:0}}" marginRight="20" mode="aspectFill"></yr-ui-lazyload>
+						</view>
+						<view class="yr-ui-news__info">
+							<yr-ui-text wx:if="{{item.isTop}}" padding="0 20rpx 0 0" text="置顶" size="25" 	color="#FF2B2B"></yr-ui-text>
+							<yr-ui-text padding="0 20rpx 0 0" text="{{item.source}}" size="25" color="#7F7F7F">
+							</yr-ui-text>
+							<yr-ui-text text="{{item.comment}}评论" size="25" color="#7F7F7F"></yr-ui-text>
+						</view>
+					</view>
+				</yr-ui-list>
+			</view>
+		</view>
+	</view>

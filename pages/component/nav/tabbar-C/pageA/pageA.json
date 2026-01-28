@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-divider":"/components/yr-ui/yr-ui-divider/yr-ui-divider"
+  }
+}

@@ -1,0 +1,14 @@
+<view class="yr-ui-wrap">
+		<yr-ui-vtabs vtabs="{{vtabs}}" activeTab="{{activeTab}}"  id="vtabs" bindclick="onTabClick" bindchange="onChange">
+			<!--注意：联动时，tabIndex属性为必传参数-->
+			<yr-ui-vtabs-content wx:for="{{vtabs}}" wx:key="index" tabIndex="{{index}}">
+				<view class="yr-ui-vtabs-content__item" style="padding-bottom:{{vtabs.length-1===index?'800px':'0'}}">
+					<view class="yr-ui-content--box">
+						<text class="yr-ui-title">{{item.title || item.name}}</text>
+						<image class="yr-ui-img" src="{{resUrl+item.img}}" mode="widthFix"></image>
+						<text class="yr-ui-descr">{{item.descr}}</text>
+					</view>
+				</view>
+			</yr-ui-vtabs-content>
+		</yr-ui-vtabs>
+	</view>

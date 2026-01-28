@@ -1,0 +1,16 @@
+.yr-ui-white__space-wrap {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yr-ui-white__space-small {
+  height: 8rpx
+}
+
+.yr-ui-white__space-default {
+  height: 16rpx
+}
+
+.yr-ui-white__space-large {
+  height: 24rpx
+}

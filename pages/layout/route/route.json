@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "运单轨迹-路线规划",
+  "navigationStyle": "custom",
+	"disableScroll": true,
+  "usingComponents": {
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text",
+    "yr-ui-list":"/components/yr-ui/yr-ui-list/yr-ui-list",
+    "yr-ui-lazyload":"/components/yr-ui/yr-ui-lazyload/yr-ui-lazyload"
+  }
+}

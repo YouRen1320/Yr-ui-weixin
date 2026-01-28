@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "骨架屏",
+  "usingComponents": {
+    "yr-ui-skeleton":"/components/yr-ui/yr-ui-skeleton/yr-ui-skeleton"
+  }
+}

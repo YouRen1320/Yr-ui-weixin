@@ -1,0 +1,18 @@
+{
+  "navigationBarTitleText": "表单项",
+  "usingComponents": {
+    "yr-ui-form":"/components/yr-ui/yr-ui-form/yr-ui-form",
+    "yr-ui-form-item":"/components/yr-ui/yr-ui-form-item/yr-ui-form-item",
+    "yr-ui-input":"/components/yr-ui/yr-ui-input/yr-ui-input",
+    "yr-ui-switch":"/components/yr-ui/yr-ui-switch/yr-ui-switch",
+    "yr-ui-checkbox-group":"/components/yr-ui/yr-ui-checkbox-group/yr-ui-checkbox-group",
+    "yr-ui-label":"/components/yr-ui/yr-ui-label/yr-ui-label",
+    "yr-ui-checkbox":"/components/yr-ui/yr-ui-checkbox/yr-ui-checkbox",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text",
+    "yr-ui-radio-group":"/components/yr-ui/yr-ui-radio-group/yr-ui-radio-group",
+    "yr-ui-radio":"/components/yr-ui/yr-ui-radio/yr-ui-radio",
+    "yr-ui-upload":"/components/yr-ui/yr-ui-upload/yr-ui-upload",
+    "yr-ui-rate":"/components/yr-ui/yr-ui-rate/yr-ui-rate",
+    "yr-ui-textarea":"/components/yr-ui/yr-ui-textarea/yr-ui-textarea"
+  }
+}

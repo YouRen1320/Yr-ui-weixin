@@ -1,0 +1,16 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view  class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Waterfall <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view bind:tap="onInsert" class="yr-ui-page__desc">Waterfall 瀑布流，是比较流行的一种页面布局，视觉表现为参差不齐的多栏布局。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<yr-ui-waterfall isBefore bindend="onEnd">
+				<yr-ui-waterfall-item wx:for="{{images}}" wx:key="index" src="{{item}}">
+					<view class="yr-ui-text">自定义信息</view>
+				</yr-ui-waterfall-item>
+			</yr-ui-waterfall>
+			<yr-ui-loadmore wx:if="{{!isEnd}}"></yr-ui-loadmore>
+		</view>
+	</view>

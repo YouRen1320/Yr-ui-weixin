@@ -1,0 +1,35 @@
+.yr-ui-empty__wrap {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-empty__fixed {
+  position: fixed;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 99;
+}
+
+.yr-ui-empty__title {
+  text-align: center;
+  font-weight: 500;
+  padding-top: 48rpx;
+}
+
+.yr-ui-empty__desc {
+  text-align: center;
+  font-weight: normal;
+  padding-top: 8rpx;
+}
+
+.yr-ui-empty__title-color {
+  color: var(--yr-ui-color-section, #333333) !important;
+}
+
+.yr-ui-empty__descr-color {
+  color: var(--yr-ui-color-label, #B2B2B2) !important;
+}

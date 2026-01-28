@@ -1,0 +1,18 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-align__center {
+  flex-direction: row;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-page__bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

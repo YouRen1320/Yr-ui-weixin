@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "可移动的视图容器",
+  "usingComponents": {
+    "yr-ui-movable-view":"/components/yr-ui/yr-ui-movable-view/yr-ui-movable-view"
+  }
+}

@@ -1,0 +1,9 @@
+.yr-ui-wrap {
+  padding-bottom: 120rpx;
+}
+
+.yr-ui-banner {
+  width: 750rpx;
+  height: 512rpx;
+  display: block;
+}

@@ -1,0 +1,13 @@
+<view class="yr-ui-gallery__wrap {{show?'yr-ui-gallery__show':'yr-ui-gallery__hidden'}}" style="z-index:{{zIndex}}" catchtap="hideGallery">
+  <swiper class="yr-ui-gallery__img-wrap" indicator-dots="{{false}}" bindchange="change" current="{{defActive}}" autoplay="{{false}}" duration="{{500}}">
+    <swiper-item class="yr-ui-gallery__swiper-item" wx:for="{{imgUrls}}" wx:key="index">
+      <image mode="aspectFit" class="yr-ui-gallery__img" src="{{item[srcKey]}}"></image>
+    </swiper-item>
+  </swiper>
+  <view class="yr-ui-gallery__index-wrap" style="top:{{top}}px">
+    <text class="yr-ui-gallery__index">{{active+1}}/{{imgUrls.length}}</text>
+  </view>
+  <view class="yr-ui-gallery__descr-wrap" wx:if="{{descr}}">
+    <text class="yr-ui-gallery__descr {{ellipsis?'yr-ui-gallery__text-ellipsis':''}}" wx:if="{{descr}}">{{descr}}</text>
+  </view>
+</view>

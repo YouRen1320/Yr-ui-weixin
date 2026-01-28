@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "筛选栏",
+  "usingComponents": {
+    "yr-ui-filter-bar":"/components/yr-ui/yr-ui-filter-bar/yr-ui-filter-bar",
+    "yr-ui-drawer":"/components/yr-ui/yr-ui-drawer/yr-ui-drawer",
+    "yr-ui-dropdown-menu":"/components/yr-ui/yr-ui-dropdown-menu/yr-ui-dropdown-menu"
+  }
+}

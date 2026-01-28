@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "左右间距",
+  "usingComponents": {
+    "yr-ui-wing-blank":"/components/yr-ui/yr-ui-wing-blank/yr-ui-wing-blank"
+  }
+}

@@ -1,0 +1,11 @@
+<view class="yr-ui-drag__item-outer" style="width:{{width}}px;height:{{height}}px">
+  <view class="yr-ui-drag__item-wrap yr-ui-drag__item-padding" style="width:{{width-(padding*2)}}px;height:{{height-(padding*2)}}px;background:{{background}};justify-content:space-between;">
+    <view class="yr-ui-drag__item-inner">
+      <view class="yr-ui-drag__item-icon yr-ui-drag__item-mr" catchtap="handleDel" wx:if="{{isDel}}">
+        <yr-ui-icon name="minussign-fill" color="{{delColor}}" size="{{48}}"></yr-ui-icon>
+      </view>
+      <text class="yr-ui-drag__item-text" style="color:{{color}};font-size:{{size}}rpx" wx:if="{{text!='' && text!==true}}">{{model.text}}</text>
+    </view>
+    <yr-ui-icon name="menu" size="{{48}}" color="{{slideColor}}" wx:if="{{isMenu}}"></yr-ui-icon>
+  </view>
+</view>

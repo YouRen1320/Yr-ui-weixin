@@ -1,0 +1,16 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Icon</view>
+    <view class="yr-ui-page__desc">Icon 图标，Yr-ui字体图标库，可自行扩展。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <yr-ui-grid columns="{{3}}" bindclick="getName">
+      <yr-ui-grid-item wx:for="{{icons}}" highlight="{{item!=''}}" index="{{index}}" wx:key="index">
+        <view class="yr-ui-icon__item">
+          <yr-ui-icon name="{{item}}"></yr-ui-icon>
+          <text class="yr-ui-icon__name">{{ item }}</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+  </view>
+</view>

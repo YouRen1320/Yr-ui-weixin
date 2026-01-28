@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动画",
+  "usingComponents": {
+    "yr-ui-lottie":"/components/yr-ui/yr-ui-lottie/yr-ui-lottie"
+  }
+}

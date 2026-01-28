@@ -1,0 +1,99 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">FormItem<image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">FormItem 表单项，主要用于表单组件相关布局使用，可结合yr-ui-form组件做表单校验。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-form id="form" show="{{false}}">
+      <view class="yr-ui-section__title">基础使用</view>
+      <yr-ui-form-item label="活动名称">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入活动名称"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="手机号码">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入手机号码"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="即时配送">
+        <yr-ui-switch scaleRatio="0.9"></yr-ui-switch>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="活动性质">
+        <yr-ui-checkbox-group>
+          <yr-ui-label inline>
+            <yr-ui-checkbox value="1"></yr-ui-checkbox>
+            <yr-ui-text size="28" text="地推活动" padding="0 30rpx 0 16rpx"></yr-ui-text>
+          </yr-ui-label>
+          <yr-ui-label inline>
+            <yr-ui-checkbox value="2"></yr-ui-checkbox>
+            <yr-ui-text size="28" text="美食活动" padding="0 16rpx"></yr-ui-text>
+          </yr-ui-label>
+        </yr-ui-checkbox-group>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="特殊资源">
+        <yr-ui-radio-group>
+          <yr-ui-label>
+            <yr-ui-radio value="1"></yr-ui-radio>
+            <yr-ui-text size="28" text="线上品牌方赞助" padding="0 30rpx 0 16rpx"></yr-ui-text>
+          </yr-ui-label>
+          <yr-ui-label margin="32rpx 0 0">
+            <yr-ui-radio value="2"></yr-ui-radio>
+            <yr-ui-text size="28" text="线下场地免费" padding="0 16rpx"></yr-ui-text>
+          </yr-ui-label>
+        </yr-ui-radio-group>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="评分">
+        <yr-ui-rate></yr-ui-rate>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="上传图片" padding="28rpx 32rpx 8rpx">
+        <yr-ui-upload></yr-ui-upload>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">必填星号【提示居左对齐】</view>
+      <yr-ui-form-item label="姓名" asterisk prop="name" error-align="left">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入姓名" model:value="{{name}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="手机号码" asterisk prop="mobile" error-align="left">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入手机号码" model:value="{{mobile}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">星号居右【提示居中对齐】</view>
+      <yr-ui-form-item asterisk-position="right" label="身份证" asterisk prop="idCard">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入身份证" model:value="{{idCard}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item asterisk-position="right" label="电子邮箱" asterisk prop="email">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入电子邮箱" model:value="{{email}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">label右对齐【提示居右对齐】</view>
+      <yr-ui-form-item label-align="right" asterisk-position="right" label="活动名称" asterisk prop="activityName" error-align="right">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入活动名称" model:value="{{activityName}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item label-align="right" asterisk-position="right" label="主办方" asterisk prop="organizer" error-align="right">
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请输入主办方" model:value="{{organizer}}"></yr-ui-input>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">选择</view>
+      <yr-ui-form-item label="活动时间" arrow highlight>
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请选择时间" disabled backgroundColor="transparent"></yr-ui-input>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="地区" arrow highlight>
+        <yr-ui-input borderBottom="{{false}}" padding="0" placeholder="请选择地区" disabled backgroundColor="transparent"></yr-ui-input>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">上下排列</view>
+      <yr-ui-form-item asterisk label="详细描述" bottomBorder="{{false}}" prop="descr" error-align="left">
+        <yr-ui-textarea slot="vertical" padding="0 32rpx 32rpx 32rpx" border-top="{{false}}" placeholder="请输入详细描述..." model:value="{{descr}}"></yr-ui-textarea>
+      </yr-ui-form-item>
+      <view class="yr-ui-section__title">其他</view>
+      <yr-ui-form-item label="是否推送">
+        <yr-ui-switch slot="right"></yr-ui-switch>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="体重">
+        <yr-ui-input type="digit" borderBottom="{{false}}" padding="0 16rpx" placeholder="请输入体重" text-align="right">
+        </yr-ui-input>
+        <yr-ui-text text="kg" slot="right"></yr-ui-text>
+      </yr-ui-form-item>
+      <yr-ui-form-item label="验证码">
+        <input class="yr-ui-page__input" placeholder="请输入验证码" placeholder-style="color:#ccc;" maxlength="6" />
+        <yr-ui-button slot="right" type="gray" bold width="200rpx" height="64rpx" size="28" text="获取验证码"></yr-ui-button>
+      </yr-ui-form-item>
+      <view class="yr-ui-btn__box">
+        <yr-ui-button text="Submit" bold bindclick="submit"></yr-ui-button>
+      </view>
+    </yr-ui-form>
+  </view>
+</view>

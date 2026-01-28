@@ -1,0 +1,24 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">SearchBar <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">SearchBar 搜索栏，主要用于内容搜索，跳转展示等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-search-bar bindsearch="search"></yr-ui-search-bar>
+    <view class="yr-ui-section__title">调整样式</view>
+    <yr-ui-search-bar background="#ededed" radius="36" searchColor="#FFB703" bindsearch="search"></yr-ui-search-bar>
+    <view class="yr-ui-section__title">插槽使用/返回箭头/不显示占位</view>
+			<yr-ui-search-bar background="#fff" radius="36" inputBackground="#fafafa" bindsearch="search">
+				<view class="yr-ui-arrow__left" catchtap="back">
+					<yr-ui-icon name="arrowleft" size="56"></yr-ui-icon>
+				</view>
+			</yr-ui-search-bar>
+    <view class="yr-ui-section__title">占位内容左对齐</view>
+    <yr-ui-search-bar isLeft background="#111" color="#fff" inputBackground="#222" bindsearch="search">
+    </yr-ui-search-bar>
+    <view class="yr-ui-section__title">禁用状态，只做跳转</view>
+    <yr-ui-search-bar disabled bindclick="onClick"></yr-ui-search-bar>
+  </view>
+</view>

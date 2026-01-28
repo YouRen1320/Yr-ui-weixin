@@ -1,0 +1,11 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Drag <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Drag 拖拽排序，通过拖动列表元素以此来达到对数据的重新排列。长按列表开启拖拽。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+      <yr-ui-drag generic:item="f-drag-item" width="{{720}}" itemList="{{itemList}}" columns="{{4}}" square  bindend="end"></yr-ui-drag>
+		</view>
+	</view>

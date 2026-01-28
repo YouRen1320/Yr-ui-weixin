@@ -1,0 +1,9 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-list":"/components/yr-ui/yr-ui-list/yr-ui-list",
+    "yr-ui-overflow-hidden":"/components/yr-ui/yr-ui-overflow-hidden/yr-ui-overflow-hidden",
+    "yr-ui-lazyload":"/components/yr-ui/yr-ui-lazyload/yr-ui-lazyload",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text"
+  }
+}

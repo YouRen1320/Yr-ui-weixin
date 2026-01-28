@@ -1,0 +1,23 @@
+<view class="yr-ui-notice__bar" style="background:{{background}};padding:{{padding}};height:{{scrollable || single?height+'rpx':'auto'}}" bindtap="onClick">
+  <view class="yr-ui-notice__shrink" catchtap="leftClick">
+    <slot></slot>
+  </view>
+  <view class="yr-ui-notice__wrap {{scrollable?'yr-ui-notice__wrap-scroll':''}}" style="height:{{scrollable&& !isNvue?parse.getHeight(height,size):'auto'}}" id="fui_notice_box">
+    <view id="{{elId_box}}" class="{{scrollable?'yr-ui-notice__content':''}} {{!scrollable && single?'yr-ui-notice__content-single':''}}">
+      <text id="animationEle" class="yr-ui-notice__text {{!scrollable && single?'yr-ui-notice__single':''}} {{scrollable?'yr-ui-notice__scrollable':''}} {{!color?'yr-ui-notice__text-color':''}}" id="{{elId}}" style="color:{{color}};font-size:{{size}}rpx;line-height:{{scrollable?parse.getHeight(height,size):'normal'}};font-weight:{{bold?'bold':'normal'}};width:{{wrapWidth}}px;animation-duration:{{animationDuration}};-webkit-animation-duration: {{animationDuration}};animation-play-state: {{webviewHide?'paused':animationPlayState}}; animation-delay: {{animationDelay}}; -webkit-animation-delay:{{animationDelay}}">{{content}}</text>
+    </view>
+  </view>
+  <view class="yr-ui-notice__shrink" catchtap="rightClick">
+    <slot name="right"></slot>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getHeight: function (height, size) {
+      var h = parseInt(height);
+      var s = parseInt(size) * 2;
+      return (h < s ? h : s) + 'rpx';
+    }
+  }
+</wxs>

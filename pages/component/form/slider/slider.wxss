@@ -1,0 +1,7 @@
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-section__title {
+  margin-bottom: 48rpx;
+}

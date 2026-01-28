@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "倒计时",
+  "usingComponents": {
+    "yr-ui-count-down": "/components/yr-ui/yr-ui-count-down/yr-ui-count-down",
+    "yr-ui-grid":"/components/yr-ui/yr-ui-grid/yr-ui-grid",
+    "yr-ui-grid-item":"/components/yr-ui/yr-ui-grid-item/yr-ui-grid-item"
+  }
+}

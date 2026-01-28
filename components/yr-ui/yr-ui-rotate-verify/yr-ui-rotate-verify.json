@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-icon": "../yr-ui-icon/yr-ui-icon"
+  }
+}

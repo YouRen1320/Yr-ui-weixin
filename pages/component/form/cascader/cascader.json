@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "级联选择器",
+  "usingComponents": {
+    "yr-ui-cascader": "/components/yr-ui/yr-ui-cascader/yr-ui-cascader",
+    "yr-ui-bottom-popup": "/components/yr-ui/yr-ui-bottom-popup/yr-ui-bottom-popup"
+  }
+}

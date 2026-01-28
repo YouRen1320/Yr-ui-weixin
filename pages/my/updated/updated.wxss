@@ -1,0 +1,19 @@
+page {
+  background-color: #fff;
+  font-weight: normal;
+}
+
+.yr-ui-wrap {
+  padding-top: 32rpx;
+}
+
+.yr-ui-title {
+  font-size: 28rpx;
+  font-weight: 500;
+}
+
+.yr-ui-date {
+  font-size: 24rpx;
+  color: #B2B2B2;
+  padding-top: 8rpx;
+}

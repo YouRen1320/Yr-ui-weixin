@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "滑块拼图验证",
+  "usingComponents": {
+    "yr-ui-puzzle-verify": "/components/yr-ui/yr-ui-puzzle-verify/yr-ui-puzzle-verify"
+  }
+}

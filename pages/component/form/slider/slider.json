@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "滑块",
+  "usingComponents": {
+    "yr-ui-slider":"/components/yr-ui/yr-ui-slider/yr-ui-slider"
+  }
+}

@@ -1,0 +1,22 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Toast</view>
+    <view class="yr-ui-page__desc">Toast 轻提示，一种轻量级反馈/提示，适合用于页面转场、数据交互的等场景中。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="带图标提示" bold margin="24rpx 0" bindclick="showToast" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="无图标提示" bold bindclick="showToast" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义内容" margin="24rpx 0" bold bindclick="showToast" data-type="3">
+    </yr-ui-button>
+  </view>
+  <yr-ui-toast id="toast"></yr-ui-toast>
+
+  <!--自定义内容-->
+  <yr-ui-toast id="toast2">
+    <view class="yr-ui-toast__custom">
+      <yr-ui-icon name="checkbox" color="#fff"></yr-ui-icon>
+      <text class="yr-ui-toast__txt">操作成功</text>
+    </view>
+  </yr-ui-toast>
+</view>

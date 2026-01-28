@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "表单预览",
+  "usingComponents": {
+    "yr-ui-preview": "/components/yr-ui/yr-ui-preview/yr-ui-preview"
+  }
+}

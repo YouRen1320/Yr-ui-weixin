@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "条形码",
+  "usingComponents": {
+    "yr-ui-barcode": "/components/yr-ui/yr-ui-barcode/yr-ui-barcode",
+    "yr-ui-input": "/components/yr-ui/yr-ui-input/yr-ui-input"
+  }
+}

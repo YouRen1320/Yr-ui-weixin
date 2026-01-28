@@ -1,0 +1,11 @@
+page {
+  background-color: #FFFFFF;
+}
+
+.yr-ui-load__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "贝塞尔曲线",
+  "usingComponents": {
+    "yr-ui-cubic-bezier":"/components/yr-ui/yr-ui-cubic-bezier/yr-ui-cubic-bezier"
+  }
+}

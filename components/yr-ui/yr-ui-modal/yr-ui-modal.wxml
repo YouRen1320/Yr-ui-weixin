@@ -1,0 +1,20 @@
+<view class="yr-ui-modal__wrap {{show?'yr-ui-modal__fadein':''}}" style="background:{{maskBackground}};z-index:{{zIndex}}" bindtap="closeModal" catchtouchmove="stop">
+  <view class="yr-ui-modal__inner" style="width:{{width}}rpx;background:{{background}};border-radius:{{boxRadius}}rpx;padding-top: {{padding}}rpx;padding-bottom: {{padding}}rpx;margin-top: {{top}}rpx;" catchtap="stop">
+    <text class="yr-ui-modal__title" style="font-size:{{size}}rpx;color:{{color}}" wx:if="{{title && title!==true}}">{{title}}</text>
+    <text class="yr-ui-modal__descr {{title?'':'yr-ui-modal__descr-pt'}}" style="font-size:{{descrSize}}rpx;color:{{descrColor}}" wx:if="{{descr && descr!==true}}">{{descr}}</text>
+    <slot></slot>
+    <view class="yr-ui-modal__btn-wrap {{direction==='row'?'yr-ui-modal__btn-row':''}}" style="{{parse.getWidth(width)}}" wx:if="{{vals.length>0}}">
+      <view class="yr-ui-modal__button {{direction==='column' && index!==vals.length-1?'yr-ui-modal__button-col':''}} {{!entity.plain && !entity.background?'yr-ui-modal__button-bg':''}} {{entity.plain?'yr-ui-modal__button-border':''}} {{entity.plain && !entity.background?'yr-ui-modal__button-bc':''}}" style="border-radius:{{radius}}rpx;background:{{entity.plain?'transparent':(entity.background || '#465CFF')}};border-color:{{entity.plain?(entity.background || '#465CFF'):'transparent'}}" wx:for="{{vals}}" wx:for-item="entity" wx:key="index" catchtap="handleClick" data-index="{{index}}">
+        <text class="yr-ui-modal__button-inner {{!entity.color && entity.plain?'yr-ui-modal__button-color':''}}" style="color:{{entity.color || (entity.plain?'#465CFF':'#fff')}}">{{entity.text}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getWidth: function (width) {
+      return "width:" + (parseInt(width) - 60) + "rpx"
+    }
+  }
+</wxs>

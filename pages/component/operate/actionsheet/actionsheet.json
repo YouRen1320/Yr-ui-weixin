@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "上拉菜单",
+  "usingComponents": {
+    "yr-ui-actionsheet": "/components/yr-ui/yr-ui-actionsheet/yr-ui-actionsheet"
+  }
+}

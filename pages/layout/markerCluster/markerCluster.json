@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "地图示例",
+  "enablePullDownRefresh": false,
+  "backgroundColor": "#FFFFFE",
+  "disableScroll": true,
+  "usingComponents": {
+    "yr-ui-empty":"/components/yr-ui/yr-ui-empty/yr-ui-empty"
+  }
+}

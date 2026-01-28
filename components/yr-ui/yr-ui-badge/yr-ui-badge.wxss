@@ -1,0 +1,55 @@
+.yr-ui-badge__wrap {
+  height: 36rpx;
+  padding: 0 12rpx;
+  color: #FFFFFF;
+  font-size: 24rpx;
+  line-height: 36rpx;
+  border-radius: 100px;
+  min-width: 36rpx !important;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.yr-ui-badge__dot {
+  height: 8px !important;
+  width: 8px !important;
+  display: inline-block;
+  border-radius: 50%;
+  z-index: 10;
+}
+
+.yr-ui-badge__bg-primary {
+  background-color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-badge__bg-success {
+  background-color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-badge__bg-warning {
+  background-color: var(--yr-ui-color-warning, #FFB703) !important;
+}
+
+.yr-ui-badge__bg-danger {
+  background-color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-badge__bg-purple {
+  background-color: var(--yr-ui-color-purple, #6831FF) !important;
+}
+
+.yr-ui-badge__bg-white {
+  background-color: var(--yr-ui-color-white, #FFFFFF) !important;
+}
+
+.yr-ui-badge__text-color {
+  color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-badge__absolute {
+  position: absolute;
+}

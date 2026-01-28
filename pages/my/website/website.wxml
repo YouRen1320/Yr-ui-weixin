@@ -1,0 +1,14 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-banner__box">
+    <image src="{{resUrl}}/website/light/img_banner_3x.png" class="yr-ui-banner" mode="widthFix"></image>
+  </view>
+  <view class="yr-ui-list__view">
+    <yr-ui-list-cell arrow padding="0 32rpx" bottomBorder="{{false}}" radius="16rpx" marginTop="24"
+      wx:for="{{links}}" wx:key="index" index="{{index}}" bindclick="getLink">
+      <view class="yr-ui-list__item yr-ui-align__center">
+        <image class="yr-ui-item__icon" src="/static/images/website/light/icon_{{item.img}}_3x.png"></image>
+        <text>{{item.name}}</text>
+      </view>
+    </yr-ui-list-cell>
+  </view>
+</view>

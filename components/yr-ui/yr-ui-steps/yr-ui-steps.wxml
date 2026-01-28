@@ -1,0 +1,46 @@
+<view class="yr-ui-steps__wrap {{direction==='row'?'yr-ui-steps__flex':''}}" style="padding:{{padding}};background:{{background}}">
+  <view class="yr-ui-steps__node-wrap {{direction==='column'?'yr-ui-steps__flex-row':'yr-ui-steps__flex-col'}} {{direction==='row'?'yr-ui-steps__nw-col':'yr-ui-steps__nw-row'}}" wx:for="{{items}}" wx:key="index" catchtap="handleClick" data-index="{{index}}">
+    <view class="yr-ui-steps__node-box {{direction==='row'?'yr-ui-steps__flex-row':'yr-ui-steps__flex-col'}} {{direction==='row'?'':'yr-ui-steps__node-weex'}}" style="{{parse.getStyles(height, direction)}}">
+      <view class="yr-ui-steps__line {{(direction==='row'?'yr-ui-steps__line-row':'yr-ui-steps__line-col')+(lineBold?'_bold':'')}} {{index<=current && index!==0 && !parse.getColor(index,current,activeColor,processColor,true,false,isWait)?'yr-ui-steps__background':''}}" style="background:{{index===0?'transparent':(index<=current?parse.getColor(index,current,activeColor,processColor,true,false,isWait):nodeColor)}}" wx:if="{{direction==='row'}}"></view>
+      <view class="yr-ui-steps__node {{direction!='row' || (direction==='row' && !lineThrough)?'yr-ui-steps__node-size':''}}">
+        <text class="yr-ui-steps__node-text {{index<=current && !activeColor?'yr-ui-steps__background':''}} {{index<=current && !activeColor?'yr-ui-steps__border':''}}" wx:if="{{item[textKey] && !(isMark && index==current)}}" style="background:{{index<=current?activeColor:'#fff'}};border-color:{{index<=current?activeColor:nodeColor}};color:{{index<=current?'#fff':color}}">{{item[textKey]}}</text>
+        <view class="yr-ui-steps__checkbox {{!activeColor && !processColor?'yr-ui-steps__background':''}}" style="background:{{processColor || activeColor}}" wx:if="{{isMark && index==current}}">
+          <block wx:if="{{processStatus==='fail'}}">
+							<view class="yr-ui-steps__ia-fail"></view>
+							<view class="yr-ui-steps__ib-fail"></view>
+						</block>
+            <view class="yr-ui-steps__ic-waiting" wx:elif="{{processStatus==='wait'}}"></view>
+          <view class="yr-ui-steps__checkmark" wx:else></view>
+        </view>
+        <view class="yr-ui-steps__node-dot {{index<=current && !activeColor?'yr-ui-steps__background':''}}" style="background:{{index<=current?activeColor:nodeColor}}" wx:if="{{!item[textKey] && !item[srcKey] && !(isMark && index==current)}}">
+        </view>
+        <image src="{{index<=current?(item[activeSrcKey] || item[srcKey]):item[srcKey]}}" mode="widthFix" class="yr-ui-steps__node-icon" wx:if="{{!item[textKey] && item[srcKey] && !(isMark && index==current)}}" style="border-radius:{{radius || 0}}"></image>
+      </view>
+      <view class="yr-ui-steps__line {{(direction==='row'?'yr-ui-steps__line-row':'yr-ui-steps__line-col')+(lineBold?'_bold':'')}} {{index!==items.length-1 && !parse.getColor(index,current,activeColor,processColor,true,true,isWait)  && (index<current || (index==current && isWait && direction==='row' && !processColor))?'yr-ui-steps__background':''}}" style="background:{{index===items.length-1?'transparent':((index<current) || (index==current && isWait && direction==='row')?parse.getColor(index, current,activeColor,processColor, true, true,isWait):nodeColor)}}">
+      </view>
+    </view>
+    <view class="yr-ui-steps__content {{direction==='row'?'yr-ui-steps__content-row':'yr-ui-steps__content-col'}}" style="padding-bottom:{{index===items.length-1 || direction==='row'? '0rpx':'64rpx'}};padding-left:{{direction==='row'?20:24}}rpx">
+      <text class="yr-ui-steps__title {{direction==='row'?'yr-ui-steps__text-row':''}} {{(index < current && !activeColor) || (index===current && !activeColor && !processColor)?'yr-ui-steps__color':''}}" wx:if="{{item[titleKey]}}" style="color:{{index<=current?parse.getColor(index, current,activeColor,processColor):color}};font-size:{{size}}rpx;font-weight:{{fontWeight}}">{{item[titleKey]}}</text>
+      <text class="yr-ui-steps__descr {{direction==='row'?'yr-ui-steps__text-row':''}} {{(index < current && !activeColor) || (index===current && !activeColor && !processColor)?'yr-ui-steps__color':''}}" wx:if="{{item[descrKey]}}" style="color:{{index<=current?parse.getColor(index, current,activeColor,processColor):descrColor}};font-size:{{descrSize}}rpx">{{item[descrKey]}}</text>
+    </view>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getStyles: function (height, direction) {
+      var styles = "height:" + height + "rpx";
+      if (direction === 'column') {
+        styles = "width:" + height + "rpx";
+      }
+      return styles
+    },
+    getColor:function(index, current,activeColor,processColor, isLine, isRight,isWait){
+      var color = activeColor
+				if (index === current  || (index === current - 1 && !isWait && isLine && isRight)) {
+					color = processColor || color
+				}
+				return color;
+    }
+  }
+</wxs>

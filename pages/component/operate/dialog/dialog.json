@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "对话框",
+  "usingComponents": {
+    "yr-ui-dialog": "/components/yr-ui/yr-ui-dialog/yr-ui-dialog"
+  }
+}

@@ -1,0 +1,3 @@
+<view class="yr-ui-wrap">
+		<yr-ui-empty src="https://res.yr-ui.cn/static/images/common/img_coding_3x.png" isFixed title="开发中~" descr="更多示例敬请期待!"></yr-ui-empty>
+	</view>

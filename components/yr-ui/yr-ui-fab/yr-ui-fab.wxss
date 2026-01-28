@@ -1,0 +1,146 @@
+.yr-ui-fab__mask {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition-property: visibility, opacity;
+}
+
+.yr-ui-fab__mask-show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.yr-ui-fab__btn-wrap {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  bottom: 120rpx;
+}
+
+.yr-ui-fab__wrap-left {
+  align-items: flex-start;
+  left: 80rpx;
+}
+
+.yr-ui-fab__wrap-right {
+  align-items: flex-end;
+  right: 80rpx;
+}
+
+.yr-ui-fab__btn-list {
+  display: flex;
+  visibility: hidden;
+  transition: all 0.25s ease-in-out;
+  transform: scale3d(0, 0, 1);
+  opacity: 0;
+  flex-direction: column;
+}
+
+.yr-ui-fab__list-left {
+  transform-origin: 0 100%;
+  align-items: flex-start;
+}
+
+.yr-ui-fab__list-right {
+  transform-origin: 100% 100%;
+  align-items: flex-end;
+}
+
+.yr-ui-fab__btn-hidden {
+  width: 0;
+  height: 0;
+}
+
+.yr-ui-fab__list-ani {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  visibility: visible;
+}
+
+.yr-ui-fab__button-box {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 32rpx;
+  position: relative;
+}
+
+.yr-ui-fab__button-left {
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+.yr-ui-fab__button-right {
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+
+.yr-ui-fab__btn-text {
+  box-sizing: border-box;
+  padding-left: 24rpx;
+  padding-right: 24rpx;
+  font-weight: normal;
+}
+
+.yr-ui-fab__button {
+  display: flex;
+  border-radius: 50%;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-fab__btn-abbr {
+  text-align: center;
+  font-weight: normal;
+}
+
+.yr-ui-fab__btn-main {
+  display: flex;
+  border-radius: 50%;
+  box-shadow: 0 10rpx 14rpx 0 rgba(0, 0, 0, 0.1);
+  align-items: center;
+  justify-content: center;
+  transform: rotate(0deg);
+  overflow: hidden;
+  position: relative;
+}
+
+.yr-ui-fab__btn-inner {
+  display: flex;
+  transform: rotate(0deg);
+  transition: transform .25s;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-fab__btn-ani {
+  transform: rotate(135deg);
+}
+
+.yr-ui-fab__btn-color {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-fab__opentype-btn {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  border-width: 0;
+  background-color: rgba(0, 0, 0, 0);
+  opacity: 0;
+  z-index: 1;
+}
+
+.yr-ui-fab__opentype-btn::after {
+  border-width: 0;
+}

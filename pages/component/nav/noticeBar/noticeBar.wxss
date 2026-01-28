@@ -1,0 +1,43 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-page__hd {
+  transition: all .2s;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-icon__box {
+  padding-left: 24rpx;
+  padding-right: 12rpx;
+}
+
+.yr-ui-more__wrap {
+  display: flex;
+  align-items: center;
+  padding: 0 24rpx;
+}
+
+.yr-ui-more__text {
+  font-size: 26rpx;
+  color: #7F7F7F;
+}
+
+.yr-ui-notice__fixed {
+  width: 100%;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 10;
+}
+
+.yr-ui-notice__pt {
+  padding-top: 124rpx;
+}

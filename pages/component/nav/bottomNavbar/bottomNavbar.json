@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "底部导航栏",
+  "usingComponents": {
+    "yr-ui-bottom-navbar": "/components/yr-ui/yr-ui-bottom-navbar/yr-ui-bottom-navbar",
+    "yr-ui-bubble-box":"/components/yr-ui/yr-ui-bubble-box/yr-ui-bubble-box"
+  }
+}

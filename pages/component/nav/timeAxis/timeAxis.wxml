@@ -1,0 +1,82 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">TimeAxis <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">TimeAxis 时间轴，用于展现时间流信息。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">右侧展示</view>
+    <yr-ui-timeaxis background="#fff" padding="32rpx 16rpx">
+      <yr-ui-timeaxis-node lineColor="{{index<3?item.activeColor:'#ccc'}}" lined="{{index!==processData.length-1}}" wx:for="{{processData}}" wx:key="index">
+        <view class="yr-ui-node" style="border-color:{{item.activeColor}}">
+        </view>
+        <view slot="right" class="yr-ui-process__node {{index!==processData.length-1?'yr-ui-node__pb':''}}">
+          <view class="yr-ui-title" style="color:{{index===3?item.activeColor:'#181818'}}">{{item.title}}
+          </view>
+          <view class="yr-ui-descr" wx:if="{{item.descr}}">{{item.descr}}</view>
+          <view class="yr-ui-time">{{item.time}}</view>
+        </view>
+      </yr-ui-timeaxis-node>
+    </yr-ui-timeaxis>
+    <view class="yr-ui-section__title">左右展示</view>
+    <yr-ui-timeaxis leftWidth="200" background="#fff" padding="32rpx 16rpx">
+      <yr-ui-timeaxis-node lineColor="{{index<3?item.activeColor:'#ccc'}}" lined="{{index!==processData.length-1}}" wx:for="{{processData}}" wx:key="index">
+        <view class="yr-ui-node" style="border-color:{{item.activeColor}}">
+        </view>
+        <view slot="left" class="yr-ui-time__left">{{item.time}}</view>
+        <view slot="right" class="yr-ui-process__node {{index!==processData.length-1?'yr-ui-node__pbtm':''}}">
+          <view class="yr-ui-title" style="color:{{index===3?item.activeColor:'#181818'}}">{{item.title}}
+          </view>
+          <view class="yr-ui-descr" wx:if="{{item.descr}}">{{item.descr}}</view>
+        </view>
+      </yr-ui-timeaxis-node>
+    </yr-ui-timeaxis>
+    <view class="yr-ui-section__title">节点设置icon</view>
+    <yr-ui-timeaxis background="#fff" padding="32rpx 16rpx">
+      <yr-ui-timeaxis-node>
+        <view class="yr-ui-node__box" style="background: #FF2B2B;">
+          <yr-ui-icon name="check" size="{{28}}" color="#fff"></yr-ui-icon>
+        </view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder">自定义内容</view>
+        </view>
+      </yr-ui-timeaxis-node>
+      <yr-ui-timeaxis-node>
+        <view class="yr-ui-node__box" style="background: #09BE4F;">
+          <yr-ui-icon name="face" size="{{28}}" color="#fff"></yr-ui-icon>
+        </view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder">自定义内容</view>
+        </view>
+      </yr-ui-timeaxis-node>
+      <yr-ui-timeaxis-node>
+        <view class="yr-ui-node__box" style="background: #465CFF;">
+          <yr-ui-icon name="my-fill" size="{{28}}" color="#fff"></yr-ui-icon>
+        </view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder">自定义内容</view>
+        </view>
+      </yr-ui-timeaxis-node>
+      <yr-ui-timeaxis-node>
+        <view class="yr-ui-node__sm"></view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder">自定义内容</view>
+        </view>
+      </yr-ui-timeaxis-node>
+      <yr-ui-timeaxis-node>
+        <view class="yr-ui-node"></view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder" style="height: 400rpx;">Yr-ui</view>
+        </view>
+      </yr-ui-timeaxis-node>
+      <yr-ui-timeaxis-node lined="{{false}}">
+        <view class="yr-ui-node"></view>
+        <view slot="right" class="yr-ui-custom__wrap">
+          <view class="yr-ui-custom__innder">
+            <image src="/static/images/common/logo.png" class="yr-ui-logo"></image>
+          </view>
+        </view>
+      </yr-ui-timeaxis-node>
+    </yr-ui-timeaxis>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "遮罩层",
+  "usingComponents": {
+    "yr-ui-backdrop": "/components/yr-ui/yr-ui-backdrop/yr-ui-backdrop"
+  }
+}

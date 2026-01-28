@@ -1,0 +1,25 @@
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-scroll__wrap {
+  padding-top: 30rpx;
+  position: relative;
+}
+
+.yr-ui-title {
+  font-size: 30rpx;
+  font-weight: bold;
+  text-align: center;
+  padding-bottom: 24rpx;
+}
+
+.yr-ui-icon__close {
+  position: absolute;
+  top: 24rpx;
+  right: 24rpx;
+}

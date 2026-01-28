@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "日期时间选择器",
+  "usingComponents": {
+    "yr-ui-date-picker":"/components/yr-ui/yr-ui-date-picker/yr-ui-date-picker"
+  }
+}

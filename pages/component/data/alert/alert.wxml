@@ -1,0 +1,45 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Alert</view>
+    <view class="yr-ui-page__desc">Alert 警告框。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-alert title="An info alert"></yr-ui-alert>
+    <yr-ui-alert type="success" isLeft title="An success alert" marginTop="{{24}}"></yr-ui-alert>
+    <yr-ui-alert type="warn" isLeft title="An warn alert" marginTop="{{24}}"></yr-ui-alert>
+    <yr-ui-alert type="clear" isLeft title="An error alert" marginTop="24"></yr-ui-alert>
+    <yr-ui-alert isLeft title="An info alert" desc="Content of alert. Content of alert." marginTop="24">
+    </yr-ui-alert>
+    <yr-ui-alert type="clear" isLeft title="An error alert" desc="Content of alert. Content of alert." marginTop="24">
+    </yr-ui-alert>
+    <yr-ui-alert type="warn" isLeft title="An warn alert" desc="Content of alert. Content of alert." marginTop="24">
+    </yr-ui-alert>
+    <yr-ui-alert type="success" title="An warn alert" desc="Content of alert. Content of alert." marginTop="24">
+    </yr-ui-alert>
+    <yr-ui-alert type="info" title="An info alert" marginTop="24"></yr-ui-alert>
+    <yr-ui-alert type="clear" title="An success alert" marginTop="24"></yr-ui-alert>
+    <yr-ui-alert type="warn" title="An warn alert" marginTop="24"></yr-ui-alert>
+    <view class="yr-ui-section__title" wx:if="{{show || shown}}">可关闭</view>
+    <yr-ui-alert closable title="An info alert" wx:if="{{show}}" bindclose="close"></yr-ui-alert>
+    <yr-ui-alert type="success" closable title="An info alert" desc="Content of alert. Content of alert.Content of alert." wx:if="{{shown}}" bindclose="close2" marginTop="24"></yr-ui-alert>
+    <view class="yr-ui-section__title">自定义图标</view>
+    <yr-ui-alert type="info" isLeft spacing title="An info alert" size="28rpx">
+      <yr-ui-icon name="info" size="{{48}}" color="#fff"></yr-ui-icon>
+    </yr-ui-alert>
+    <yr-ui-alert type="success" isLeft spacing title="An info alert" size="28rpx" marginTop="24">
+      <yr-ui-icon name="checkbox" size="{{48}}" color="#fff"></yr-ui-icon>
+    </yr-ui-alert>
+    <yr-ui-alert type="warn" isLeft spacing title="An info alert" size="28rpx" marginTop="24">
+      <yr-ui-icon name="warning" size="{{48}}" color="#fff"></yr-ui-icon>
+    </yr-ui-alert>
+    <yr-ui-alert type="clear" isLeft spacing title="An info alert" size="28rpx" marginTop="24">
+      <yr-ui-icon name="clear" size="48" color="#fff"></yr-ui-icon>
+    </yr-ui-alert>
+    <view class="yr-ui-section__title">自定义颜色</view>
+    <yr-ui-alert type="clear" iconColor="#FF2B2B" background="#fff" color="#181818" title="An info alert">
+    </yr-ui-alert>
+    <yr-ui-alert type="success" iconColor="#09BE4F" background="#fff" color="#181818" title="An info alert" marginTop="24"></yr-ui-alert>
+    <yr-ui-alert type="warn" iconColor="#FFB703" background="#fff" color="#181818" title="An info alert" marginTop="24"></yr-ui-alert>
+  </view>
+</view>

@@ -1,0 +1,24 @@
+<view class="yr-ui-tabbar__wrap {{isFixed?'yr-ui-tabbar__fixed':''}}" style=" background:{{background}};z-index:{{zIndex}}">
+  <view class="yr-ui-tabbar__inner {{isBorder?'yr-ui-tababr__border':''}}">
+    <view class="yr-ui-tabbar__item" wx:for="{{tabs}}" wx:key="index" bindtap="itemClick" data-index="{{index}}">
+      <view class="yr-ui-tabbar__icon-wrap" wx:if="{{item.iconPath || item.iconName}}">
+        <image class="yr-ui-tabbar__icon" src="{{current==index?item.selectedIconPath:item.iconPath}}" wx:if="{{!item.midButton && item.iconPath}}"></image>
+        <yr-ui-icon wx:if="{{item.iconName && !item.iconPath && !item.midButton}}" name="{{current==index?item.selectedIconName:item.iconName}}" size="{{item.iconSize || iconSize}}"	unit="{{item.iconUnit || iconUnit}}" color="{{current==index?(item.selectedColor || selectedColor):(item.color || color)}}" customPrefix="{{item.customPrefix || ''}}"></yr-ui-icon>
+        <text class="{{item.dot?'yr-ui-tabbar__dot':'yr-ui-tabbar__badge'}} {{badgeBackground?'':'yr-ui-tabbar__badge-color'}}" style="background:{{badgeBackground}};color:{{badgeColor}};width:{{parse.getWidth(item.badge,item.dot)}}" wx:if="{{item.badge}}">{{item.dot?'':item.badge}}</text>
+      </view>
+      <text class="yr-ui-tabbar__text {{!item.selectedColor && !selectedColor && current==index?'yr-ui-tabbar__selected-color':''}}" style="font-size:{{size}}rpx;font-weight:{{fontWeight}};color:{{current==index?(item.selectedColor || selectedColor):(item.midButton?(item.color || color):color)}}" wx:if="{{item.text}}">{{item.text}}</text>
+      <image wx:if="{{item.midButton}}" class="yr-ui-tabbar__mid-button {{item.center?'yr-ui-tabbar__mid-center':''}}" src="{{item.iconPath}}" style="width:{{item.width || 56}}rpx;height:{{item.height || 56}}rpx;bottom:{{item.bottom}}rpx">
+      </image>
+    </view>
+  </view>
+  <view class="yr-ui-tabbar__safe-area {{fixedHeight?'yr-ui-tabbar__safe-weex':''}}" wxif="{{isFixed}}"></view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    getWidth: function (value, dot) {
+      value = value + ''
+      return dot ? '16rpx' : ((value.length * 12 + 20) + 'rpx')
+    }
+  }
+</wxs>

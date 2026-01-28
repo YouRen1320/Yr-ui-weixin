@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "下拉菜单",
+  "usingComponents": {
+    "yr-ui-dropdown-menu":"/components/yr-ui/yr-ui-dropdown-menu/yr-ui-dropdown-menu"
+  }
+}

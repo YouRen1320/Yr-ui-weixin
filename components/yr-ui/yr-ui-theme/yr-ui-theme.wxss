@@ -1,0 +1,83 @@
+/*
+  yr-ui组件内置的基础变量
+  1.如果你是组件使用者，你可以通过修改这些变量的值来定制自己的组件主题，实现自定义主题功能
+  2.如果全局修改需要在项目根目录下app.wxss文件中引入此wxss文件
+  3.如果组件中有props属性是针对颜色设置（默认为空值），则优先级：props变量（如果有传值）> 全局主题色
+*/
+
+page {
+	/* 行为相关颜色 */
+	--yr-ui-color-primary: #465CFF;
+	--yr-ui-color-success: #09BE4F;
+	--yr-ui-color-warning: #FFB703;
+	--yr-ui-color-danger: #FF2B2B;
+	--yr-ui-color-purple: #6831FF;
+
+	/* 文字基本颜色、其他辅助色 */
+	/* 用于重量级文字信息、标题 */
+	--yr-ui-color-title: #181818;
+	/* 用于普通级段落信息、引导词 */
+	--yr-ui-color-section: #333333;
+	/* 用于次要标题内容 */
+	--yr-ui-color-subtitle: #7F7F7F;
+	/* 用于底部标签、描述、次要文字信息 */
+	--yr-ui-color-label: #B2B2B2;
+	/* 用于辅助、次要信息、禁用文字等。如：待输入状态描述文字，已点击按钮文字 */
+	--yr-ui-color-minor: #CCCCCC;
+	--yr-ui-color-white: #FFFFFF;
+	/* 链接颜色 */
+	--yr-ui-color-link: #465CFF;
+
+
+	/* 背景颜色 */
+	--yr-ui-bg-color: #ffffff;
+	/* 页面背景底色 */
+	--yr-ui-bg-color-grey: #F1F4FA;
+	/* 内容模块底色 */
+	--yr-ui-bg-color-content: #F8F8F8;
+	--yr-ui-bg-color-red: rgba(255, 43, 43, .05);
+	--yr-ui-bg-color-yellow: rgba(255, 183, 3, .1);
+	--yr-ui-bg-color-purple: rgba(104, 49, 255, .05);
+	--yr-ui-bg-color-green: rgba(9, 190, 79, .05);
+	/* 点击背景色 */
+	--yr-ui-bg-color-hover: rgba(0, 0, 0, 0.2);
+	/* 遮罩颜色 */
+	--yr-ui-bg-color-mask: rgba(0, 0, 0, 0.6);
+
+
+	/* 边框颜色 */
+	--yr-ui-color-border: #EEEEEE;
+
+	/* 阴影颜色 */
+	--yr-ui-color-shadow: rgba(2, 4, 38, 0.05);
+
+	/*禁用态的透明度 */
+	--yr-ui-opacity-disabled: 0.5;
+
+	/* 图标尺寸 */
+	--yr-ui-img-size-sm: 48rpx;
+	--yr-ui-img-size-base: 56rpx;
+	--yr-ui-img-size-middle: 64rpx;
+	--yr-ui-img-size-lg: 96rpx;
+
+	/* 图片尺寸 */
+	--yr-ui-img-sm: 60rpx;
+	--yr-ui-img-base: 120rpx;
+	--yr-ui-img-lg: 240rpx;
+
+	/* Border Radius */
+	--yr-ui-border-radius-sm: 16rpx;
+	--yr-ui-border-radius-base: 24rpx;
+	--yr-ui-border-radius-lg: 48rpx;
+	--yr-ui-border-radius-circle: 50%;
+
+	/* 水平间距 */
+	--yr-ui-spacing-row-sm: 16rpx;
+	--yr-ui-spacing-row-base: 24rpx;
+	--yr-ui-spacing-row-lg: 32rpx;
+
+	/* 垂直间距 */
+	--yr-ui-spacing-col-sm: 8rpx;
+	--yr-ui-spacing-col-base: 16rpx;
+	--yr-ui-spacing-col-lg: 24rpx;
+}

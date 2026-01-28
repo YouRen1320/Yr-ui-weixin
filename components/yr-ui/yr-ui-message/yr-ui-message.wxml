@@ -1,0 +1,4 @@
+<view class="yr-ui-message__wrap {{isShow?'yr-ui-message__show':''}} {{opts_align!=='center'?'yr-ui-message__flex-row':''}}" style="padding:{{padding}};top:{{top}}px;left:{{left}}rpx;right:{{right}}rpx;background:{{opts_bg}};border-radius:{{ridus}}rpx;z-index:{{zIndex}}">
+  <slot></slot>
+  <text class="yr-ui-message__text {{opts_align!=='center'?'yr-ui-message__text-full':''}}" style="color:{{opts_color}};font-size:{{opts_size}}rpx;text-align:{{opts_align}}" wx:if="{{text}}">{{text}}</text>
+</view>

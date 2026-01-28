@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "纵向选项卡",
+  "navigationBarBackgroundColor": "#f8f8f8",
+  "disableScroll": true,
+  "usingComponents": {
+    "yr-ui-vtabs": "/components/yr-ui/yr-ui-vtabs/yr-ui-vtabs",
+    "yr-ui-vtabs-content": "/components/yr-ui/yr-ui-vtabs-content/yr-ui-vtabs-content"
+  }
+}

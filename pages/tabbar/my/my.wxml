@@ -1,0 +1,30 @@
+<view class="yr-ui-wrap yr-ui-page__bd">
+  <view class="yr-ui-banner__box">
+    <image class="yr-ui-banner" src="{{resUrl}}/my/light/img_banner_3x.png" mode="widthFix"></image>
+    <view class="yr-ui-vip__box yr-ui-page__spacing">
+      <view class="yr-ui-mod__box">
+        <image class="yr-ui-vip__bg" src="{{resUrl}}/my/light/img_mod_bg.png"></image>
+      </view>
+      <view class="yr-ui-vip__btn yr-ui-flex__center" bindtap="href" data-page="/pages/my/vip/vip">立即开通</view>
+    </view>
+  </view>
+  <view class="yr-ui-page__spacing">
+    <view class="yr-ui-menu__wrap yr-ui-align__center">
+      <view class="yr-ui-menu__item" wx:for="{{menus}}" wx:key="index" bindtap="href" data-page="{{item.page}}">
+        <button open-type="feedback" class="yr-ui-btn__feedback" wx:if="{{index===2}}"></button>
+        <view class="yr-ui-menu__img yr-ui-flex__center" style="background:{{item.background}}">
+          <image src="{{resUrl}}/my/light/icon_{{item.src}}_3x.png" mode="widthFix"></image>
+        </view>
+        <text>{{item.text}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="yr-ui-list__wrap">
+    <yr-ui-list-cell bindclick="href" data-page="{{item.page}}" arrow bottomRight="32" wx:for="{{list}}" wx:key="index">
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/my/light/icon_{{item.src}}_3x.png" mode="widthFix"></image>
+        <text class="yr-ui-list__text" style="margin-right: -20rpx;">{{item.text}}</text>
+      </view>
+    </yr-ui-list-cell>
+  </view>
+</view>

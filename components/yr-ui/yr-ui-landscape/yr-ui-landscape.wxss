@@ -1,0 +1,53 @@
+.yr-ui-landscape__wrap {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 1002;
+  display: flex;
+  transition: all ease-in .25s;
+  transform: scale3d(1, 1, 0);
+  visibility: hidden;
+  opacity: 0;
+  align-items: center;
+  justify-content: center;
+}
+.yr-ui-landscape__fixed {
+  position: fixed;
+}
+
+.yr-ui-landscape__absolute {
+  position: absolute;
+}
+
+.yr-ui-landscape__show {
+  opacity: 1;
+  transform: scale3d(1, 1, 1);
+  visibility: visible;
+}
+
+.yr-ui-landscape__inner {
+  display: flex;
+  box-sizing: border-box;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: relative;
+}
+
+.yr-ui-landscape__icon {
+  position: absolute;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: row;
+}
+
+.yr-ui-landscape__icon-rt {
+  justify-content: flex-end !important;
+}
+
+.yr-ui-landscape__icon-def {
+  justify-content: center !important;
+}

@@ -1,0 +1,35 @@
+.yr-ui-overflow__hidden-wrap {
+  position: relative;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  flex: 1;
+}
+
+.yr-ui-overflow__hidden {
+  display: -webkit-box;
+  word-break: break-all;
+  white-space: normal;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.yr-ui-gradient__hidden {
+  display: block;
+  word-break: break-all;
+  overflow: hidden;
+}
+.yr-ui-text__nowrap {
+  display: inline-block !important;
+  word-break: normal !important;
+  white-space: nowrap !important;
+}
+.yr-ui-oh__gradient-wrap {
+  width: 100%;
+  z-index: 2;
+  flex: 1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

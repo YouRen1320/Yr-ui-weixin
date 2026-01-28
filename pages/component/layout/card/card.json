@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "卡片",
+  "usingComponents": {
+    "yr-ui-card": "/components/yr-ui/yr-ui-card/yr-ui-card"
+  }
+}

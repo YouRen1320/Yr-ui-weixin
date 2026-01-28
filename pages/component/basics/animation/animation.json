@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "动画",
+  "usingComponents": {
+    "yr-ui-animation":"/components/yr-ui/yr-ui-animation/yr-ui-animation"
+  }
+}

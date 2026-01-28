@@ -1,0 +1,21 @@
+.yr-ui-wrap {
+  padding-top: 20rpx;
+  padding-bottom: 48rpx;
+}
+
+.yr-ui-goods__item-content {
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.yr-ui-card__padding {
+  padding: 24rpx 20rpx;
+}
+
+.yr-ui-goods__item-price {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  padding-top: 24rpx;
+}

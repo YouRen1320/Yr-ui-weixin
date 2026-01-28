@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "标签",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-tag": "/components/yr-ui/yr-ui-tag/yr-ui-tag"
+  }
+}

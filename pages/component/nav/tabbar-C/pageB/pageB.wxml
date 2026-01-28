@@ -1,0 +1,9 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-header">
+			<view class="yr-ui-title__text">PageB：布局</view>
+			<view class="yr-ui-desc__text">非必要情况下建议使用原生配置tababr。</view>
+		</view>
+		<view class="yr-ui-body">
+			
+		</view>
+	</view>

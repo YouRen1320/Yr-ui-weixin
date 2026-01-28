@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "瀑布流",
+  "usingComponents": {
+    "yr-ui-waterfall":"/components/yr-ui/yr-ui-waterfall/yr-ui-waterfall",
+    "yr-ui-waterfall-item":"/components/yr-ui/yr-ui-waterfall-item/yr-ui-waterfall-item",
+    "yr-ui-loadmore":"/components/yr-ui/yr-ui-loadmore/yr-ui-loadmore"
+  }
+}

@@ -1,0 +1,62 @@
+
+export default [{
+	cn: '商城',
+	en: 'MALL',
+	src: 'shopping_mall',
+	background: '#FFF7E5',
+	page: ''
+}, {
+	cn: '点餐',
+	en: 'ORDER',
+	src: 'order',
+	background: '#FFF4F4',
+	page: ''
+}, {
+	cn: '聊天',
+	en: 'CHAT',
+	src: 'chat',
+	background: '#F2FCF6',
+	page: ''
+}, {
+	cn: '短视频',
+	en: 'SHORT VIDEO',
+	src: 'short_video',
+	background: '#FFF4F4',
+	page: ''
+}, {
+	cn: '新闻',
+	en: 'NEWS',
+	src: 'journalism',
+	background: '#F6F7FF',
+	page: ''
+}, {
+	cn: '门户',
+	en: 'PORTAL',
+	src: 'gateway',
+	background: '#F2FCF6',
+	page: '/pages/nav/portal-nav/portal-nav'
+}, {
+	cn: '登录',
+	en: 'LOGIN',
+	src: 'login',
+	background: '#FFF7E5',
+	page: '/pages/nav/login-nav/login-nav'
+}, {
+	cn: '签到',
+	en: 'SIGN IN',
+	src: 'sign_in',
+	background: '#F7F4FF',
+	page: ''
+}, {
+	cn: '投票',
+	en: 'VOTE',
+	src: 'vote',
+	background: '#FFF4F4',
+	page: ''
+}, {
+	cn: '教育',
+	en: 'EDUCATION',
+	src: 'education',
+	background: '#F6F7FF',
+	page: ''
+}]

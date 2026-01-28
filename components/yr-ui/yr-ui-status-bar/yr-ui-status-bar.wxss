@@ -1,0 +1,12 @@
+.yr-ui-status__bar {
+  width: 100%;
+  height: 20px;
+  overflow: hidden;
+}
+
+.yr-ui-status__bar-fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+}

@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "加载动画",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-load-ani":"/components/yr-ui/yr-ui-load-ani/yr-ui-load-ani",
+    "yr-ui-grid":"/components/yr-ui/yr-ui-grid/yr-ui-grid",
+    "yr-ui-grid-item":"/components/yr-ui/yr-ui-grid-item/yr-ui-grid-item"
+  }
+}

@@ -1,0 +1,29 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">InputNumber</view>
+    <view class="yr-ui-page__desc">InputNumber 数字输入框，该组件多用于购物车加减商品等场景。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-input-number></yr-ui-input-number>
+    <view class="yr-ui-section__title">改变加减号颜色</view>
+    <yr-ui-input-number signColor="#FFB703" value="1.1" modelValue="1.1"></yr-ui-input-number>
+    <view class="yr-ui-section__title">改变数字框背景色</view>
+    <yr-ui-input-number backgroundColor="#F1F4FA"></yr-ui-input-number>
+    <view class="yr-ui-section__title">自定义加减号</view>
+    <yr-ui-input-number custom backgroundColor="#FFF" size="{{30}}" width="{{60}}" margin="0">
+      <yr-ui-icon name="minussign" size="{{48}}" color="#FFB703"></yr-ui-icon>
+      <yr-ui-icon slot="plus" name="plussign-fill" size="{{48}}" color="#FFB703"></yr-ui-icon>
+    </yr-ui-input-number>
+    <view class="yr-ui-section__title">使用model:value：{{val}}</view>
+    <yr-ui-input-number model:value="{{val}}"></yr-ui-input-number>
+    <view class="yr-ui-section__title">设置最小值和最大值</view>
+    <yr-ui-input-number min="{{2}}" max="{{9}}"></yr-ui-input-number>
+    <view class="yr-ui-section__title">设置步长（步长0.1)</view>
+    <yr-ui-input-number step="{{0.1}}"></yr-ui-input-number>
+    <view class="yr-ui-section__title">禁用状态</view>
+    <yr-ui-input-number disabled></yr-ui-input-number>
+    <view class="yr-ui-section__title">事件获取数字框的值: {{inputVal}}</view>
+    <yr-ui-input-number bindchange="change"></yr-ui-input-number>
+  </view>
+</view>

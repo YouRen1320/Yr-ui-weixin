@@ -1,0 +1,47 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">FilterBar <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">FilterBar 筛选栏，主要用于数据的筛选。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-dropdown-menu isMask="{{false}}" options="{{itemList}}" id="ddm" left="0" minWidth="750" splitLine bindclick="itemClick">
+      <yr-ui-filter-bar items="{{items}}" bindchange="change"></yr-ui-filter-bar>
+    </yr-ui-dropdown-menu>
+    <view class="yr-ui-section__title">配置项调整</view>
+    <yr-ui-filter-bar items="{{items2}}"></yr-ui-filter-bar>
+    <view class="yr-ui-section__title">互不排斥/选项共存</view>
+			<view class="yr-ui-filter--wrap">
+				<yr-ui-filter-bar coexist items="{{items4}}" bindchange="change4"></yr-ui-filter-bar>
+				<yr-ui-dropdown-menu isMask="{{false}}" options="{{itemStatus}}" id="statusRef" left="0" minWidth="750" splitLine bindclick="statusClick">
+				</yr-ui-dropdown-menu>
+				<yr-ui-dropdown-menu isMask="{{false}}" options="{{itemTypes}}" id="typesRef" left="0" minWidth="750" splitLine bindclick="typeClick">
+				</yr-ui-dropdown-menu>
+			</view>
+    <view class="yr-ui-section__title">颜色调整 / 默认选中</view>
+    <yr-ui-filter-bar items="{{items3}}" background="#222" color="#A3A3A3" lineColor="#333" activeColor="#465CFF">
+    </yr-ui-filter-bar>
+    <!--筛选-->
+    <yr-ui-drawer show="{{show}}" bindclose="closeDrawer">
+      <scroll-view scroll-y class="yr-ui-scroll__view">
+        <view class="yr-ui-filter__list" wx:for="{{filters}}" wx:key="index">
+          <view class="yr-ui-filter__title">{{item.title}}</view>
+          <view class="yr-ui-filter__item">
+            <view class="yr-ui-filter__item-btn {{parse.isActive(brands,modal.value)?'yr-ui-item__btn-active':''}}" bindtap="attrClick" data-value="{{modal.value}}" wx:for="{{item.data}}" wx:for-item="modal" wx:for-index="idx" wx:key="idx">
+              {{modal.text}}
+            </view>
+          </view>
+        </view>
+      </scroll-view>
+    </yr-ui-drawer>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    isActive: function (brands, val) {
+      return ~brands.indexOf(val)
+    }
+  }
+</wxs>

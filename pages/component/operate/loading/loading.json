@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "加载中",
+  "usingComponents": {
+    "yr-ui-loading":"/components/yr-ui/yr-ui-loading/yr-ui-loading"
+  }
+}

@@ -1,0 +1,27 @@
+page {
+  background-color: #FFFFFF;
+  font-weight: normal;
+}
+
+.yr-ui-title {
+  font-weight: 600;
+}
+
+.yr-ui-content {
+  width: 100%;
+  padding: 32rpx;
+  box-sizing: border-box;
+  font-size: 28rpx;
+}
+
+.yr-ui-p {
+  width: 100%;
+  padding-bottom: 32rpx;
+  word-break: break-all;
+  display: flex;
+  line-height: 44rpx;
+}
+
+.yr-ui-sign {
+  padding-right: 8rpx;
+}

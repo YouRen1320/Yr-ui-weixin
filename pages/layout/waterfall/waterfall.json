@@ -1,0 +1,11 @@
+{
+  "navigationBarTitleText": "瀑布流",
+	"enablePullDownRefresh": true,
+  "usingComponents": {
+    "yr-ui-waterfall":"/components/yr-ui/yr-ui-waterfall/yr-ui-waterfall",
+    "yr-ui-waterfall-item":"/components/yr-ui/yr-ui-waterfall-item/yr-ui-waterfall-item",
+    "yr-ui-overflow-hidden":"/components/yr-ui/yr-ui-overflow-hidden/yr-ui-overflow-hidden",
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text",
+    "yr-ui-loadmore":"/components/yr-ui/yr-ui-loadmore/yr-ui-loadmore"
+  }
+}

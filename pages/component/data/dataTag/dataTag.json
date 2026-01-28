@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "标签选择",
+  "usingComponents": {
+    "yr-ui-data-tag":"/components/yr-ui/yr-ui-data-tag/yr-ui-data-tag"
+  }
+}

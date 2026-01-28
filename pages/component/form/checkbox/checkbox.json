@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "复选框",
+  "usingComponents": {
+    "yr-ui-checkbox-group":"/components/yr-ui/yr-ui-checkbox-group/yr-ui-checkbox-group",
+    "yr-ui-checkbox":"/components/yr-ui/yr-ui-checkbox/yr-ui-checkbox",
+    "yr-ui-label":"/components/yr-ui/yr-ui-label/yr-ui-label"
+  }
+}

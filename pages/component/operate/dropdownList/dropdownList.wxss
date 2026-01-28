@@ -1,0 +1,48 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+
+.yr-ui-filter__icon {
+  flex-shrink: 0;
+  transition: all .15s linear;
+}
+
+.yr-ui-icon__ani {
+  transform: rotate(180deg);
+}
+
+.yr-ui-list__cell {
+  width: 100%;
+}
+
+.yr-ui-select {
+  flex: 1;
+  height: 80rpx;
+  padding: 32rpx;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.yr-ui-input {
+  font-size: 32rpx;
+  flex: 1;
+  padding-right: 8rpx;
+}
+
+.yr-ui-select::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 200%;
+  height: 200%;
+  border: 1px solid #eee;
+  transform: scale(.5);
+  transform-origin: 0 0;
+  pointer-events: none;
+}

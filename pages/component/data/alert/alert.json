@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "警告框",
+  "usingComponents": {
+    "yr-ui-alert":"/components/yr-ui/yr-ui-alert/yr-ui-alert"
+  }
+}

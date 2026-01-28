@@ -1,0 +1,18 @@
+<view class="yr-ui-license__plate-wrap {{show?'yr-ui-license__plate__ani':''}} {{theme==='light'?'yr-ui-lp__theme-light':''}} {{theme==='dark'?'yr-ui-lp__theme-dark':''}}" style="z-index:{{zIndex}}">
+  <slot></slot>
+  <view wx:if="{{toolbar}}" class="yr-ui-lp__btn-wrap {{theme==='light'?'yr-ui-lp__btnwrap-light':'yr-ui-lp__btnwrap-dark'}}">
+    <text class="yr-ui-lp__button {{!color?'yr-ui-lp__button-color':''}}" style="color:{{color}};font-size:{{size}}rpx;font-weight:{{fontWeight}}" catchtap="onComplete">{{text}}</text>
+  </view>
+  <view class="yr-ui-license__plate-grids">
+    <view class="yr-ui-lp__grid-wrap" wx:for="{{keyList}}" wx:key="index">
+      <view class="yr-ui-lp__grid {{index===3 && idx===0?'yr-ui-lp__grid-lg':''}} {{!(type===1?val.cn:val.en)?'yr-ui-lp__grid-hidden':''}}" wx:for="{{item.keys}}" wx:for-item="val" wx:for-index="idx" wx:key="idx">
+        <text style="font-size:{{index===3 && idx===0? 28:(type===1?32:36)}}rpx" class="yr-ui-license__plate-key {{theme==='dark'?'yr-ui-lp__key-dark':''}} {{theme==='dark' && val?'yr-ui-lp__highlight-dark':''}} {{theme==='light' && val?'yr-ui-lp__highlight':''}}" catchtap="keyClick" data-index="{{index}}" data-idx="{{idx}}" data-val="{{val}}">{{type===1?val.cn:val.en}}</text>
+      </view>
+      <view class="yr-ui-lp__grid yr-ui-lp__grid-lg" wx:if="{{index===3}}">
+        <view class="yr-ui-license__plate-key {{theme==='dark'?'yr-ui-lp__key-dark':''}} {{theme==='dark'?'yr-ui-lp__highlight-dark':''}} {{theme==='light'?'yr-ui-lp__highlight':''}}" catchtap="backspace">
+          <yr-ui-icon name="{{name}}" size="{{48}}" color="{{theme==='dark'?'#d1d1d1':'#333'}}"></yr-ui-icon>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+page {
+  font-weight: normal;
+}
+.yr-ui-page__wrap{
+  padding: 0 120rpx;
+  box-sizing: border-box;
+}
+.yr-ui-pageno__wrap {
+  width: 100%;
+  padding: 0 64rpx;
+  box-sizing: border-box;
+}

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "拖拽排序",
+  "usingComponents": {
+    "f-drag-item": "./f-drag-item/f-drag-item",
+    "yr-ui-drag": "/components/yr-ui/yr-ui-drag/yr-ui-drag"
+  }
+}

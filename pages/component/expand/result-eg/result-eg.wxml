@@ -1,0 +1,17 @@
+<view class="yr-ui-wrap">
+  <view wx:if="{{type==='custom'}}">
+    <yr-ui-result type="{{type}}" title="{{title}}" descr="{{descr}}">
+      <yr-ui-icon slot="icon" name="warning" color="#FF2B2B" size="{{128}}"></yr-ui-icon>
+      <yr-ui-button width="400rpx" height="84rpx" text="主要操作" type="{{btnType}}" bold margin="48rpx 0 24rpx">
+      </yr-ui-button>
+      <yr-ui-button width="400rpx" height="84rpx" text="次要操作" type="gray" color="{{color}}" bold></yr-ui-button>
+    </yr-ui-result>
+  </view>
+  <view wx:else>
+    <yr-ui-result type="{{type}}" title="{{title}}" descr="{{descr}}">
+      <yr-ui-button width="400rpx" height="84rpx" text="主要操作" type="{{btnType}}" bold margin="48rpx 0 24rpx">
+      </yr-ui-button>
+      <yr-ui-button width="400rpx" height="84rpx" text="次要操作" type="gray" color="{{color}}" bold></yr-ui-button>
+    </yr-ui-result>
+  </view>
+</view>

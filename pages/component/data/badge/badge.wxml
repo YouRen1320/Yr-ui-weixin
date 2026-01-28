@@ -1,0 +1,74 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Badge</view>
+    <view class="yr-ui-page__desc">Badge 徽章，可自定义颜色。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-list-cell :highlight="false">
+      <yr-ui-badge value="1"></yr-ui-badge>
+      <yr-ui-badge type="success" value="2"></yr-ui-badge>
+      <yr-ui-badge type="warning" value="3"></yr-ui-badge>
+      <yr-ui-badge type="danger" value="4"></yr-ui-badge>
+      <yr-ui-badge type="purple" value="5"></yr-ui-badge>
+      <yr-ui-badge value="6" background="#eee" color="#333"></yr-ui-badge>
+      <yr-ui-badge dot></yr-ui-badge>
+      <yr-ui-badge type="success" dot></yr-ui-badge>
+      <yr-ui-badge type="warning" dot></yr-ui-badge>
+      <yr-ui-badge type="danger" dot></yr-ui-badge>
+      <yr-ui-badge type="purple" dot></yr-ui-badge>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">新消息</view>
+    <yr-ui-list-cell arrow topBorder>
+      <view class="yr-ui-list__item">
+        <text>单行列表</text>
+        <yr-ui-badge value="1" type="danger"></yr-ui-badge>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow>
+      <view class="yr-ui-list__item">
+        <text>单行列表</text>
+        <yr-ui-badge dot type="danger"></yr-ui-badge>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow>
+      <view class="yr-ui-align__center">
+        <text>单行列表</text>
+        <yr-ui-badge type="danger" marginLeft="{{16}}" value="8"></yr-ui-badge>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow bottomLeft="{{0}}">
+      <view class="yr-ui-align__center">
+        <text>单行列表</text>
+        <yr-ui-badge type="danger" marginLeft="{{16}}" value="new"></yr-ui-badge>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">新消息、绝对定位</view>
+    <yr-ui-list-cell topBorder>
+      <view class="yr-ui-align__center">
+        <view class="yr-ui-item__img-box">
+          <image class="yr-ui-item__img" src="/static/images/common/icon_tabbar_3x.png" mode="widthFix">
+          </image>
+          <yr-ui-badge absolute type="danger" value="{{200}}" max="{{99}}"></yr-ui-badge>
+        </view>
+        <view>
+          <view>联系人名称</view>
+          <text class="yr-ui-page__desc">摘要信息</text>
+        </view>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell bottomLeft="{{0}}">
+      <view class="yr-ui-align__center">
+        <view class="yr-ui-item__img-box">
+          <image class="yr-ui-item__img" src="/static/images/common/icon_tabbar_3x.png" mode="widthFix">
+          </image>
+          <yr-ui-badge absolute type="danger" dot></yr-ui-badge>
+        </view>
+        <view>
+          <view>联系人名称</view>
+          <text class="yr-ui-page__desc">摘要信息</text>
+        </view>
+      </view>
+    </yr-ui-list-cell>
+  </view>
+</view>

@@ -1,0 +1,28 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-page__bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-title {
+  font-size: 32rpx;
+  padding-top: 24rpx;
+}
+
+.yr-ui-descr {
+  font-size: 24rpx;
+  color: #B2B2B2;
+  padding-top: 12rpx;
+  padding-bottom: 48rpx;
+}
+
+.yr-ui-icon__close {
+  position: absolute;
+  right: 24rpx;
+  top: 20rpx;
+}

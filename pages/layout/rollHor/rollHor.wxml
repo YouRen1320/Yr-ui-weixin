@@ -1,0 +1,33 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-align__center" bindtap="href" data-type="1">
+				<text class="yr-ui-page__title">Roll Horizontal</text>
+				<image src="/static/images/index/light/icon_member_3x.png" class="yr-ui-vip__icon"></image>
+			</view>
+			<text class="yr-ui-page__desc">横向滚动，常用的页面布局，可提升开发效率以及带来舒服的视觉效果！</text>
+		</view>
+		<view class="yr-ui-page__bd yr-ui-page__spacing">
+			<view class="yr-ui-section__title">访问记录</view>
+			<view class="yr-ui-card__wrap">
+				<yr-ui-list-cell background="transparent" arrow bottomBorder="{{false}}" highlight="{{false}}" padding="24rpx 24rpx 48rpx">
+					<view class="yr-ui-card__header">
+						<yr-ui-text text="我的经常访问" size="28" fontWeight="bold"></yr-ui-text>
+						<yr-ui-text text="查看全部" size="26" type="gray"></yr-ui-text>
+					</view>
+				</yr-ui-list-cell>
+				<scroll-view scroll-x show-scrollbar="{{false}}" class="yr-ui-scroll__view">
+					<view class="yr-ui-cell__list">
+						<view class="yr-ui-list__item" wx:for="{{records}}" wx:key="index">
+							<yr-ui-avatar src="{{item.avatar}}" marginBottom="20"></yr-ui-avatar>
+							<yr-ui-overflow-hidden text="{{item.name}}" align="center" size="26" width="128rpx">
+							</yr-ui-overflow-hidden>
+						</view>
+					</view>
+				</scroll-view>
+			</view>
+
+			<view class="yr-ui-btn__box">
+				<yr-ui-button type="gray" width="400rpx" height="84rpx" text="tabs 标签页" bold bindclick="href" data-type="2"></yr-ui-button>
+			</view>
+		</view>
+	</view>

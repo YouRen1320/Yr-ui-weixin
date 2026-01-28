@@ -1,0 +1,17 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Color</view>
+    <view class="yr-ui-page__desc">Color 色彩，Yr-ui用色指南。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <block wx:for="{{colors}}" wx:key="index">
+      <view class="yr-ui-section__title">{{item.text}}</view>
+      <view bindtap="getColor" data-value="{{model.gradual || model.value}}" wx:for="{{item.data}}" wx:for-item="model"
+        wx:for-index="idx" wx:key="idx" class="yr-ui-color__item yr-ui-page__spacing yr-ui-align__center"
+        style="background:{{model.gradual || model.value}};color:{{model.color}}">
+        <text>{{model.text}}</text>
+        <text>{{model.value}}</text>
+      </view>
+    </block>
+  </view>
+</view>

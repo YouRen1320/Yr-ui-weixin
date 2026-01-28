@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "吸顶容器",
+  "usingComponents": {
+    "yr-ui-sticky":"/components/yr-ui/yr-ui-sticky/yr-ui-sticky"
+  }
+}

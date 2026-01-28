@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "圆形进度条",
+  "usingComponents": {
+    "yr-ui-circle":"/components/yr-ui/yr-ui-circle/yr-ui-circle"
+  }
+}

@@ -1,0 +1,5 @@
+<view class="yr-ui-drawer__popup-wrap {{show?'yr-ui-drawer__wrap-show':''}}" style="z-index: {{zIndex}};background:{{maskBackground}};align-items:{{direction==='left'?'flex-start':'flex-end'}}" catchtap="handleClose" catchtouchmove="stop">
+  <view class="yr-ui-drawer__popup {{'yr-ui-drawer_'+direction}} {{show?'yr-ui-drawer__show':''}}" style="background:{{background}};border-top-left-radius: {{direction==='right'? radius:0}}rpx;border-bottom-left-radius: {{direction==='right'? radius:0}}rpx;border-top-right-radius: {{direction==='left'? radius:0}}rpx;border-bottom-right-radius: {{direction==='left'? radius:0}}rpx;" catchtap="stop">
+    <slot></slot>
+  </view>
+</view>

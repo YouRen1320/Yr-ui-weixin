@@ -1,0 +1,7 @@
+<view style="width:{{width}};height:{{height?height:'auto'}}" class="yr-ui-grid__item {{width?'':'yr-ui-grid__item-hidden'}}" >
+  <view class="yr-ui-grid__item-box {{showBorder?'yr-ui-grid__item-border':''}} {{highlight?'yr-ui-highlight':''}}"
+    style="border-right-color: {{borderColor}};border-bottom-color: {{borderColor}};border-top-color: {{borderColor}};background-color:{{backgroundColor}}"
+    bindtap="handleClick">
+    <slot></slot>
+  </view>
+</view>

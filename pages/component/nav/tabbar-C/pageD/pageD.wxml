@@ -1,0 +1,22 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-logo__box">
+    <image src="/static/images/common/img_logo.png" class="yr-ui-logo" mode="widthFix"></image>
+    <view class="yr-ui-title">Yr-ui</view>
+    <view class="yr-ui-version">Version {{version}}</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-desc">
+      <text class="yr-ui-mr">Yr-ui</text> 是一套基于uni-app开发的组件化、可复用、易扩展、低耦合的跨平台移动端UI 组件库。
+    </view>
+    <yr-ui-list-cell topBorder arrow bindclick="getLink">
+      去STAR
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow bindclick="href" data-page="/pages/my/updated/updated">
+      功能介绍
+    </yr-ui-list-cell>
+    <yr-ui-list-cell bottomLeft="0" arrow bindclick="href" data-page="/pages/my/vip/vip">
+      会员介绍
+    </yr-ui-list-cell>
+    <yr-ui-footer isFixed text="Copyright © 2021 Yr-ui. All Rights Reserved."></yr-ui-footer>
+  </view>
+</view>

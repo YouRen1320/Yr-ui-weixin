@@ -1,0 +1,17 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Number</view>
+    <view class="yr-ui-page__desc">Number 数字，DigitalNumbers字体，仅支持数字和小数点。默认字体显示：123456789.00</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-number text="1234567890.00"></yr-ui-number>
+    <view class="yr-ui-section__title">调整颜色</view>
+    <yr-ui-number text="200" color="#465CFF"></yr-ui-number>
+    <view class="yr-ui-section__title">调整字体大小</view>
+    <yr-ui-number text="123" color="#FFB703" size="24"></yr-ui-number>
+    <yr-ui-number text="678" color="#FFB703" size="48"></yr-ui-number>
+    <view class="yr-ui-section__title">加粗/点击效果</view>
+    <yr-ui-number text="{{520}}" color="#09BE4F" size="64" fontWeight="bold" highlight bindclick="onTap"></yr-ui-number>
+  </view>
+</view>

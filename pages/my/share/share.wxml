@@ -1,0 +1,28 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-bg__box">
+    <image src="/static/images/share/img_bg_3x.png" mode="widthFix" class="yr-ui-share__bg"></image>
+    <view class="yr-ui-logo__box">
+      <image class="yr-ui-logo" src="/static/images/common/img_logo.png"></image>
+      <view class="yr-ui-text">Yr-ui组件库</view>
+    </view>
+  </view>
+  <view class="yr-ui-qrcode__box">
+    <image src="/static/images/qrcode/wx_qrcode.jpg" mode="widthFix" class="yr-ui-qrcode"></image>
+  </view>
+  <view class="yr-ui-btn__box">
+    <yr-ui-button open-type="share" radius="100rpx" background="-webkit-linear-gradient(90deg, #465CFF 0%, #6831FF 100%)"
+      margin="64rpx 0 32rpx">
+      <view class="yr-ui-flex__center">
+        <image class="yr-ui-share__ic" src="/static/images/share/icon_share_3x.png"></image>
+        <text>分享好友</text>
+      </view>
+    </yr-ui-button>
+    <yr-ui-button radius="100rpx" background="#F1F4FA" color="#333333" borderColor="#465CFF" bindclick="generatePoster">
+      <view class="yr-ui-flex__center">
+        <image class="yr-ui-share__ic" src="/static/images/share/icon_picture_3x.png"></image>
+        <text>生成海报</text>
+      </view>
+    </yr-ui-button>
+  </view>
+  <yr-ui-poster id="generator" width="{{750}}" height="{{1064}}" bindready="ready"></yr-ui-poster>
+</view>

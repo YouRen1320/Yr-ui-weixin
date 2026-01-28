@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "旋转验证",
+  "usingComponents": {
+    "yr-ui-rotate-verify":"/components/yr-ui/yr-ui-rotate-verify/yr-ui-rotate-verify"
+  }
+}

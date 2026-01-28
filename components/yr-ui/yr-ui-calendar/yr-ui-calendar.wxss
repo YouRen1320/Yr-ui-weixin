@@ -1,0 +1,163 @@
+.yr-ui-calendar__header {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 20rpx 0 30rpx;
+}
+
+.yr-ui-calendar__title {
+  display: block;
+  white-space: nowrap;
+  font-weight: normal;
+  text-align: center;
+
+}
+
+.yr-ui-calendar__icon-left {
+  transform: rotate(180deg);
+}
+
+.yr-ui-calendar__pl {
+  padding-left: 16rpx;
+}
+
+.yr-ui-calendar__pl:active {
+  opacity: .5;
+}
+
+.yr-ui-calendar__date-header {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  position: relative;
+  border-bottom-width: 0;
+  flex-direction: row;
+  justify-content: center;
+  padding: 12rpx 0;
+}
+
+.yr-ui-calendar__border {
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 1px;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  transform-origin: 0 100%;
+  z-index: 1;
+}
+
+.yr-ui-calendar__date-wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 12rpx 0;
+  position: relative;
+}
+
+.yr-ui-calendar__date {
+  display: flex;
+  width: 14.2857%;
+  box-sizing: border-box;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  z-index: 2;
+  font-size: 24rpx;
+  font-weight: normal;
+}
+
+.yr-ui-calendar__dh {
+  height: 104rpx;
+}
+
+.yr-ui-calendar__left-radius {
+  border-top-left-radius: 8rpx;
+  border-bottom-left-radius: 8rpx;
+}
+
+.yr-ui-calendar__right-radius {
+  border-top-right-radius: 8rpx;
+  border-bottom-right-radius: 8rpx;
+}
+
+.yr-ui-calendar__date-val {
+  font-size: 32rpx;
+  font-weight: normal;
+}
+
+.yr-ui-calendar__date-lunar {
+  display: block;
+  font-size: 24rpx;
+  font-weight: normal;
+  transform: scale(0.8);
+  text-align: center;
+}
+
+.yr-ui-calendar__date-descr {
+  width: 100%;
+  display: block;
+  font-size: 24rpx;
+  line-height: 24rpx;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: scale(0.8);
+  text-align: center;
+  bottom: 8rpx;
+  z-index: 2;
+  font-weight: normal;
+}
+
+.yr-ui-calendar__swiper {
+  width: 100%;
+  height: 648rpx;
+}
+
+.yr-ui-calendar__diaabled {
+  opacity: 0.4;
+}
+
+.yr-ui-calendar__btn-wrap {
+  width: 100%;
+  display: flex;
+  box-sizing: border-box;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 32rpx;
+}
+
+.yr-ui-calendar__btn {
+  width: 100%;
+  display: flex;
+  flex: 1;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 88rpx;
+  border-radius: 44rpx;
+  font-size: 32rpx;
+  font-weight: normal;
+  text-align: center;
+}
+
+.yr-ui-calendar__btn-active:active {
+  background: rgba(0, 0, 0, .2);
+}
+
+.yr-ui-calendar__badge {
+  position: absolute;
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  z-index: 3;
+}

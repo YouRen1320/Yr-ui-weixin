@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "提交订单栏",
+  "usingComponents": {
+    "yr-ui-safe-area":"/components/yr-ui/yr-ui-safe-area/yr-ui-safe-area",
+    "yr-ui-checkbox":"/components/yr-ui/yr-ui-checkbox/yr-ui-checkbox"
+  }
+}

@@ -1,0 +1,1 @@
+<canvas style="width:{{w}}px;height:{{h}}px" canvas-id="{{canvasId}}" class="yr-ui-poster__canvas"></canvas>

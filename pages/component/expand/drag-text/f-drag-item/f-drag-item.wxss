@@ -1,0 +1,76 @@
+.yr-ui-drag__item-outer {
+  display: flex;
+  box-sizing: border-box;
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+  justify-content: center;
+  align-items: center;
+}
+
+.yr-ui-drag__item-wrap {
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-drag__item-padding {
+  padding: 0 32rpx;
+  position: absolute;
+}
+
+.yr-ui-drag__item-padding::after {
+  content: '';
+  position: absolute;
+  border-bottom: 1px solid #eee;
+  transform: scaleY(0.5) translateZ(0);
+  transform-origin: 0 100%;
+  left: 32rpx;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+
+.yr-ui-drag__item-inner {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-drag__item-icon {
+  flex-shrink: 0;
+}
+
+.yr-ui-drag__item-ab {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+}
+
+.yr-ui-drag__item-mr {
+  margin-right: 20rpx;
+}
+
+.yr-ui-drag__itemicon {
+  position: absolute;
+}
+
+.yr-ui-drag__item-img {
+  display: block;
+  pointer-events: none;
+  flex-shrink: 0;
+  transform: translate3d(0,0,0);
+  backface-visibility: hidden;
+}
+
+.yr-ui-drag__item-text {
+  font-size: 30rpx;
+  font-weight: normal;
+  flex: 1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "轻提示",
+  "usingComponents": {
+    "yr-ui-toast":"/components/yr-ui/yr-ui-toast/yr-ui-toast"
+  }
+}

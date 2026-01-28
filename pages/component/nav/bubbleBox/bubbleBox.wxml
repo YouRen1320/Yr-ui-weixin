@@ -1,0 +1,33 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">BubbleBox <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">BubbleBox 气泡框，弹出气泡式的卡片浮层。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-bubble-box items="{{items}}" direction="top" position="absolute" show="{{show1}}" bindclick="itemClick" data-type="1" bindclose="onClose">
+      <yr-ui-button type="gray" width="320rpx" height="84rpx" text="上方显示" bold margin="24rpx 0" bindclick="bubble" data-type="1"></yr-ui-button>
+    </yr-ui-bubble-box>
+    <view class="yr-ui-bubble-box">
+      <yr-ui-bubble-box background="#4c4c4c" color='#fff' lineColor="#666" items="{{items}}" direction="right" position="absolute" triangle="{{triangle}}" show="{{show3}}" bindclick="itemClick" data-type="3" bindclose="onClose">
+        <yr-ui-button type="gray" width="320rpx" height="84rpx" text="右侧显示" bold bindclick="bubble" data-type="3">
+        </yr-ui-button>
+      </yr-ui-bubble-box>
+      <yr-ui-bubble-box items="{{items}}" direction="left" position="absolute" triangle="{{triangle}}" show="{{show2}}" bindclick="itemClick" bindclose="onClose" data-type="2">
+        <yr-ui-button type="gray" width="320rpx" height="84rpx" text="左侧显示" bold bindclick="bubble" data-type="2">
+        </yr-ui-button>
+      </yr-ui-bubble-box>
+    </view>
+    <yr-ui-bubble-box items="{{items}}" direction="bottom" position="absolute" show="{{show4}}" bindclick="itemClick" bindclose="onClose" data-type="4">
+      <yr-ui-button type="gray" width="320rpx" height="84rpx" text="下方显示" bold margin="24rpx 0" bindclick="bubble" data-type="4">
+      </yr-ui-button>
+    </yr-ui-bubble-box>
+    <yr-ui-button type="gray" width="320rpx" height="84rpx" text="左上方显示" bold bindclick="bubble" data-type="5">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="320rpx" height="84rpx" text="右上方显示" bold margin="24rpx 0" bindclick="bubble" data-type="6">
+    </yr-ui-button>
+    <yr-ui-bubble-box items="{{items}}" show="{{show5}}" left="{{8}}" triangle="{{triangle2}}" bindclick="itemClick" bindclose="onClose" data-type="5"></yr-ui-bubble-box>
+    <yr-ui-bubble-box background="#4c4c4c" color='#fff' lineColor="#666" right="{{8}}" items="{{items}}" show="{{show6}}" bindclick="itemClick" bindclose="onClose" data-type="6">
+    </yr-ui-bubble-box>
+  </view>
+</view>

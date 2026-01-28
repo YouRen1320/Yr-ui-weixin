@@ -1,0 +1,26 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Divider</view>
+    <view class="yr-ui-page__desc">Divider 分割线，可自定义线条宽度、颜色等，支持渐变背景使用。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-divider text="没有更多了"></yr-ui-divider>
+    <yr-ui-divider dividerColor="#465CFF" text="没有更多了"></yr-ui-divider>
+    <yr-ui-divider dividerColor="#FFB703" color="#FFB703" text="没有更多了"></yr-ui-divider>
+    <yr-ui-divider dividerColor="#09BE4F" color="#09BE4F" width="100%" text="没有更多了"></yr-ui-divider>
+    <yr-ui-divider dividerColor="linear-gradient(to right,#eee,#ccc,#ccc,#eee)" text="没有更多了"></yr-ui-divider>
+    <yr-ui-divider text="已加载完全部数据"></yr-ui-divider>
+    <yr-ui-divider>
+      <view class="yr-ui-flex__center">
+        <yr-ui-icon name="like" color="#FF2B2B" size="{{40}}"></yr-ui-icon>
+        <text class="yr-ui-text">猜你喜欢</text>
+      </view>
+    </yr-ui-divider>
+    <yr-ui-divider>
+      <view class="yr-ui-flex__center">
+        <yr-ui-icon name="fabulous" color="#FFB703" size="{{40}}"></yr-ui-icon>
+        <text class="yr-ui-text">好物推荐</text>
+      </view>
+    </yr-ui-divider>
+  </view>
+</view>

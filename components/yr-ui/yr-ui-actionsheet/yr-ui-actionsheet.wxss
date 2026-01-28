@@ -1,0 +1,128 @@
+.yr-ui-actionsheet__wrap {
+  width: 100%;
+  visibility: hidden;
+  min-height: 100rpx;
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: translate3d(0, 100%, 0);
+  transition: all 0.25s ease-in-out;
+  transform-origin: center center;
+}
+
+.yr-ui-as__bg-light {
+  background-color: #F8F8F8;
+}
+
+.yr-ui-as__bg-dark {
+  background-color: #111111;
+}
+
+.yr-ui-actionsheet__radius {
+  border-top-left-radius: 24rpx;
+  border-top-right-radius: 24rpx;
+  overflow: hidden;
+}
+
+.yr-ui-actionsheet__show {
+  transform: translate3d(0, 0, 0);
+  visibility: visible;
+}
+
+.yr-ui-actionsheet__tips {
+  width: 100%;
+  box-sizing: border-box;
+  flex: 1;
+  padding: 40rpx 60rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: normal;
+}
+
+.yr-ui-as__btn-light {
+  background-color: #FFFFFF;
+}
+
+.yr-ui-as__btn-dark {
+  background-color: #222222;
+}
+
+.yr-ui-actionsheet__operate-box {
+  padding-bottom: 12rpx;
+}
+
+.yr-ui-actionsheet__btn {
+  width: 100%;
+  flex: 1;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  /* font-size: 32rpx; */
+  font-weight: normal;
+  position: relative;
+}
+
+.yr-ui-actionsheet__btn:active {
+  background-color: var(--yr-ui-bg-color-hover, rgba(0, 0, 0, 0.2)) !important;
+
+}
+
+.yr-ui-actionsheet__btn-last {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.yr-ui-as__divider-light::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid var(--yr-ui-color-border, #EEEEEE);
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.yr-ui-as__divider-dark::before {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  border-top: 1px solid #333;
+  -webkit-transform: scaleY(0.5);
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.yr-ui-actionsheet__cancel {
+  padding-bottom: constant(safe-area-inset-bottom);
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+.yr-ui-actionsheet__mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: var(--yr-ui-bg-color-mask, rgba(0, 0, 0, 0.6));
+  transition: opacity 0.3s ease-in-out;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.yr-ui-actionsheet__mask-show {
+  visibility: visible;
+  opacity: 1;
+}

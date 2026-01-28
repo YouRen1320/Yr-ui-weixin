@@ -1,0 +1,34 @@
+page {
+  background-color: #FFFFFF;
+}
+
+.yr-ui-load__item {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-loading {
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 2px solid #465CFF;
+  border-left-color: transparent;
+}
+.yr-ui-loading2{
+  width: 40rpx;
+  height: 40rpx;
+  border-radius: 50%;
+  border: 2px solid #ccc;
+  border-left-color: #888;
+}
+.yr-ui-icon__img{
+  width: 60rpx;
+  height: 60rpx;
+  display: block;
+}
+.yr-ui-circle{
+  border-radius: 50%;
+}

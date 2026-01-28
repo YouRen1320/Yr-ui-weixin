@@ -1,0 +1,73 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">CubicBezier <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">CubicBezier 贝塞尔曲线，可用于加入购物车动画。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">左下方</view>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<text class="yr-ui-text">点击加号加入购物车</text>
+					<yr-ui-cubic-bezier left="{{left}}" bottom="{{bottom}}" param="{{0}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+						<view slot="badge" class="yr-ui-badge">1</view>
+					</yr-ui-cubic-bezier>
+				</view>
+			</yr-ui-list-cell>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<text class="yr-ui-text">点击加号加入购物车</text>
+					<yr-ui-cubic-bezier left="{{left}}" bottom="{{bottom}}" param="{{1}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+            <image slot="badge" class="yr-ui-badge--logo" src="/static/images/common/img_logo.png"></image>
+					</yr-ui-cubic-bezier>
+				</view>
+			</yr-ui-list-cell>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<yr-ui-cubic-bezier left="{{left}}" bottom="{{bottom}}" param="{{1}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+            <image slot="badge" class="yr-ui-badge--logo" src="/static/images/common/img_logo.png"></image>
+					</yr-ui-cubic-bezier>
+					<text class="yr-ui-text">点击加号加入购物车</text>
+				</view>
+			</yr-ui-list-cell>
+			<view class="yr-ui-section__title">右下方</view>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<text class="yr-ui-text">点击加号加入购物车</text>
+					<yr-ui-cubic-bezier direction="rb" right="{{right}}" bottom="{{bottom}}" param="{{1}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+            <image slot="badge" class="yr-ui-badge--logo" src="/static/images/common/img_logo.png"></image>
+					</yr-ui-cubic-bezier>
+				</view>
+			</yr-ui-list-cell>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<yr-ui-cubic-bezier direction="rb" right="{{right}}" bottom="{{bottom}}" param="{{0}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+						<view slot="badge" class="yr-ui-badge">1</view>
+					</yr-ui-cubic-bezier>
+					<text class="yr-ui-text">点击加号加入购物车</text>
+				</view>
+			</yr-ui-list-cell>
+			<yr-ui-list-cell highlight="{{false}}">
+				<view class="yr-ui-list__item">
+					<yr-ui-cubic-bezier direction="rb" right="{{right}}" bottom="{{bottom}}" param="{{1}}" bindclick="handleClick">
+						<yr-ui-icon name="plussign"></yr-ui-icon>
+            <image slot="badge" class="yr-ui-badge--logo" src="/static/images/common/img_logo.png"></image>
+					</yr-ui-cubic-bezier>
+					<text class="yr-ui-text">点击加号加入购物车</text>
+				</view>
+			</yr-ui-list-cell>
+
+		</view>
+		<view class="yr-ui-cart--box">
+			<yr-ui-icon name="cart"></yr-ui-icon>
+		</view>
+		<view class="yr-ui-cart--box yr-ui-cart--right">
+			<yr-ui-icon name="cart"></yr-ui-icon>
+		</view>
+	</view>

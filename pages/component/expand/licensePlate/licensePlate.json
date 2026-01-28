@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "车牌号键盘",
+  "usingComponents": {
+    "yr-ui-license-plate":"/components/yr-ui/yr-ui-license-plate/yr-ui-license-plate",
+    "yr-ui-single-input":"/components/yr-ui/yr-ui-single-input/yr-ui-single-input"
+  }
+}

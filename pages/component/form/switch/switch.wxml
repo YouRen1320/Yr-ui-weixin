@@ -1,0 +1,67 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Switch</view>
+    <view class="yr-ui-page__desc">Switch 开关选择器，原生组件增强。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-list-cell highlight="{{false}}" padding="28rpx 32rpx">
+      <view class="yr-ui-cells">
+        <text>状态：{{status?'ON':'OFF'}}</text>
+        <yr-ui-switch bindchange="change"></yr-ui-switch>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">带文字</view>
+    <yr-ui-list-cell highlight="{{false}}" padding="28rpx 32rpx">
+      <view class="yr-ui-cells">
+        <text class="yr-ui-text">slot插槽</text>
+        <yr-ui-switch bindchange="change2">
+          <text class="yr-ui-switch--text">{{isOpen?'ON':'OFF'}}</text>
+        </yr-ui-switch>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">带图标</view>
+    <yr-ui-list-cell highlight="{{false}}" padding="28rpx 32rpx">
+      <view class="yr-ui-cells">
+        <text class="yr-ui-text">slot插槽</text>
+        <yr-ui-switch btnColor="#3d3d3d" color="#2C2C2C" bindchange="change3">
+          <image src="/static/images/component/icon_{{isOpen2?'moon':'sun'}}.png" class="yr-ui-icon--img">
+          </image>
+        </yr-ui-switch>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">默认打开</view>
+    <yr-ui-list-cell highlight="{{false}}" padding="28rpx 32rpx">
+      <view class="yr-ui-cells">
+        <text>checked</text>
+        <yr-ui-switch checked></yr-ui-switch>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">禁用状态</view>
+    <yr-ui-list-cell highlight="{{false}}" padding="28rpx 32rpx">
+      <view class="yr-ui-cells">
+        <text>checked/disabled</text>
+        <yr-ui-switch checked disabled></yr-ui-switch>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">改变大小、颜色</view>
+    <yr-ui-label>
+      <yr-ui-list-cell>
+        <view class="yr-ui-cells">
+          <text>scaleRatio</text>
+          <yr-ui-switch scaleRatio="{{0.8}}" background="#f5f5f5" btn-bg-color="#f8f8f8" color="#FFB703"></yr-ui-switch>
+        </view>
+      </yr-ui-list-cell>
+    </yr-ui-label>
+    <view class="yr-ui-section__title">展示为checkbox</view>
+    <yr-ui-label>
+      <yr-ui-list-cell>
+        <view class="yr-ui-cells">
+          <text>type=checkbox</text>
+          <yr-ui-switch type="checkbox" color="#FFB703" scaleRatio="{{1.2}}">
+          </yr-ui-switch>
+        </view>
+      </yr-ui-list-cell>
+    </yr-ui-label>
+  </view>
+</view>

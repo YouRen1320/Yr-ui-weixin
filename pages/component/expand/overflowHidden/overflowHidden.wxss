@@ -1,0 +1,39 @@
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-oh__wrap {
+  width: 100%;
+  padding: 24rpx 32rpx;
+  box-sizing: border-box;
+  background: #FFFFFF;
+}
+
+
+.yr-ui-btn__text {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  background-color: #fff;
+  color: var(--yr-ui-color-primary);
+  cursor: pointer;
+  padding-left: 8rpx;
+}
+
+.yr-ui-visible {
+  display: inline-block;
+  position: static;
+  padding-left: 0;
+}
+
+.yr-ui-btn__text::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -48rpx;
+  height: 100%;
+  width: 48rpx;
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 0.5) 10%, #fff);
+  pointer-events: none;
+}

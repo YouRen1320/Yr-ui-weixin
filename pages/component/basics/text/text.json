@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "文本",
+  "enablePullDownRefresh": false,
+  "usingComponents": {
+    "yr-ui-text":"/components/yr-ui/yr-ui-text/yr-ui-text"
+  }
+}

@@ -1,0 +1,3 @@
+<yr-ui-form-field name="{{name}}" value="{{val}}">
+		<slot></slot>
+	</yr-ui-form-field>

@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "栅格布局",
+  "usingComponents": {
+    "yr-ui-row": "/components/yr-ui/yr-ui-row/yr-ui-row",
+    "yr-ui-col": "/components/yr-ui/yr-ui-col/yr-ui-col"
+  }
+}

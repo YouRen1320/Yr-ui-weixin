@@ -1,0 +1,5 @@
+<view style="{{style}}">
+  <view style="height:{{statusBarHeight}};z-index:{{isFixed?zIndex:1}};background:{{background}}" class="yr-ui-status__bar {{isFixed?'yr-ui-status__bar-fixed':''}}">
+    <slot></slot>
+  </view>
+</view>

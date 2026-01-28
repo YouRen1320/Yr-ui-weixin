@@ -1,0 +1,20 @@
+<view class="yr-ui-rate__wrap">
+  <view class="yr-ui-rate__item" style="padding-right:{{spacing}}rpx" wx:for="{{stars}}" wx:key="index" bindtouchstart="touchstart" catchtouchmove="touchmove">
+    <yr-ui-icon disabled="{{disabled}}" name="{{parse.getName(index,intScore,decimalScore)}}" size="{{size}}" color="{{index < intScore || (index == intScore && decimalScore > 0) ? activeColor : color}}"></yr-ui-icon>
+  </view>
+</view>
+
+<wxs module="parse">
+    module.exports={
+      getName:function(index, iScore, dScore){
+        var name = 'star'
+				if (index < iScore) {
+					name += '-fill'
+				}
+				if (index === iScore && dScore > 0) {
+					name += 'half'
+				}
+				return name;
+      }
+    }
+</wxs>

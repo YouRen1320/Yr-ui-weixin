@@ -1,0 +1,23 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Select <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Select 选择器，用于弹出一个底部菜单给用户选择操作，可单选或多选。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="单选+默认选中" bold bindclick="btnClick" data-type="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="多选" bold margin="24rpx 0" bindclick="btnClick" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="列表" bold bindclick="btnClick" data-type="3">
+    </yr-ui-button>
+    <view class="yr-ui-picker__result">
+      选择的值为：{{result}}
+    </view>
+  </view>
+  <yr-ui-select show="{{show}}" options="{{items}}" title="请选择平台" type="{{type}}" bindclick="onTap" bindconfirm="onConfirm" bindclose="onClose">
+  </yr-ui-select>
+  <!--多选-->
+  <yr-ui-select show="{{show1}}" options="{{items1}}" title="请选择银行" multiple isReverse checkboxColor="#FFC529" btnBackground="#FFC529" btnColor="#1A1D26" closeColor="#6D758A" bindconfirm="onConfirm" bindclose="onClose">
+  </yr-ui-select>
+</view>

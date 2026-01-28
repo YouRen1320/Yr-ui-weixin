@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "验证码倒计时",
+  "usingComponents": {
+    "yr-ui-countdown-verify":"/components/yr-ui/yr-ui-countdown-verify/yr-ui-countdown-verify"
+  }
+}

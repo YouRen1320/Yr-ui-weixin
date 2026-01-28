@@ -1,0 +1,68 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Collapse</view>
+    <view class="yr-ui-page__desc">Collapse 折叠面板，可以折叠/展开的内容区域。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <!--yr-ui-collapse-item可单独使用 bindchange事件仅无父组件yr-ui-collapse时生效-->
+    <yr-ui-collapse-item bindchange="change">
+      <view class="yr-ui-item__box">
+        <image src="/static/images/common/logo.png" class="yr-ui-logo"></image>
+        <text>Yr-ui</text>
+      </view>
+      <view class="yr-ui-descr" slot="content">Yr-ui 是一套基于uni-app开发的组件化、可复用、易扩展、低耦合的跨平台移动端UI 组件库。</view>
+    </yr-ui-collapse-item>
+    <view class="yr-ui-section__title">默认展开</view>
+    <yr-ui-collapse bindchange="change">
+      <yr-ui-collapse-item index="{{index}}" open="{{item.isOpen}}" wx:for="{{items}}" wx:key="index">
+        <view class="yr-ui-item__box">
+          <image src="{{item.src}}" class="yr-ui-logo"></image>
+          <text>{{item.title}}</text>
+        </view>
+        <view slot="content" class="yr-ui-descr" style="background-color: rgba(255, 183, 3, .1);">{{item.descr}}</view>
+      </yr-ui-collapse-item>
+    </yr-ui-collapse>
+    <view class="yr-ui-section__title">手风琴效果</view>
+    <yr-ui-collapse accordion bindchange="change">
+      <yr-ui-collapse-item index="{{index}}" wx:for="{{items}}" wx:key="index">
+        <view class="yr-ui-item__box">
+          <image src="{{item.src}}" class="yr-ui-logo"></image>
+          <text>{{item.title}}</text>
+        </view>
+        <view slot="content" class="yr-ui-descr" style="background-color: rgba(255, 183, 3, .1);">{{item.descr}}</view>
+      </yr-ui-collapse-item>
+    </yr-ui-collapse>
+    <view class="yr-ui-section__title">无动画效果</view>
+    <yr-ui-collapse bindchange="change">
+      <yr-ui-collapse-item animation="{{false}}" arrowColor="#333" index="{{index}}" wx:for="{{items}}" wx:key="index">
+        <view class="yr-ui-item__box">
+          <image src="{{item.src}}" class="yr-ui-logo"></image>
+          <text>{{item.title}}</text>
+        </view>
+        <view slot="content" class="yr-ui-descr" style="background-color: rgba(255, 183, 3, .1);">{{item.descr}}</view>
+      </yr-ui-collapse-item>
+    </yr-ui-collapse>
+    <view class="yr-ui-section__title">禁用不可点击</view>
+    <yr-ui-collapse bindchange="change">
+      <yr-ui-collapse-item disabled="{{index===1}}" arrowColor="#333" index="{{index}}" wx:for="{{items}}" wx:key="index">
+        <view class="yr-ui-item__box">
+          <image src="{{item.src}}" class="yr-ui-logo"></image>
+          <text>{{item.title}}</text>
+        </view>
+        <view slot="content" class="yr-ui-descr" style="background-color: rgba(255, 183, 3, .1);">{{item.descr}}</view>
+      </yr-ui-collapse-item>
+    </yr-ui-collapse>
+    <view class="yr-ui-section__title">不显示箭头</view>
+    <yr-ui-collapse accordion bindchange="change">
+      <yr-ui-collapse-item arrow="{{false}}" index="{{index}}" wx:for="{{list}}" wx:key="index">
+        <yr-ui-list-cell padding="0">
+          <view class="yr-ui-item__box">
+            <text style="font-size: 28rpx;">{{item.question}}</text>
+          </view>
+        </yr-ui-list-cell>
+        <view slot="content" class="yr-ui-descr" style="color: #09BE4F;">{{item.answer}}</view>
+      </yr-ui-collapse-item>
+    </yr-ui-collapse>
+  </view>
+</view>

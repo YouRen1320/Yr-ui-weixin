@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "数字键盘",
+  "usingComponents": {
+    "yr-ui-digital-keyboard": "/components/yr-ui/yr-ui-digital-keyboard/yr-ui-digital-keyboard",
+    "yr-ui-single-input":"/components/yr-ui/yr-ui-single-input/yr-ui-single-input"
+  }
+}

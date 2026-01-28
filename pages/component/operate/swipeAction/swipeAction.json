@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "滑动菜单",
+  "usingComponents": {
+    "yr-ui-swipeaction-group": "/components/yr-ui/yr-ui-swipeaction-group/yr-ui-swipeaction-group",
+    "yr-ui-swipe-action": "/components/yr-ui/yr-ui-swipe-action/yr-ui-swipe-action"
+  }
+}

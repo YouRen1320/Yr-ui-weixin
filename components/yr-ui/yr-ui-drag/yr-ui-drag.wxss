@@ -1,0 +1,43 @@
+.yr-ui-drag__wrap {
+  width: 100%;
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  position: relative;
+}
+
+.yr-ui-drag-item__wrap {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: flex;
+  box-sizing: border-box;
+  overflow: hidden;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.yr-ui-drag-item__hidden {
+  opacity: 0;
+  transition-property: opacity;
+  transition-duration: .35s;
+}
+
+.yr-ui-drag-item__show {
+  opacity: 1 !important;
+}
+
+.yr-ui-drag__trans {
+  transition-property: transform;
+  transition-duration: .35s;
+}
+
+.yr-ui-drag__trans-end {
+  transition-property: transform;
+  transition-duration: .35s;
+}
+
+.yr-ui-drag__cur {
+  z-index: 5 !important;
+}

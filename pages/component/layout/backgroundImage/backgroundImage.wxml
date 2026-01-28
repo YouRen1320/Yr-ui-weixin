@@ -1,0 +1,14 @@
+<view class="yr-ui-wrap" :style="{marginTop:top}">
+		<yr-ui-status-bar bindinit="init"></yr-ui-status-bar>
+		<image style="top:{{top}}" class="yr-ui-back--icon" src="/static/images/layout/icon_back_3x.png" bindtap="onBack">
+		</image>
+		<view class="yr-ui-content">
+			<text class="yr-ui-text">welcome to this page!</text>
+		</view>
+		<view style="width:100%;height: 600px;"></view>
+		<view class="yr-ui-content">
+			<text class="yr-ui-text">背景图～</text>
+		</view>
+		<!-- <yr-ui-background-image :absolute="true" background="linear-gradient(to top right, rgb(238, 163, 175), rgb(149, 214, 240));"></yr-ui-background-image> -->
+		<yr-ui-background-image src="/static/images/component/bg.jpeg"></yr-ui-background-image>
+	</view>

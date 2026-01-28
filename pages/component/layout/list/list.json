@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "列表",
+  "usingComponents": {
+    "yr-ui-list": "/components/yr-ui/yr-ui-list/yr-ui-list",
+    "yr-ui-badge":"/components/yr-ui/yr-ui-badge/yr-ui-badge"
+  }
+}

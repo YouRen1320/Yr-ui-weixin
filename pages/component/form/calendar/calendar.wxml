@@ -1,0 +1,32 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Calendar <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Calendar 日历，用于选择日期区间。支持单选、多选、区间选择。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">单个日期选择/按年加载,滑动切换月份</view>
+    <yr-ui-calendar bindchange="change"></yr-ui-calendar>
+    <view class="yr-ui-section__title">多个日期选择/显示农历</view>
+    <yr-ui-calendar type="2" isMultiple="{{false}}" showLunar bindchange="change1"></yr-ui-calendar>
+    <view class="yr-ui-section__title">设置自定义描述/角标</view>
+    <yr-ui-calendar badgeColor="#09BE4F" isMultiple="{{false}}" bindchange="change" bind:dateChange="dateChange" id="calendarRef"></yr-ui-calendar>
+    <view class="yr-ui-section__title">设置默认值/范围/仅展示不可选择</view>
+    <yr-ui-calendar type="2" isMultiple="{{false}}" language="en" value="{{value}}" disabled minDate="2021-01-01" maxDate="2023-12-31">
+    </yr-ui-calendar>
+    <view class="yr-ui-section__title">区间选择/底部弹出选择</view>
+    <view class="yr-ui-flex__center">
+      <yr-ui-button type="gray" width="400rpx" height="84rpx" text="日期区间选择" bold margin="48rpx 0 0" bindclick="btnSelect"></yr-ui-button>
+    </view>
+    <view class="yr-ui-result">您的选择为：{{result}}</view>
+    <yr-ui-bottom-popup show="{{show}}">
+      <view class="yr-ui-scroll__wrap">
+        <view class="yr-ui-calendar-title">请选择日期</view>
+        <yr-ui-calendar type="3" isMultiple="{{false}}" showLunar showBtn bindchange="change2"></yr-ui-calendar>
+        <view class="yr-ui-icon__close" catchtap="closePopup">
+          <yr-ui-icon name="close" size="{{48}}"></yr-ui-icon>
+        </view>
+      </view>
+    </yr-ui-bottom-popup>
+  </view>
+</view>

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "手写签名",
+  "usingComponents": {
+    "yr-ui-autograph":"/components/yr-ui/yr-ui-autograph/yr-ui-autograph"
+  }
+}

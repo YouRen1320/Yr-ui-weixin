@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "步骤条",
+  "usingComponents": {
+    "yr-ui-steps": "/components/yr-ui/yr-ui-steps/yr-ui-steps"
+  }
+}

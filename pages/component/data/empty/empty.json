@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "缺省页",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-empty":"/components/yr-ui/yr-ui-empty/yr-ui-empty"
+  }
+}

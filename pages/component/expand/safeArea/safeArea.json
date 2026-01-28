@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "底部安全区域",
+  "usingComponents": {
+    "yr-ui-safe-area":"/components/yr-ui/yr-ui-safe-area/yr-ui-safe-area",
+    "yr-ui-divider":"/components/yr-ui/yr-ui-divider/yr-ui-divider"
+  }
+}

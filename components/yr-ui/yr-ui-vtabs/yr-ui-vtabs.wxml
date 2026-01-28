@@ -1,0 +1,20 @@
+<view class="yr-ui-vtabs__wrap" style="width:{{vtabsW}};height:{{vtabsH}}">
+  <view style="width:{{tabWidth}}rpx;background:{{background}}">
+    <scroll-view class="yr-ui-vtabs__scroll-bar" style="width:{{tabWidth}}rpx;height:{{vtabsH}}" scroll-y scroll-into-view="{{scrollInto}}" scroll-with-animation="{{isTap}}">
+      <view class="yr-ui-vtabs__item__wrap" style="width:{{tabWidth}}rpx">
+        <view class="yr-ui-vtabs__item {{isBorder?'yr-ui-vtabs__left-border':''}} {{!item.disable?'yr-ui-vtabs__item-hover':''}} {{item.disable?'yr-ui-vtabs__item-disable':''}} {{!borderColor && current===index && isBorder?'yr-ui-vtabs__border-color':''}}" id="fui_vtabs_bar_{{index}}" wx:for="{{vals}}" wx:key="index" style="background:{{current===index?activeBgColor:background}};border-left-color:{{current===index && isBorder?borderColor:'transparent'}};width:{{tabWidth}}rpx;height:{{tabHeight}}rpx" bindtap="handleSwitchTab" data-index="{{index}}">
+          <image class="yr-ui-vtabs__icon" style="width:{{item.iconWidth || 40}}rpx;height:{{item.iconHeight || 40}}rpx" src="{{current===index && item[activeIconKey]?item[activeIconKey]:item[iconKey]}}" wx:if="{{item[iconKey]}}">
+          </image>
+          <view class="yr-ui-vtabs__text {{!activeColor && current===index?'yr-ui-vtabs__selected-color':''}}" style="font-size:{{current===index?activeSize:size}}rpx;color:{{current===index?activeColor:color}};font-weight:{{current===index?activeFontWeight:fontWeight}}">
+            {{item[nameKey]}}<text class="{{!badgeBackground?'yr-ui-vtabs__badge-color':''}} {{isDot?'yr-ui-vtabs__badge-dot':'yr-ui-vtabs__badge'}}" style="color:{{badgeColor}};background:{{badgeBackground}}" wx:if="{{item[badgeKey]}}">{{isDot?'':item[badgeKey]}}</text>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+  <scroll-view scroll-y class="yr-ui-vtabs__content-wrap" style="height:{{vtabsH}}" scroll-top="{{contentScrollTop}}" scroll-with-animation="{{animation}}" bindscroll="contentScroll" bindscrolltolower="scrolltolower">
+    <view class="yr-ui-vtabs__content">
+      <slot></slot>
+    </view>
+  </scroll-view>
+</view>

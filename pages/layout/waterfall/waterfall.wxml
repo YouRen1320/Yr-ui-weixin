@@ -1,0 +1,30 @@
+<view class="yr-ui-wrap">
+		<yr-ui-waterfall id="waterfall" left-gap="20" right-gap="20" column-gap="16" top-gap="16" bindend="onEnd">
+			<yr-ui-waterfall-item wx:for="{{goodsList}}" wx:key="index" src="{{item.src}}" bindclick="handleClick" data-index="{{index}}">
+				<view class="yr-ui-goods__item-content yr-ui-card__padding">
+					<view>
+						<yr-ui-overflow-hidden rows="{{2}}" size="28" text="{{item.title}}">
+						</yr-ui-overflow-hidden>
+					</view>
+					<view class="yr-ui-goods__item-price">
+						<yr-ui-text font-weight="500" text="￥" size="22" color="#FF2B2B"></yr-ui-text>
+						<yr-ui-text font-weight="500" lineHeight text="{{parse.getPrice(item.price,1)}}" size="34"
+							color="#FF2B2B"></yr-ui-text>
+						<yr-ui-text font-weight="500" text="{{parse.getPrice(item.price,2)}}" size="24" color="#FF2B2B">
+						</yr-ui-text>
+					</view>
+				</view>
+			</yr-ui-waterfall-item>
+		</yr-ui-waterfall>
+		<yr-ui-loadmore activeColor="#7F7F7F" wx:if="{{!isEnd || loading}}"></yr-ui-loadmore>
+	</view>
+
+  <wxs module="parse">
+     module.exports = {
+      getPrice: function (price, type) {
+         if (!price) return ''
+				 var arr = price.split('.')
+         return type === 1 ? arr[0] : '.' + arr[1]
+        }
+    }
+  </wxs>

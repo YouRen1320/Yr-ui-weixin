@@ -1,0 +1,26 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">UploadVideo <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">UploadVideo 视频上传，拍摄或从手机相册中选择视频进行上传。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">自动上传</view>
+			<yr-ui-upload-video immediate border-color="#FFB703" border-sytle="dashed" url="{{url}}" id="upload" bindsuccess="success" binderror="error" bindcomplete="complete">
+			</yr-ui-upload-video>
+			<view class="yr-ui-section__title">手动上传</view>
+			<view class="yr-ui-btn__box">
+				<yr-ui-button type="gray" width="400rpx" height="84rpx" text="开始上传" bold bindclick="startUpload">
+				</yr-ui-button>
+			</view>
+			<yr-ui-upload-video width="340" max="{{2}}" background="#333" addColor="#d1d1d1" fileList="{{fileList}}" url="{{url}}" id="upload2" bindsuccess="success2" binderror="error2" bindcomplete="complete2">
+			</yr-ui-upload-video>
+      <view class="yr-ui-section__title">传入文件上传函数，返回一个promise</view>
+			<yr-ui-upload-video call-upload id="uploader" bindreupload="reUpload" bindcomplete="complete3"></yr-ui-upload-video>
+			<view class="yr-ui-btn__box">
+				<yr-ui-button margin="48rpx 0" type="gray" btn-size="medium" text="调用upload方法上传" bold	bindclick="callUpload">
+				</yr-ui-button>
+			</view>
+		</view>
+	</view>

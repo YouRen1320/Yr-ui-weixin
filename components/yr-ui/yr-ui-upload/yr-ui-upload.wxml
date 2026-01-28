@@ -1,0 +1,18 @@
+<view class="yr-ui-upload__wrap">
+  <view class="yr-ui-upload__item" style="width:{{width}}rpx;height:{{height}}rpx;border-radius:{{radius}}rpx" wx:for="{{urls}}" wx:key="index">
+    <image class="yr-ui-upload__img" style="width:{{width}}rpx;height:{{height}}rpx;border-radius:{{radius}}rpx" src="{{item}}" mode="aspectFill" catchtap="previewImage" data-index="{{index}}"></image>
+    <view class="yr-ui-upload__mask" wx:if="{{status[index]!=='success' && status[index]!=='preupload'}}">
+      <yr-ui-icon name="warning-fill" color="#fff" size="{{48}}" wx:if="{{status[index]==='error'}}"></yr-ui-icon>
+      <text class="yr-ui-reupload__btn" catchtap="reUpload" wx:if="{{status[index]==='error'}}" data-index="{{index}}">重新上传</text>
+      <view class="yr-ui-upload__loading" wx:if="{{status[index]==='uploading'}}"></view>
+      <text class="yr-ui-upload__text" wx:if="{{status[index]==='uploading'}}">请稍候...</text>
+    </view>
+    <view class="yr-ui-upload__del" style="background:{{delColor}}" wx:if="{{isDel}}" catchtap="deleteImage" data-index="{{index}}">
+      <yr-ui-icon name="close" color="#fff" size="{{32}}"></yr-ui-icon>
+    </view>
+  </view>
+  <view class="yr-ui-upload__item {{borderColor && borderColor!==true?'yr-ui-upload__border':'yr-ui-upload__noborder'}}" style="width:{{width}}rpx;height:{{height}}rpx;background:{{background}};border-radius:{{radius}}rpx;border-color:{{borderColor}};border-style:{{borderSytle}}" wx:if="{{isAdd && ((max == -1 && urls.length < 9) || (max != -1 && urls.length < max))}}" catchtap="chooseImage">
+    <yr-ui-icon name="plus" size="{{addSize}}" color="{{addColor}}" wx:if="{{!custom}}"></yr-ui-icon>
+    <slot></slot>
+  </view>
+</view>

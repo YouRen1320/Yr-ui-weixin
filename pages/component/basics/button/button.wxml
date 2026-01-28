@@ -1,0 +1,38 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Button</view>
+    <view class="yr-ui-page__desc">Button 按钮，支持自定义大小、颜色等。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">按钮类型</view>
+    <yr-ui-button text="默认按钮" bindclick="btnClick"></yr-ui-button>
+    <yr-ui-button margin="24rpx 0" type="success">success</yr-ui-button>
+    <yr-ui-button type="warning">warning</yr-ui-button>
+    <yr-ui-button margin="24rpx 0" type="danger">danger</yr-ui-button>
+    <yr-ui-button type="purple">purple</yr-ui-button>
+    <yr-ui-button margin="24rpx 0" type="link" color="#465CFF">链接 link</yr-ui-button>
+    <view class="yr-ui-section__title">禁用状态</view>
+    <yr-ui-button disabled>禁用按钮</yr-ui-button>
+    <yr-ui-button margin="24rpx 0" disabled loading>禁用按钮</yr-ui-button>
+    <yr-ui-button disabled disabledBackground="#F8F8F8" disabledColor="#CCCCCC">禁用按钮
+    </yr-ui-button>
+    <view class="yr-ui-section__title">按钮形状</view>
+    <yr-ui-button radius="0">方形按钮</yr-ui-button>
+    <yr-ui-button radius="96rpx" margin="24rpx 0">圆形按钮</yr-ui-button>
+    <view class="yr-ui-section__title">按钮大小</view>
+			<yr-ui-button btn-size="medium">medium</yr-ui-button>
+			<yr-ui-button type="warning" margin="24rpx 0" btn-size="small">small</yr-ui-button>
+			<yr-ui-button type="danger" btn-size="mini">mini</yr-ui-button>
+			<view class="yr-ui-section__title">自定义按钮大小</view>
+    <yr-ui-button plain color="#465CFF" borderColor="#465CFF">默认大小</yr-ui-button>
+    <yr-ui-button type="purple" margin="24rpx 0" width="224rpx" height="84rpx" :size="28">小型按钮</yr-ui-button>
+    <yr-ui-button type="danger" width="200rpx" height="72rpx" :size="28">小型按钮</yr-ui-button>
+    <view class="yr-ui-section__title">自定义颜色</view>
+    <yr-ui-button background="#fff" color="#465CFF" borderColor="#465CFF">朴素按钮</yr-ui-button>
+    <yr-ui-button margin="24rpx 0" background="#fff" color="#6831FF" borderColor="#6831FF">朴素按钮</yr-ui-button>
+    <yr-ui-button background="linear-gradient(300deg, #6831FF 0%, #465CFF 100%)" border-width="0">渐变按钮
+    </yr-ui-button>
+    <yr-ui-button margin="24rpx 0" background="linear-gradient(127deg, #FF416C 0%, #FF2B2B 100%)" border-width="0">渐变按钮
+    </yr-ui-button>
+  </view>
+</view>

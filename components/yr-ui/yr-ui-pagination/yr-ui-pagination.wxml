@@ -1,0 +1,34 @@
+<view class="yr-ui-pagination__wrap">
+  <view class="yr-ui-pagination__btn {{currentIndex === 1?'yr-ui-pagination__disabled':''}} {{currentIndex !== 1 && highlight?'yr-ui-pagination__btn-ac':''}} {{color?'':'yr-ui-pagination__color'}}" style="width:{{width}}rpx;height:{{height}}rpx;border-color:{{borderColor}};background:{{background}};border-radius:{{radius}}rpx" bindtap="clickPrev">
+    <text class="{{color?'':'yr-ui-pagination__color'}}" style="color:{{color}};font-size:{{size}}rpx" wx:if="{{!custom}}">{{prevText}}</text>
+    <slot name="prev"></slot>
+  </view>
+  <view class="yr-ui-pagination__num" wx:if="{{isPage && pageType==1}}">
+    <text class="{{currentColor?'':'yr-ui-pagination__active-color'}}" style="color:{{currentColor}};font-size:{{pageFontSize}}rpx">{{currentIndex}}</text>
+    <text class="{{pageColor?'':'yr-ui-pagination__color'}}" style="color:{{pageColor}};font-size:{{pageFontSize}}rpx">/{{parse.maxPage(total, pageSize)}}</text>
+  </view>
+		<view class="yr-ui-page__number" wx:if="{{isPage && pageType==2}}">
+			<view class="yr-ui-page__num-item {{!activeBgColor && currentIndex===item?'yr-ui-pagination__bg':''}}" 	wx:for="{{pageNumber}}" wx:key="index"
+				style="background:{{currentIndex===item?activeBgColor:pageBgColor}};border-radius:{{radius}}rpx" catchtap="handleClick" data-item="{{item}}" data-index="{{index}}">
+				<text class="yr-ui-page__num-text {{!color && currentIndex!==item?'yr-ui-pagination__color':''}}" style="color:{{currentIndex===item?activeColor:pageColor}}">{{item}}</text>
+			</view>
+		</view>
+  <view class="yr-ui-pagination__btn {{currentIndex === parse.maxPage(total, pageSize)?'yr-ui-pagination__disabled':''}} {{currentIndex !== parse.maxPage(total, pageSize) && highlight?'yr-ui-pagination__btn-ac':''}} {{color?'':'yr-ui-pagination__color'}}" style="width:{{width}}rpx;height:{{height}}rpx;border-color:{{borderColor}};background:{{background}};border-radius:{{radius}}rpx" bindtap="clickNext">
+    <text class="{{color?'':'yr-ui-pagination__color'}}" style="color:{{color}};font-size:{{size}}rpx" wx:if="{{!custom}}">{{nextText}}</text>
+    <slot name="next"></slot>
+  </view>
+</view>
+
+<wxs module="parse">
+  module.exports = {
+    maxPage: function (total, pageSize) {
+      var maxPage = 1
+      var total = parseInt(total)
+      var pageSize = parseInt(pageSize)
+      if (total && pageSize) {
+        maxPage = Math.ceil(total / pageSize)
+      }
+      return maxPage || 0
+    }
+  }
+</wxs>

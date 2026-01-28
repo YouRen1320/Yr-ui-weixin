@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "回到顶部",
+  "usingComponents": {
+    "yr-ui-backtop":"/components/yr-ui/yr-ui-backtop/yr-ui-backtop"
+  }
+}

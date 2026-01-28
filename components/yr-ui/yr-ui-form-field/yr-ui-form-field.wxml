@@ -1,0 +1,3 @@
+<view class="{{hidden?'yr-ui-form__field':''}}">
+		<slot></slot>
+	</view>

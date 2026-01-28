@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "画廊",
+  "usingComponents": {
+    "yr-ui-gallery": "/components/yr-ui/yr-ui-gallery/yr-ui-gallery"
+  }
+}

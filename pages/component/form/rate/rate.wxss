@@ -1,0 +1,6 @@
+page{
+  background: #fff;
+}
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}

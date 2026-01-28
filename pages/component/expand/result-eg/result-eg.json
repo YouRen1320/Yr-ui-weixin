@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "Result 演示",
+  "usingComponents": {
+    "yr-ui-result": "/components/yr-ui/yr-ui-result/yr-ui-result"
+  }
+}

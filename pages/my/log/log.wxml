@@ -1,0 +1,11 @@
+<view class="yr-ui-wrap">
+  <yr-ui-list-cell bottom-right="32" highlight="{{false}}">
+    <text class="yr-ui-title">Yr-ui {{version}}（{{date}}）</text>
+  </yr-ui-list-cell>
+  <view class="yr-ui-content">
+    <view class="yr-ui-p" wx:for="{{logs}}" wx:key="index">
+      <text class="yr-ui-sign" wx:if="{{logs.length>1}}">-</text>
+      <text>{{item}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,414 @@
+.yr-ui-parse__wrap {
+  max-width: 100%;
+  display: inline;
+  font-weight: normal;
+  overflow: hidden;
+}
+
+.fuiParse {
+  margin: 0 5px;
+  font-family: Helvetica, sans-serif;
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.8;
+}
+
+.fuiParse-inline {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  line-height: 1.75;
+}
+
+.mb10 {
+  margin-bottom: 0.63em;
+}
+
+/*//标题 */
+.fuiParse-div {
+  /* margin: 0; */
+  padding: 0;
+}
+
+.fuiParse-h1 {
+  font-size: 2em;
+  margin: .67em 0
+}
+
+.fuiParse-h2 {
+  font-size: 1.5em;
+  margin: .75em 0
+}
+
+.fuiParse-h3 {
+  font-size: 1.17em;
+  margin: .83em 0
+}
+
+.fuiParse-h4 {
+  margin: 1.12em 0
+}
+
+.fuiParse-h5 {
+  font-size: .83em;
+  margin: 1.5em 0
+}
+
+.fuiParse-h6 {
+  font-size: .75em;
+  margin: 1.67em 0
+}
+
+.fuiParse-h1 {
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: .9em;
+}
+
+.fuiParse-h2 {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: .34em;
+}
+
+.fuiParse-h3 {
+  font-weight: 500;
+  font-size: 15px;
+  margin-bottom: .34em;
+}
+
+.fuiParse-h4 {
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: .24em;
+}
+
+.fuiParse-h5 {
+  font-weight: 500;
+  font-size: 13px;
+  margin-bottom: .14em;
+}
+
+.fuiParse-h6 {
+  font-weight: 500;
+  font-size: 12px;
+  margin-bottom: .04em;
+}
+
+.fuiParse-h1,
+.fuiParse-h1 text,
+.fuiParse-h2,
+.fuiParse-h2 text,
+.fuiParse-h3,
+.fuiParse-h3 text,
+.fuiParse-h4,
+.fuiParse-h4 text,
+.fuiParse-h5,
+.fuiParse-h5 text,
+.fuiParse-h6,
+.fuiParse-h6 text,
+.fuiParse-b,
+.fuiParse-b text,
+.fuiParse-strong,
+.fuiParse-strong text {
+  font-weight: bold;
+}
+
+.fuiParse-i,
+.fuiParse-i text,
+.fuiParse-cite,
+.fuiParse-em,
+.fuiParse-em text,
+.fuiParse-var,
+.fuiParse-address,
+.fuiParse-address text {
+  font-style: italic;
+}
+
+.fuiParse-pre,
+.fuiParse-tt,
+.fuiParse-code,
+.fuiParse-kbd,
+.fuiParse-samp {
+  font-family: monospace
+}
+
+.fuiParse-pre {
+  white-space: pre;
+  overflow-x: scroll;
+  background: #f5f5f5;
+}
+
+.fuiParse-p {
+  max-width: 100%;
+  word-break: break-all;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+  text-indent: 0 !important;
+}
+
+.fuiParse-section {
+  max-width: 100%;
+  overflow: hidden;
+  white-space: pre-wrap;
+  box-sizing: border-box;
+}
+
+.fuiParse-text {
+  max-width: 100%;
+}
+
+.fuiParse-big {
+  font-size: 1.17em
+}
+
+.fuiParse-small,
+.fuiParse-sub,
+.fuiParse-sup {
+  font-size: .83em
+}
+
+.fuiParse-sub {
+  vertical-align: sub
+}
+
+.fuiParse-sup {
+  vertical-align: super
+}
+
+.fuiParse-s,
+.fuiParse-strike,
+.fuiParse-del {
+  text-decoration: line-through
+}
+
+/*fuiParse-自定义个性化的css样式*/
+/*增加video的css样式*/
+.fuiParse-strong,
+.fuiParse-s {
+  display: inline
+}
+
+.fuiParse-a {
+  word-break: break-all;
+  overflow: auto;
+  color: var(--yr-ui-color-link, #465CFF);
+}
+
+.fuiParse-video {
+  max-width: 100% !important;
+  text-align: center;
+  margin: 10px 0;
+}
+
+.fuiParse-video-video {
+  width: 100%;
+}
+
+.fuiParse-blockquote {
+  padding: 10px 0 10px 5px;
+  font-family: Courier, Calibri, "宋体";
+  background: #f5f5f5;
+  border-left: 3px solid #dbdbdb;
+}
+
+.fuiParse-code,
+.fuiParse-code-style {
+  background: #f5f5f5;
+  line-height: 1.75;
+}
+
+.fuiParse-li,
+.fuiParse-li-inner {
+  align-items: baseline;
+  margin: 10rpx 0;
+}
+
+.fuiParse-li-text {
+  flex-direction: row;
+  align-items: center;
+  line-height: 20px;
+}
+
+.fuiParse-li-circle,
+.fuiParse-ol-number {
+  margin: 10rpx 10rpx 10rpx 0;
+}
+
+.fuiParse-li-circle {
+  display: inline-flex;
+  width: 5px;
+  height: 5px;
+  margin-top: 34rpx !important;
+  background-color: #333;
+  border-radius: 50%;
+}
+
+.fuiParse-li-square {
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  background-color: #333;
+  margin-right: 5px;
+}
+
+.fuiParse-li-ring {
+  display: inline-flex;
+  width: 10rpx;
+  height: 10rpx;
+  border: 2rpx solid #333;
+  border-radius: 50%;
+  background-color: #fff;
+  margin-right: 5px;
+}
+
+.fuiParse-u {
+  text-decoration: underline;
+}
+
+.fuiParse-hide {
+  display: none;
+}
+
+.fuiEmojiView {
+  align-items: center;
+}
+
+.fuiEmoji {
+  width: 16px;
+  height: 16px;
+}
+
+.fuiParse-table {
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 0;
+  overflow-x: scroll;
+}
+
+.fuiParse-tr {
+  display: flex;
+  flex-direction: row;
+  border-right: 1px solid #e0e0e0;
+}
+
+.fuiParse-th,
+.fuiParse-td {
+  flex: 1;
+  padding: 5px;
+  font-size: 28rpx;
+  word-break: break-all;
+  text-align: center;
+}
+
+.fuiParse-th image,
+.fuiParse-td image {
+  width: 100% !important;
+}
+
+.fuiParse-th-container,
+.fuiParse-td-container {
+  border-left: 1px solid #e0e0e0;
+  border-top: 1px solid #e0e0e0
+}
+
+.fuiParse-td:last {
+  border-top: 1px solid #e0e0e0;
+}
+
+.fuiParse-th__bg {
+  background: #f0f0f0;
+}
+
+.fuiParse-del {
+  display: inline;
+}
+
+.fuiParse-figure {
+  overflow: hidden;
+}
+
+.fuiParse-ol-inner,
+.fuiParse-ul-inner {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: row;
+  line-height: 28px;
+}
+
+.fuiParse-img-inner {
+  position: relative;
+  min-height: 100rpx;
+}
+
+.fuiParse-img {
+  background-color: #efefef;
+  overflow: hidden;
+  max-width: 100%;
+  width: 100%;
+  display: block;
+}
+
+.fuiParse-img-fadein {
+  animation: fade-in 1s linear;
+}
+
+
+.fuiParse-img-inner .fuiParse-img__loading {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -30rpx;
+  margin-left: -30rpx;
+  /* #ifndef APP-NVUE */
+  animation: loading 1s linear 0s infinite;
+  /* #endif */
+  width: 60rpx !important;
+  height: 60rpx !important;
+}
+
+/* audio */
+.fuiParse-audio-inner {
+  width: 100%;
+  height: 200rpx;
+}
+
+/* common */
+.mr5 {
+  margin-right: 5px;
+}
+
+.flex-full {
+  flex: 1;
+}
+
+.overflow-hide {
+  overflow: hidden;
+}
+
+@keyframes loading {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.fuiParse-img__hidden {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}

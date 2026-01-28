@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "压屏窗",
+  "usingComponents": {
+    "yr-ui-landscape": "/components/yr-ui/yr-ui-landscape/yr-ui-landscape"
+  }
+}

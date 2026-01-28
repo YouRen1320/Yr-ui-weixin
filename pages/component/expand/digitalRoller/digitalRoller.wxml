@@ -1,0 +1,25 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">DigitalRoller <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">DigitalRoller 数字滚轮，数字变化时切换滚动效果，一般用于金额的变化。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-roller__box">
+      <text>默认样式： </text>
+      <yr-ui-digital-roller value="{{value}}"></yr-ui-digital-roller>
+    </view>
+    <view class="yr-ui-roller__box">
+      <yr-ui-digital-roller value="{{value}}" color="#FFB703" size="{{48}}" height="{{48}}"></yr-ui-digital-roller>
+    </view>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="188.21" bold margin="24rpx 0" bindclick="roller" data-value="188.21"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="5,890.89" bold bindclick="roller" data-value="5,890.89">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="$1,314.20" bold margin="24rpx 0" bindclick="roller" data-value="$1,314.20">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="￥9,790.95" bold bindclick="roller" data-value="￥9,790.95">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="8913" bold margin="24rpx 0" bindclick="roller" data-value="8913">
+    </yr-ui-button>
+  </view>
+</view>

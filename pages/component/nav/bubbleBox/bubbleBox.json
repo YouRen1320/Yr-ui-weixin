@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "气泡框",
+  "usingComponents": {
+    "yr-ui-bubble-box": "/components/yr-ui/yr-ui-bubble-box/yr-ui-bubble-box"
+  }
+}

@@ -1,0 +1,9 @@
+.yr-ui-sticky__wrap {
+  width: 100%;
+}
+
+.yr-ui-sticky__fixed {
+  width: 100%;
+  position: sticky;
+  top: 0;
+}

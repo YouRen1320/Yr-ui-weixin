@@ -1,0 +1,11 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-left__icon {
+  padding-right: 24rpx;
+}

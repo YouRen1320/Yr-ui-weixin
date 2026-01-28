@@ -1,0 +1,16 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center">模板库
+    </view>
+    <view class="yr-ui-page__desc">常用模板，提升开发效率，付费模块。</view>
+  </view>
+  <view class="yr-ui-page-bd yr-ui-page__spacing">
+    <view class="yr-ui-template__item" bindtap="href" data-page="{{item.page}}" wx:for="{{templateData}}" wx:key="index">
+      <view class="yr-ui-template__item-inner" style="background:{{item.background}}">
+        <image class="yr-ui-icon" src="{{resUrl}}/template/light/icon_{{item.src}}_3x.png" mode="widthFix"></image>
+        <view class="yr-ui-name__cn">{{item.cn}}</view>
+        <view class="yr-ui-name__en">{{item.en}}</view>
+      </view>
+    </view>
+  </view>
+</view>

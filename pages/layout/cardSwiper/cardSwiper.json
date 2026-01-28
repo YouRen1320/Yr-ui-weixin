@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "卡片轮播",
+  "usingComponents": {
+    "yr-ui-swiper-dot":"/components/yr-ui/yr-ui-swiper-dot/yr-ui-swiper-dot"
+  }
+}

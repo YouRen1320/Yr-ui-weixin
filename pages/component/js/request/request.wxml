@@ -1,0 +1,26 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Request<image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">Request 网络请求，支持Promise，可在发起请求和请求响应之前进行拦截，更多使用请参考文档。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="GET 返回全部数据" bold margin="24rpx 0" bindclick="get" data-type="0"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="GET 返回简洁数据" bold bindclick="get" data-type="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="GET 传参数{id}" bold margin="24rpx 0" bindclick="get2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="POST 返回全部数据" bold bindclick="post" data-type="0">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="POST 返回简洁数据" bold margin="24rpx 0" bindclick="post" data-type="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="自定义接口域名" bold bindclick="changeHost">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="合并多个请求" bold margin="24rpx 0" bindclick="all">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="同步请求" bold bindclick="sync">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="使用request方法请求" bold margin="24rpx 0" bindclick="request">
+    </yr-ui-button>
+  </view>
+</view>

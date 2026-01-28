@@ -1,0 +1,54 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-banner__box">
+    <image src="{{resUrl}}/cooperate/light/img_banner_3x.png" mode="widthFix" class="yr-ui-banner"></image>
+  </view>
+  <view class="yr-ui-menu__wrap">
+    <view class="yr-ui-menu__item" wx:for="{{menus}}" wx:for-item="model" wx:for-index="idx" wx:key="idx" catchtap="open"
+      data-index="{{idx}}">
+      <view class="yr-ui-item__inner {{'yr-ui-bg__'+idx}}">
+        <image class="yr-ui-menu__icon" src="/static/images/cooperate/light/icon_{{model.icon}}_3x.png">
+        </image>
+        <text>{{model.name}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="yr-ui-divider"></view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-contacts__box">
+      <view class="yr-ui-contacts__item" wx:for="{{contacts}}" wx:key="index" bindtap="copy" data-value="{{item.value}}"
+        data-text="{{item.text}}">
+        <image class="yr-ui-icon" src="/static/images/cooperate/light/icon_{{item.icon}}_3x.png"></image>
+        <view class="yr-ui-title">{{item.text}}</view>
+      </view>
+    </view>
+    <yr-ui-divider backgroundColor="#fff" dividerColor="#F1F4FA" color="#465CFF" text="联系方式" size="{{28}}">
+    </yr-ui-divider>
+    <view class="yr-ui-desc">
+      上方联系方式，仅限合作沟通，加好友或发邮件时请务必备注您的来意，谢谢配合！
+    </view>
+  </view>
+  <yr-ui-animation duration="{{500}}" animationType="{{['fade']}}" styles="{{styles}}" show="{{show}}">
+    <view class="yr-ui-ani__box">
+      <view class="yr-ui-ani__title">
+        <image src="/static/images/cooperate/light/img_decorate_Left_3x.png" mode="widthFix"></image>
+        <text>{{title}}</text>
+        <image src="/static/images/cooperate/light/img_decorate_right_3x.png" mode="widthFix"></image>
+      </view>
+      <view class="yr-ui-flex__center yr-ui-flex__column">
+        <view class="yr-ui-desc yr-ui-p" wx:if="{{idx<4}}">
+          定制软件开发价格具体需要结合软件的具体的功能，需求来决定，一般来说如果进行定制开发这样的造价比模板制作要贵。定制开发可以最大程度上满足用户需求，并且后期维护和改动比较方便，适合企业公司深层次推广并且使用。如有需要可通过页面联系方式与我们联系。
+        </view>
+        <view class="yr-ui-desc yr-ui-p" wx:if="{{idx===4}}">
+          在以任何形式的参与前，请先阅读文档开发指南。如有任何的意见或建议，欢迎您通过创建<text class="yr-ui-link" bindtap="copy"
+            data-value="https://github.com/yr-ui/yr-ui/issues">Issue</text>或<text class="yr-ui-link" bindtap="copy" data-value="https://github.com/yr-ui/yr-ui/pulls">Pull Request</text>的方式告知我们。
+        </view>
+        <view class="yr-ui-desc yr-ui-p" wx:if="{{idx===5}}">
+          Yr-ui 拥有成熟优秀的开发工程师团队及专业的UI设计师团队。产品研发团队中拥有多位行业经验丰富技术工程师。如需合作请通过页面联系方式与我们联系。
+        </view>
+        <yr-ui-button width="400rpx" height="84rpx" radius="100rpx"
+          background="linear-gradient(270deg, #6831FF 0%, #465CFF 100%)" borderColor="rgba(0,0,0,0)" border-width="0"
+          bindclick="close">我知道了</yr-ui-button>
+      </view>
+    </view>
+  </yr-ui-animation>
+</view>

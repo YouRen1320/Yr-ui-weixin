@@ -1,0 +1,6 @@
+<view class="yr-ui-countdown__verify {{status>1?'yr-ui-cdv__disabled':''}}" style="width: {{width}}rpx; height: {{height}}rpx; margin-left: {{marginLeft}}rpx;margin-right:{{marginRight}}rpx;border-radius: {{radius}}rpx;background: {{background}};border-color:{{!borderColor || borderColor==='true'?background:borderColor}}">
+  <text style="font-size: {{size}}rpx;line-height:{{size}}rpx; color:{{color}}" class="yr-ui-countdown__verify-text {{!color?'yr-ui-cdv__color':''}}">{{ showText }}</text>
+  <view class="yr-ui-countdown__verify-main yr-ui-countdown__verify-active" style="border-radius: {{radius}}rpx" catchtap="sendCode" wx:if="{{status===1}}"></view>
+  <view class="yr-ui-countdown__verify-line {{!borderColor?'yr-ui-cdv__border-color':''}}" style="border-color: {{borderColor}};border-radius: {{radius * 2}}rpx">
+  </view>
+</view>

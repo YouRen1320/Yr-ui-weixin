@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "数字输入框",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-input-number": "/components/yr-ui/yr-ui-input-number/yr-ui-input-number"
+  }
+}

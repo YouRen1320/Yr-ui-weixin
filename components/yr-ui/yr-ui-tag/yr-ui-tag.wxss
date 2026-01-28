@@ -1,0 +1,156 @@
+.yr-ui-tag__wrap {
+  display: inline-flex;
+  box-sizing: border-box;
+  flex-shrink: 0;
+  max-width: 100%;
+  white-space: nowrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  border-width: 1rpx;
+  border-style: solid;
+  border-color: transparent;
+  font-weight: normal;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.yr-ui-tag__no-border {
+  border-width: 0;
+}
+.yr-ui-tag__text {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yr-ui-tag__primary-dark {
+  background-color: var(--yr-ui-color-primary, #465CFF) !important;
+  border-color: var(--yr-ui-color-primary, #465CFF) !important;
+  color: #FFFFFF !important;
+}
+
+.yr-ui-tag_primary-dark,
+.yr-ui-tag_success-dark,
+.yr-ui-tag_warning-dark,
+.yr-ui-tag_danger-dark,
+.yr-ui-tag_purple-dark {
+  color: #FFFFFF !important;
+}
+
+.yr-ui-tag__success-dark {
+  background-color: var(--yr-ui-color-success, #09BE4F) !important;
+  border-color: var(--yr-ui-color-success, #09BE4F) !important;
+  color: #FFFFFF !important;
+}
+
+
+.yr-ui-tag__warning-dark {
+  background-color: var(--yr-ui-color-warning, #FFB703) !important;
+  border-color: var(--yr-ui-color-warning, #FFB703) !important;
+  color: #FFFFFF !important;
+}
+
+.yr-ui-tag__danger-dark {
+  background-color: var(--yr-ui-color-danger, #FF2B2B) !important;
+  border-color: var(--yr-ui-color-danger, #FF2B2B) !important;
+  color: #FFFFFF !important;
+}
+
+.yr-ui-tag__purple-dark {
+  background-color: var(--yr-ui-color-purple, #6831FF) !important;
+  border-color: var(--yr-ui-color-purple, #6831FF) !important;
+  color: #FFFFFF !important;
+}
+
+.yr-ui-tag__primary-light {
+  background-color: var(--yr-ui-bg-color-grey, #F1F4FA) !important;
+  border-color: var(--yr-ui-bg-color-grey, #F1F4FA) !important;
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-tag_primary-light,
+.yr-ui-tag_primary-plain {
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-tag__success-light {
+  background-color: var(--yr-ui-bg-color-green, rgba(9, 190, 79, .05)) !important;
+  border-color: var(--yr-ui-bg-color-green, rgba(9, 190, 79, .05)) !important;
+  color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-tag_success-light,
+.yr-ui-tag_success-plain {
+  color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-tag__warning-light {
+  background-color: var(--yr-ui-bg-color-yellow, rgba(255, 183, 3, .1)) !important;
+  border-color: var(--yr-ui-bg-color-yellow, rgba(255, 183, 3, .1)) !important;
+  color: var(--yr-ui-color-warning, #FFB703) !important;
+
+}
+
+.yr-ui-tag_warning-light,
+.yr-ui-tag_warning-plain {
+  color: var(--yr-ui-color-warning, #FFB703) !important;
+
+}
+
+.yr-ui-tag__danger-light {
+  background-color: var(--yr-ui-bg-color-red, rgba(255, 43, 43, .05)) !important;
+  border-color: var(--yr-ui-bg-color-red, rgba(255, 43, 43, .05)) !important;
+  color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-tag__danger-light,
+.yr-ui-tag__danger-plain {
+  color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-tag__purple-light {
+  background-color: var(--yr-ui-bg-color-purple, rgba(104, 49, 255, .05)) !important;
+  border-color: var(--yr-ui-bg-color-purple, rgba(104, 49, 255, .05)) !important;
+  color: var(--yr-ui-color-purple, #6831FF) !important;
+}
+
+.yr-ui-tag_purple-light,
+.yr-ui-tag_purple-plain {
+  color: var(--yr-ui-color-purple, #6831FF) !important;
+}
+
+.yr-ui-tag__primary-plain {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: var(--yr-ui-color-primary, #465CFF) !important;
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-tag__success-plain {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: var(--yr-ui-color-success, #09BE4F) !important;
+  color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-tag__warning-plain {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: var(--yr-ui-color-warning, #FFB703) !important;
+  color: var(--yr-ui-color-warning, #FFB703) !important;
+}
+
+.yr-ui-tag__danger-plain {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: var(--yr-ui-color-danger, #FF2B2B) !important;
+  color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-tag__purple-plain {
+  background-color: rgba(0, 0, 0, 0) !important;
+  border-color: var(--yr-ui-color-purple, #6831FF) !important;
+  color: var(--yr-ui-color-purple, #6831FF) !important;
+
+}
+
+.yr-ui-tag__opacity:active {
+  opacity: 0.5;
+}

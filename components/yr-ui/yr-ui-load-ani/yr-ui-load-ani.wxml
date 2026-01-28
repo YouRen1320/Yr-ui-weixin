@@ -1,0 +1,25 @@
+<view class="yr-ui-load__ani {{isFixed?'yr-ui-load__ani-fixed':''}}">
+  <view class="yr-ui-load__ani-1" wx:if="{{type==1}}">
+    <view class="yr-ui-load__ani--1 yr-ui-load__ani-a {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+    <view class="yr-ui-load__ani--1 yr-ui-ani__ani-b {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+    <view class="yr-ui-load__ani--1 {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+  </view>
+
+  <view class="yr-ui-load__ani-2" wx:if="{{type==2}}">
+    <view class="yr-ui-load__ani-line yr-ui-load__ani-c {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+    <view class="yr-ui-load__ani-line yr-ui-load__ani-d {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+    <view class="yr-ui-load__ani-line yr-ui-load__ani-e {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+  </view>
+
+  <view class="yr-ui-load__ani-3 {{!color || color===true?'yr-ui-load__ani-border':''}}" style="border-left-color:{{color}};border-right-color:{{color}}" wx:if="{{type==3}}">
+  </view>
+
+  <view class="yr-ui-load__ani-4 {{!color || color===true?'yr-ui-load__ani-bcolor':''}}" style="border-color:{{color}}" wx:if="{{type==4}}">
+    <view class="yr-ui-load__ani-f {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+  </view>
+
+  <view class="yr-ui-load__ani-5 {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}" wx:if="{{type==5}}">
+    <view class="yr-ui-load__ani-g {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+    <view class="yr-ui-load__ani-h {{!color || color===true?'yr-ui-load__ani-bg':''}}" style="background:{{color}}"></view>
+  </view>
+</view>

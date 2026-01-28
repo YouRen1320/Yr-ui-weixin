@@ -1,0 +1,7 @@
+<view class="yr-ui-copy__text-wrap">
+  <text id="fui_ct__el" selectable="{{false}}" class="yr-ui-copy__text" catchlongpress="handleCopy" style="color:{{color}};font-size: {{size}}rpx;font-weight: {{fontWeight}}; background:{{showTooltip ? background : 'transparent'}}">{{ text }}</text>
+  <view wx:if="{{showTooltip}}" class="yr-ui-copy__tooltip-list {{'yr-ui-copy__tooltip-' + direction}} {{(direction == 'left' || direction == 'right') && buttons.length > 0 ? 'yr-ui-copy__list-column' : ''}}" style="z-index:{{zIndex}}">
+    <text selectable="{{false}}" wx:if="{{!removeCopy || buttons.length === 0}}" class="yr-ui-copy__tooltip-cell {{(direction == 'left' || direction == 'right') && buttons.length > 0?'yr-ui-copy__tooltip-column':''}}" catchtap="copyVal">复制</text>
+    <text selectable="{{false}}" class="yr-ui-copy__tooltip-cell yr-ui-copy__btn-extend {{direction == 'left' || direction == 'right'?'yr-ui-copy__tooltip-column':''}}" wx:for="{{buttons}}" wx:key="index" catchtap="buttonTap" data-index="{{index}}">{{ item }}</text>
+  </view>
+</view>

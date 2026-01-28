@@ -1,0 +1,50 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">BottomPopup</view>
+    <view class="yr-ui-page__desc">BottomPopup 底部弹出层，从底部弹出的浮层，引导用户进行相关操作。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="基础使用" bold margin="24rpx 0" bindclick="showPopup" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="案例一" bold bindclick="showPopup" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="内容可滚动" margin="24rpx 0" bold bindclick="showPopup" data-type="3">
+    </yr-ui-button>
+  </view>
+
+  <yr-ui-bottom-popup show="{{show}}" bindclose="closePopup" data-type="1">
+    <view class="yr-ui-custom__wrap">
+      这是自定义内容区
+    </view>
+  </yr-ui-bottom-popup>
+
+  <!--案例一-->
+  <yr-ui-bottom-popup show="{{show2}}" maskClosable="{{false}}">
+    <view class="yr-ui-popup__container">
+      <text class="yr-ui-title">测试标题一</text>
+      <text class="yr-ui-sub__title">测试标题一的副标题</text>
+      <text class="yr-ui-descr">辅助描述内容，可根据实际需要安排</text>
+      <text class="yr-ui-sub__descr">辅助提示内容，可根据实际需要安排</text>
+      <view class="yr-ui-btn__box">
+        <yr-ui-button type="gray" width="240rpx" height="80rpx" text="辅助操作" margin="0 16rpx">
+        </yr-ui-button>
+        <yr-ui-button width="240rpx" height="80rpx" text="主操作" margin="0 16rpx"></yr-ui-button>
+      </view>
+
+      <view class="yr-ui-icon__close" bindtap="closePopup" data-type="2">
+        <yr-ui-icon name="close" size="{{48}}"></yr-ui-icon>
+      </view>
+    </view>
+  </yr-ui-bottom-popup>
+
+  <yr-ui-bottom-popup show="{{show3}}" bindclose="closePopup" data-type="3">
+    <view class="yr-ui-scroll__wrap">
+      <view class="yr-ui-title yr-ui-title__pb">测试标题二</view>
+      <scroll-view scroll-y class="yr-ui-scroll__view">
+        <yr-ui-list-cell wx:for="{{itemList}}" wx:key="index">item{{index+1}}</yr-ui-list-cell>
+      </scroll-view>
+      <view class="yr-ui-icon__close" bindtap="closePopup" data-type="3">
+        <yr-ui-icon name="close" size="{{48}}"></yr-ui-icon>
+      </view>
+    </view>
+  </yr-ui-bottom-popup>
+</view>

@@ -1,0 +1,43 @@
+.yr-ui-swiper__wrap {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  position: relative;
+  overflow: hidden;
+}
+
+.yr-ui-swiper__dot {
+  position: absolute;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  overflow: hidden;
+}
+
+.yr-ui-swiper__dot-item {
+  flex-shrink: 0;
+  display: flex;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-swiper__nav-ellipsis {
+  flex: 1;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yr-ui-swiper__flex-center {
+  justify-content: center;
+  text-align: center;
+}
+
+.yr-ui-swiper__dot-bg {
+  background: var(--yr-ui-color-primary, #465CFF) !important;
+}

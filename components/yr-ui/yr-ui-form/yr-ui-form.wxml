@@ -1,0 +1,5 @@
+<view class="yr-ui-form__wrap" style="padding:{{padding}}">
+  <slot></slot>
+  <view class="yr-ui-form__msg-wrap {{background?'':'yr-ui-form__msg-bg'}} {{errorMsg?'yr-ui-form__msg-show':''}}" style="top:{{top}}px;left:{{left}}rpx;right:{{right}}rpx;background:{{background}};border-radius:{{radius}}rpx" wx:if="{{show}}"><text class="yr-ui-form__text" style="font-size:{{size}}rpx;color:{{color}}">{{errorMsg}}</text></view>
+  <view class="yr-ui-form__mask" wx:if="{{disabled}}"></view>
+</view>

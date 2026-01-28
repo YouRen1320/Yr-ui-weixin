@@ -1,0 +1,21 @@
+<view class="yr-ui-preview__wrap {{isBorder?'':'yr-ui-preview__unlined'}} {{background?'':'yr-ui-preview__background'}}" style="border-top-color:{{borderColor}};border-bottom-color:{{borderColor}};margin-top:{{marginTop}}rpx;margin-bottom:{{marginBottom}}rpx;background:{{background}}">
+  <view class="yr-ui-preview__hd" style="padding-left:{{padding}}rpx;padding-right:{{padding}}rpx" wx:if="{{pvd[label] || pvd[value]}}">
+    <view class="yr-ui-preview__item">
+      <text class="yr-ui-preview__label {{labelColor?'':'yr-ui-preview__gray'}}" style="color:{{labelColor}};font-size:{{hdLabelSize}}rpx;width:{{hdLabelWidth>0?hdLabelWidth+'rpx':'auto'}};margin-right: {{labelRight}}rpx;">{{pvd[label] || ''}}</text>
+      <text class="yr-ui-preview__value-hd {{hdValColor?'':'yr-ui-preview__color'}}" style="color:{{hdValColor}};font-size:{{hdValSize}}rpx;text-align: {{bdAlign}};">{{pvd[value] || ''}}</text>
+    </view>
+    <view style="background:{{borderColor}};left:{{hdLeft}}rpx;right:{{hdRight}}rpx" class="yr-ui-preview__border {{borderColor?'':'yr-ui-preview__border-color'}}"></view>
+  </view>
+  <view class="yr-ui-preview__bd" wx:if="{{pvd[list] && pvd[list].length>0}}" style="padding-left:{{padding}}rpx;padding-right:{{padding}}rpx">
+    <view class="yr-ui-preview__item" wx:for="{{pvd[list]}}" wx:key="index">
+      <text class="yr-ui-preview__label {{!labelColor && !item[lColor]?'yr-ui-preview__gray':''}} {{'yr-ui-preview__label-'+labelAlign}}" style="color:{{item[lColor] || labelColor}};font-size:{{bdSize}}rpx;width:{{labelWidth>0?labelWidth+'rpx':'auto'}};margin-right: {{labelRight}}rpx;">{{item[label]}}</text>
+      <text class="yr-ui-preview__value {{!bdColor && !item[valueColor]?'yr-ui-preview__color':''}}" style="color:{{item[valueColor] || bdColor}};font-size:{{bdSize}}rpx;text-align: {{bdAlign}};" bindtap="itemClick" data-index="{{index}}">{{item[value]}}</text>
+    </view>
+  </view>
+  <slot></slot>
+  <view class="yr-ui-preview__ft" style="border-top-color:{{borderColor}}" wx:if="{{pvd[buttons] && pvd[buttons].length>0}}">
+    <view style="border-right-color:{{idx!==pvd[buttons].length-1?borderColor : 'transparent'}}" class="{{highlight && !btn[disabled]?'yr-ui-preview__hover-weex':''}} {{idx!==pvd[buttons].length-1?'yr-ui-preview__btn-def':'yr-ui-preview__btn'}}" hover-class="{{highlight && !btn[disabled]?'yr-ui-preview_hover':''}}" hover-stay-time="150" wx:for="{{pvd[buttons]}}" wx:for-item="btn" wx:for-index="idx" wx:key="idx" bindtap="handleClick" data-index="{{idx}}">
+      <text style="font-size:{{btnSize}}rpx;color:{{btn.color || '#465CFF'}}" class="{{btn[color]?'':'yr-ui-preview__link'}} {{btn[disabled]?'yr-ui-preview__button-disable':''}}">{{btn[text]}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,37 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Grid</view>
+    <view class="yr-ui-page__desc">Grid 宫格，主要使用场景如：热门内容等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">九宫格</view>
+    <yr-ui-grid>
+      <yr-ui-grid-item wx:for="{{nums}}" wx:key="index">
+        <view class="yr-ui-grid__cell">
+          <image src="/static/images/common/icon_tabbar_3x.png" class="yr-ui-icon" mode="widthFix"></image>
+          <text>Grid</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+    <view class="yr-ui-section__title">高度自适应</view>
+    <yr-ui-grid square="{{false}}">
+      <yr-ui-grid-item wx:for="{{nums}}" wx:key="index">
+        <view class="yr-ui-grid__cell yr-ui-padding">
+          <image src="/static/images/common/icon_tabbar_2x.png" class="yr-ui-icon__2x" mode="widthFix">
+          </image>
+          <text>Grid</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+    <view class="yr-ui-section__title">改变列数（4列）</view>
+    <yr-ui-grid columns="{{4}}">
+      <yr-ui-grid-item wx:for="{{arrs}}" wx:key="index">
+        <view class="yr-ui-grid__cell yr-ui-padding">
+          <image src="/static/images/common/icon_tabbar_2x.png" class="yr-ui-icon__2x" mode="widthFix">
+          </image>
+          <text>Grid</text>
+        </view>
+      </yr-ui-grid-item>
+    </yr-ui-grid>
+  </view>
+</view>

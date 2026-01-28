@@ -1,0 +1,53 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">SwipeAction <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">SwipeAction 滑动菜单，用于滑动操作的组件。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-swipeaction-group>
+      <yr-ui-swipe-action bindclick="onClick" bindchange="change">
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">默认菜单按钮</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+      <yr-ui-swipe-action buttons="{{buttons}}" bindclick="onClick" bindchange="change">
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">自定义菜单按钮</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+      <yr-ui-swipe-action buttons="{{buttons}}" custom>
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">插槽菜单</yr-ui-list-cell>
+        <view class="yr-ui-menu__box" slot="buttons">
+            <view class="yr-ui-menu__btn">
+              <yr-ui-icon name="delete" size="{{44}}"></yr-ui-icon>
+            </view>
+          </view>
+      </yr-ui-swipe-action>
+    </yr-ui-swipeaction-group>
+    <view class="yr-ui-section__title">禁止滑动</view>
+    <yr-ui-swipeaction-group>
+      <yr-ui-swipe-action disabled>
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">不可滑动</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+    </yr-ui-swipeaction-group>
+    <view class="yr-ui-section__title">默认打开</view>
+    <yr-ui-swipeaction-group>
+      <yr-ui-swipe-action show="{{show}}">
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">默认打开状态</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+    </yr-ui-swipeaction-group>
+    <view class="yr-ui-section__title">各菜单状态不关联</view>
+    <yr-ui-swipeaction-group>
+      <yr-ui-swipe-action autoClose="{{false}}">
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">左滑菜单</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+      <yr-ui-swipe-action autoClose="{{false}}" buttons="{{buttons}}">
+        <yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}">自定义菜单按钮</yr-ui-list-cell>
+      </yr-ui-swipe-action>
+    </yr-ui-swipeaction-group>
+    <view class="yr-ui-section__title">点击按钮不关闭菜单，结合提示操作</view>
+			<yr-ui-swipeaction-group>
+				<yr-ui-swipe-action clickClose="{{false}}" show="{{isShow}}" bindchange="stateChange" bindclick="buttonTap">
+					<yr-ui-list-cell padding="36rpx 32rpx" highlight="{{false}}" bindclick="onTap">点击菜单弹出提示信息</yr-ui-list-cell>
+				</yr-ui-swipe-action>
+			</yr-ui-swipeaction-group>
+  </view>
+</view>

@@ -1,0 +1,55 @@
+.yr-ui-text__wrap {
+  align-items: center;
+  flex-direction: row;
+}
+
+.yr-ui-text__active:active {
+  opacity: .5;
+}
+
+.yr-ui-text__inline {
+  display: inline-flex;
+}
+
+.yr-ui-text__block {
+  display: flex;
+}
+.yr-ui-text__unshrink {
+  flex-shrink: 0;
+}
+
+.yr-ui-text__center {
+  justify-content: center;
+}
+
+.yr-ui-text__right {
+  justify-content: flex-end;
+}
+
+.yr-ui-text__primary {
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-text__success {
+  color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-text__warning {
+  color: var(--yr-ui-color-warning, #FFB703) !important;
+}
+
+.yr-ui-text__danger {
+  color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-text__purple {
+  color: var(--yr-ui-color-purple, #6831FF) !important;
+}
+
+.yr-ui-text__gray {
+  color: var(--yr-ui-color-label, #B2B2B2) !important;
+}
+
+.yr-ui-text__black {
+  color: var(--yr-ui-color-title, #181818) !important;
+}

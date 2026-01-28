@@ -1,0 +1,22 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">ShareSheet <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">ShareSheet 分享面板，主要用于分享或相关操作使用。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="内容两端对齐" bold margin="24rpx 0" bindclick="shareSheet" data-type="1"></yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="展示多行" bold bindclick="shareSheet" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="更换颜色" bold margin="24rpx 0" bindclick="shareSheet" data-type="3">
+    </yr-ui-button>
+  </view>
+  <yr-ui-share-sheet isFull padding="48" background="#fff" lineColor="#eee" show="{{visible}}" itemList="{{items}}" maskClosable bindcancel="onCancel" bindclick="onTap" data-type="1">
+  </yr-ui-share-sheet>
+
+  <yr-ui-share-sheet show="{{show}}" itemList="{{itemList}}" itemBackground="#fff" bindclick="onClick" bindcancel="onCancel" data-type="2">
+  </yr-ui-share-sheet>
+
+  <yr-ui-share-sheet title="分享给好友" background="#222" itemBackground="#333" btnColor="#d1d1d1" lineColor="#333" show="{{show2}}" itemList="{{itemList2}}" bindclick="onClick" bindcancel="onCancel" data-type="{{3}}">
+  </yr-ui-share-sheet>
+</view>

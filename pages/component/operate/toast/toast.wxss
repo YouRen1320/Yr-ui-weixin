@@ -1,0 +1,20 @@
+.yr-ui-page__bd {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-toast__custom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.yr-ui-toast__txt {
+  font-size: 32rpx;
+  color: #FFFFFF;
+  padding-top: 12rpx;
+  display: block;
+}

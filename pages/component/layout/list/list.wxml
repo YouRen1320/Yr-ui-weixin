@@ -1,0 +1,115 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">List</view>
+    <view class="yr-ui-page__desc">List 列表，常用的布局组件。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-list>
+      <yr-ui-list-cell>标题文字</yr-ui-list-cell>
+      <yr-ui-list-cell>
+        <text>标题文字</text>
+        <text class="yr-ui-text__explain">说明文字</text>
+      </yr-ui-list-cell>
+      <yr-ui-list-cell arrow>
+        <text>标题文字</text>
+      </yr-ui-list-cell>
+      <yr-ui-list-cell arrow>
+        <view class="yr-ui-list__item">
+          <text>标题文字</text>
+          <text class="yr-ui-text__explain">说明文字</text>
+        </view>
+      </yr-ui-list-cell>
+      <yr-ui-list-cell arrow bottomLeft="{{0}}">
+        <view class="yr-ui-list__item">
+          <text>标题文字</text>
+          <yr-ui-badge value="1" type="danger"></yr-ui-badge>
+        </view>
+      </yr-ui-list-cell>
+    </yr-ui-list>
+    <view class="yr-ui-section__title" style="margin-bottom: 0;">无点击效果、带标题</view>
+    <yr-ui-list bottomBorder title="带标题的列表">
+      <yr-ui-list-cell highlight="{{false}}">标题文字</yr-ui-list-cell>
+      <yr-ui-list-cell bottomBorder="{{false}}" highlight="{{false}}" arrow>标题文字</yr-ui-list-cell>
+    </yr-ui-list>
+    <view class="yr-ui-section__title">带图标的列表</view>
+    <yr-ui-list-cell topBorder>
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell>
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+      <text class="yr-ui-text__explain">说明文字</text>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow>
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell arrow bottomLeft="{{0}}">
+      <view class="yr-ui-list__item">
+        <view class="yr-ui-align__center">
+          <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+          </image>
+          <text>标题文字</text>
+        </view>
+        <text class="yr-ui-text__explain">说明文字</text>
+      </view>
+    </yr-ui-list-cell>
+
+    <view class="yr-ui-section__title">改变底部线条左侧偏移距离</view>
+    <yr-ui-list-cell topBorder bottomLeft="{{104}}">
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell bottomLeft="{{0}}">
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">改变底部线条右侧偏移距离</view>
+    <yr-ui-list-cell bottomRight="{{32}}">
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell bottomBorder="{{false}}">
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <view class="yr-ui-section__title">无线条</view>
+    <yr-ui-list-cell bottomBorder="{{false}}" arrow>
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+    <yr-ui-list-cell bottomBorder="{{false}}" arrow>
+      <view class="yr-ui-align__center">
+        <image class="yr-ui-list__icon" src="/static/images/common/icon_tabbar.png" mode="widthFix">
+        </image>
+        <text>标题文字</text>
+      </view>
+    </yr-ui-list-cell>
+  </view>
+</view>

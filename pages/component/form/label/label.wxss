@@ -1,0 +1,19 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-text {
+  font-size: 30rpx;
+  padding-left: 16rpx;
+}
+
+.yr-ui-list__cell {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}

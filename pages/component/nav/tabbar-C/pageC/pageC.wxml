@@ -1,0 +1,9 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-header">
+			<view class="yr-ui-title__text">PageC：模板</view>
+			<view class="yr-ui-desc__text">由于Nvue端Android下内容超出会强制隐藏，所以App-Nvue暂不支持中间凸起图标，可使用原生tabbar配置。</view>
+		</view>
+		<view class="yr-ui-body">
+			
+		</view>
+	</view>

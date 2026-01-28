@@ -1,0 +1,23 @@
+.yr-ui-lazyload__wrap {
+  display: inline-flex;
+  flex-shrink: 0;
+  position: relative;
+}
+
+.yr-ui-lazyload__img {
+  display: block;
+  flex-shrink: 0;
+  transition-duration: .35s;
+  transition-property: opacity;
+  transition-timing-function: linear;
+}
+
+.yr-ui-lazyload__visible {
+  visibility: visible;
+  opacity: 1;
+}
+
+.yr-ui-lazyload__hidden {
+  visibility: hidden;
+  opacity: 0;
+}

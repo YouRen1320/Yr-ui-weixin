@@ -1,0 +1,71 @@
+.yr-ui-alert__wrap {
+  display: flex;
+  width: 100%;
+  box-sizing: border-box;
+  flex-direction: row;
+  align-items: center;
+  position: relative;
+}
+
+.yr-ui-alert__info,
+.yr-ui-alert__waiting {
+  background-color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-alert__success {
+  background-color: var(--yr-ui-color-success, #09BE4F) !important;
+}
+
+.yr-ui-alert__warn {
+  background-color: var(--yr-ui-color-warning, #FFB703) !important;
+}
+
+.yr-ui-alert__clear {
+  background-color: var(--yr-ui-color-danger, #FF2B2B) !important;
+}
+
+.yr-ui-alert__shrink {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yr-ui-alert__content {
+  flex: 1;
+  flex-direction: column;
+  overflow: hidden;
+}
+
+.yr-ui-alert__text {
+  word-break: break-all;
+  display: block;
+  box-sizing: border-box;
+}
+
+.yr-ui-desc__padding {
+  padding-top: 3px;
+}
+
+.yr-ui-text__p-left {
+  padding-left: 20rpx;
+}
+
+.yr-ui-text__p-right {
+  padding-right: 60rpx;
+}
+
+.yr-ui-alert__single {
+  display: block;
+  width: 100%;
+  white-space: nowrap;
+  flex-direction: row;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.yr-ui-alert__icon-close {
+  position: absolute;
+  right: 30rpx;
+  top: 16rpx;
+}

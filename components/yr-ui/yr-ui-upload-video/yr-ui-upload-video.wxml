@@ -1,0 +1,42 @@
+<view class="yr-ui-uploadv__wrap">
+		<view class="yr-ui-uploadv__item" style="width:{{width}}rpx;height:{{height}}rpx" wx:for="{{urls}}"	wx:key="index">
+			<video class="yr-ui-upload__video" style="width:{{width}}rpx;height:{{height-(isView?0:40)}}rpx" src="{{parse.getVideoSrc(item)}}"></video>
+			<view class="yr-ui-uploadv__del-wrap" style="width:{{width}}rpx" wx:if="{{!isView}}">
+				<view class="yr-ui-uploadv__flex-row" catchtap="reUpload" data-index="{{index}}">
+					<yr-ui-icon name="checkbox" color="#fff" size="32" wx:if="{{progress[index]===100}}"></yr-ui-icon>
+					<yr-ui-icon name="{{progress[index]===-99?'clear':'wait'}}" color="#fff" size="32" wx:if="{{progress[index]<0}}"></yr-ui-icon>
+					<text class="yr-ui-uploadv__progress-text {{progress[index]===100 || progress[index]<0?'yr-ui-upt__pl':''}}">{{parse.getStatusText(progress[index])}}</text>
+					<text class="yr-ui-uploadv__progress-text" wx:if="{{progress[index]>=0 && progress[index]<100}}">{{progress[index]}}%</text>
+				</view>
+				<view class="yr-ui-uploadv__del" catchtap="deleteVideo" data-index="{{index}}">
+					<yr-ui-icon name="close" color="#fff" size="28"></yr-ui-icon>
+				</view>
+				<progress border-radius="6" class="yr-ui-uploadv__progress" backgroundColor="rgba(255, 255, 255, 0.5)" activeColor="{{progressColor}}" percent="{{progress[index]}}" stroke-width="3" wx:if="{{progress[index]<100 && progress[index]>0}}"></progress>
+			</view>
+		</view>
+		<view class="yr-ui-uploadv__item {{borderColor && borderColor!==true?'yr-ui-upload__border':'yr-ui-upload__noborder'}}" style="width:{{width}}rpx;height:{{height}}rpx;background:{{background}};border-radius:{{radius}}rpx;border-color:{{borderColor}};border-style:{{borderSytle}}"	wx:if="{{!isView && urls.length < max}}" catchtap="chooseVideo">
+			<yr-ui-icon name="plus" size="{{addSize}}" color="{{addColor}}" wx:if="{{!custom}}"></yr-ui-icon>
+      <slot></slot>
+		</view>
+	</view>
+
+  <wxs module="parse">
+    module.exports={
+      //仅支持https地址
+			getVideoSrc:function(src) {
+        var str=(src || '').substring(0,5)
+				return !src || str!=='https' ? '' : src
+			},
+			getStatusText:function(progress) {
+				var text = '上传中...'
+				if (progress === -1) {
+					text = '等待上传'
+				} else if (progress === -99) {
+					text = '上传失败，点击重新上传'
+				} else if (progress === 100) {
+					text = '已上传'
+				}
+				return text;
+			}
+    }
+  </wxs>

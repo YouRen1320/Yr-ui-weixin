@@ -1,0 +1,98 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-node {
+  width: 32rpx;
+  height: 32rpx;
+  border-radius: 50%;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 4px solid #ccc;
+  box-sizing: border-box;
+}
+
+.yr-ui-process__node {
+  padding-left: 20rpx;
+}
+
+.yr-ui-node__pb {
+  padding-bottom: 48rpx;
+}
+
+.yr-ui-title {
+  font-size: 34rpx;
+  line-height: 34rpx;
+  font-weight: bold;
+}
+
+.yr-ui-descr {
+  font-size: 28rpx;
+  padding-top: 12rpx;
+  color: #7F7F7F;
+}
+
+.yr-ui-time {
+  font-size: 24rpx;
+  color: #B2B2B2;
+  padding-top: 12rpx;
+}
+
+.yr-ui-time__left {
+  font-size: 36rpx;
+  line-height: 36rpx;
+  text-align: right;
+  padding-right: 20rpx;
+}
+
+.yr-ui-node__pbtm {
+  padding-bottom: 88rpx;
+}
+
+.yr-ui-custom__wrap {
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+
+.yr-ui-custom__innder {
+  height: 200rpx;
+  border-radius: 0 16rpx 16rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #F1F4FA;
+  color: #FFB703;
+}
+
+.yr-ui-logo {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 24rpx;
+}
+
+.yr-ui-node__box {
+  width: 36rpx;
+  height: 36rpx;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+}
+
+.yr-ui-node__sm {
+  width: 9px;
+  height: 9px;
+  background: #ccc;
+  border-radius: 50%;
+}

@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "标签页",
+  "usingComponents": {
+    "yr-ui-tabbar": "/components/yr-ui/yr-ui-tabbar/yr-ui-tabbar"
+  }
+}

@@ -1,0 +1,15 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">SingleInput <image src="/static/images/index/light/icon_member_3x.png"></image>
+    </view>
+    <view class="yr-ui-page__desc">SingleInput 单输入框，每个输入框只允许输入一个字符，主要用于验证码、密码输入框等。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="验证码输入框" bold margin="24rpx 0" bindclick="href" data-type="1">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="密码输入框" bold bindclick="href" data-type="2">
+    </yr-ui-button>
+    <yr-ui-button type="gray" width="400rpx" height="84rpx" text="结合自定义键盘" bold margin="24rpx 0" bindclick="dk">
+    </yr-ui-button>
+  </view>
+</view>

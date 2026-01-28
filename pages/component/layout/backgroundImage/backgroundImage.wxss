@@ -1,0 +1,35 @@
+
+page {
+  background-color: transparent;
+}
+
+.yr-ui-back--icon {
+  width: 60rpx;
+  height: 60rpx;
+  position: fixed;
+  z-index: 2;
+  left: 32rpx;
+  margin-top: 32rpx;
+}
+
+.yr-ui-wrap {
+  padding-top: 60rpx;
+  background: transparent;
+}
+
+.yr-ui-content {
+  width: 700rpx;
+  height: 500rpx;
+  background: rgba(255, 255, 255, .4);
+  box-shadow: 0px 3rpx 40rpx rgba(0, 0, 0, 0.36);
+  border-radius: 33rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 200rpx auto;
+}
+
+.yr-ui-text {
+  color: #fff;
+  font-size: 50rpx;
+}

@@ -1,0 +1,100 @@
+.yr-ui-align__center {
+  flex-direction: row;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+/* 布局内容样式 start */
+.yr-ui-submit__bar {
+  width: 100%;
+  box-sizing: border-box;
+  height: 100rpx;
+  padding: 0 32rpx;
+  background-color: #fff;
+  position: relative;
+}
+
+.yr-ui-submit__bar::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  border-top: 1px solid #eee;
+  transform: scaleY(0.5);
+  transform-origin: 0 0;
+  z-index: 1;
+  pointer-events: none;
+}
+
+
+.yr-ui-submitbar__flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.yr-ui-submitbar__column {
+  display: flex;
+  flex-direction: column;
+}
+
+.yr-ui-submit__bar-left {
+  display: flex;
+  flex-direction: row;
+}
+
+.yr-ui-submit__bar-text {
+  font-size: 26rpx;
+  line-height: 26rpx;
+  font-weight: normal;
+  padding: 0 24rpx 0 12rpx;
+}
+
+.yr-ui-submit__bar-sign {
+  font-size: 26rpx;
+  line-height: 26rpx;
+  font-weight: normal;
+}
+
+.yr-ui-submitbar__price {
+  font-size: 32rpx;
+  line-height: 32rpx;
+  font-weight: 500;
+}
+
+.yr-ui-submitbar__sub {
+  font-size: 25rpx;
+  font-weight: normal;
+  color: #7F7F7F;
+  transform: scale(0.8);
+  transform-origin: 0 center;
+}
+
+.yr-ui-submitbar__between {
+  justify-content: space-between;
+}
+
+.yr-ui-submitbar__end {
+  justify-content: flex-end;
+}
+
+.yr-ui-color__danger {
+  color: #FF2B2B;
+}
+
+.yr-ui-submitbar__pr {
+  padding-right: 28rpx;
+}
+
+.yr-ui-submitbar__fixed {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 10;
+}
+
+/* 布局内容样式 end */

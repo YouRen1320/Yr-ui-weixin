@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "yr-ui-form-field": "/components/yr-ui/yr-ui-form-field/yr-ui-form-field"
+  }
+}

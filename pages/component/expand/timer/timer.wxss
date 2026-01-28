@@ -1,0 +1,28 @@
+page {
+  font-weight: normal;
+}
+
+.yr-ui-wrap {
+  padding-bottom: 64rpx;
+}
+
+.yr-ui-section__title {
+  margin-left: 32rpx;
+}
+
+.yr-ui-timer__box {
+  width: 100%;
+  padding-left: 32rpx;
+  padding-bottom: 16rpx;
+  box-sizing: border-box;
+
+}
+
+.yr-ui-grid__cell {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  flex: 1;
+  font-size: 28rpx;
+}

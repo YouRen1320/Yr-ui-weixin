@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "聊天栏",
+  "usingComponents": {
+    "yr-ui-safe-area":"/components/yr-ui/yr-ui-safe-area/yr-ui-safe-area"
+  }
+}

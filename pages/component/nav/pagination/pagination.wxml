@@ -1,0 +1,32 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Pagination</view>
+    <view class="yr-ui-page__desc">Pagination 分页器，当数据量过多时，使用分页分解数据。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用</view>
+    <yr-ui-pagination total="{{100}}" bindchange="change"></yr-ui-pagination>
+    <view class="yr-ui-section__title">样式调整</view>
+    <yr-ui-pagination total="{{100}}" color="#FFB703" background="transparent" currentColor="#FFB703"></yr-ui-pagination>
+    <view class="yr-ui-section__title">自定义按钮内容</view>
+    <yr-ui-pagination total="{{100}}" custom background="transparent">
+      <yr-ui-icon name="arrowleft" slot="prev"></yr-ui-icon>
+      <yr-ui-icon name="arrowright" slot="next"></yr-ui-icon>
+    </yr-ui-pagination>
+    <view class="yr-ui-section__title">页码展开</view>
+			<yr-ui-pagination total="{{1000}}" pageType="{{2}}"></yr-ui-pagination>
+			<view class="yr-ui-section__title">页码展开/调整样式</view>
+			<view class="yr-ui-pageno__wrap">
+				<yr-ui-pagination total="{{1000}}" custom pageType="{{2}}" width="{{62}}" background="#FFB703"
+					pageBgColor="rgba(255, 183, 3, .1)" activeBgColor="#FFB703">
+						<yr-ui-icon slot="prev" size="40" name="arrowleft" color="#fff"></yr-ui-icon>
+						<yr-ui-icon slot="next" size="40" name="arrowright" color="#fff"></yr-ui-icon>
+				</yr-ui-pagination>
+			</view>
+			<view class="yr-ui-section__title">页码展开/按钮宽度设为60</view>
+			<yr-ui-pagination total="{{1000}}" custom pageType="{{2}}" width="{{60}}" background="#09BE4F" pageBgColor="rgba(9, 190, 79, .05)" activeBgColor="#09BE4F">
+					<yr-ui-icon slot="prev" size="40" name="arrowleft" color="#fff"></yr-ui-icon>
+					<yr-ui-icon slot="next" size="40" name="arrowright" color="#fff"></yr-ui-icon>
+			</yr-ui-pagination>
+  </view>
+</view>

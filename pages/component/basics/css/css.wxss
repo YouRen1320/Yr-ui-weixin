@@ -1,0 +1,14 @@
+/*项目中使用可全局引入scss文件：yr-ui.scss*/
+@import '../../../../components/yr-ui/yr-ui-css/yr-ui.wxss';
+
+page {
+  font-weight: normal;
+}
+
+.yr-ui-cell {
+  width: 100%;
+  height: 96rpx;
+  border-radius: 16rpx;
+  background: #fff;
+  margin-bottom: 16rpx;
+}

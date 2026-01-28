@@ -1,0 +1,19 @@
+<view style="{{style}}">
+  <view class="yr-ui-nav__bar {{splitLine?'yr-ui-nav__bar-line':''}} {{background?'':'yr-ui-nva__bar-bg'}} {{isFixed?'yr-ui-nav__bar-fixed':''}}" style="background:{{background}};padding-left:{{padding}}px;padding-right:{{padding}}px;z-index:{{zIndex}}">
+  <view class="yr-ui-nav__status-bar" style="height:{{statusBarHeight}}px" wx:if="{{statusBar}}"></view>
+  <view class="yr-ui-nav__header" wx:if="{{!custom}}">
+    <view class="yr-ui-nav__left" bindtap="leftClick">
+      <slot></slot>
+    </view>
+    <view class="yr-ui-nav__title" wx:if="{{title}}" bindtap="titleClick">
+      <text class="yr-ui-nav__title-text" style="font-size:{{size}}px;color:{{color}};font-weight:{{fontWeight}}">{{title}}</text>
+    </view>
+    <view class="yr-ui-nav__right" bindtap="rightClick">
+      <slot name="right"></slot>
+    </view>
+  </view>
+  <view class="yr-ui-nav__header" wx:if="{{custom}}">
+    <slot></slot>
+  </view>
+</view>
+</view>

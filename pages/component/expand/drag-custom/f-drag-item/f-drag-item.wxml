@@ -1,0 +1,4 @@
+<view class="yr-ui-item" style="width:{{width}}px;height:{{height}}px">
+  <image src="{{model.src}}" class="yr-ui-img"></image>
+  <text class="yr-ui-text">{{model.text}}</text>
+</view>

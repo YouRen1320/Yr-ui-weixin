@@ -1,0 +1,12 @@
+<view class="yr-ui-divider__wrap" style="height:{{height}}rpx">
+  <view class="yr-ui-divider__wrap" style="height:{{height}}rpx;width:{{width}};">
+    <view class="yr-ui-divider__line" style="width:{{width}};background: {{dividerColor}};">
+  </view>
+  <view class="yr-ui-divider__text-box">
+    <slot></slot>
+    <text class="yr-ui-divider__text" style="font-weight: {{fontWeight}};color: {{color}};font-size:{{size}}rpx;line-height:{{size}} rpx" wx:if="{{text}}">{{text}}</text>
+  </view>
+  <view class="yr-ui-divider__line" style="width:{{width}};background: {{dividerColor}};">
+  </view>
+  </view>
+</view>

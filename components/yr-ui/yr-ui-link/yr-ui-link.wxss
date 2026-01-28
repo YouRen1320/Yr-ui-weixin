@@ -1,0 +1,11 @@
+.yr-ui-link__underline {
+  text-decoration: underline;
+}
+
+.yr-ui-link__defcolor {
+  color: var(--yr-ui-color-primary, #465CFF) !important;
+}
+
+.yr-ui-link__active:active{
+  opacity: .5;
+}

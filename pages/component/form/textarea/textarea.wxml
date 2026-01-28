@@ -1,0 +1,24 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Textarea</view>
+    <view class="yr-ui-page__desc">Textarea 多行输入框，该组件是对原生textarea组件的增强，内置了常用布局样式，同时包含 textarea 所有功能。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-textarea placeholder="请输入内容"></yr-ui-textarea>
+    <view class="yr-ui-section__title">带标题</view>
+    <yr-ui-textarea flexStart label="标题" placeholder="请输入内容"></yr-ui-textarea>
+    <view class="yr-ui-section__title">调整高度、必填</view>
+    <yr-ui-textarea required height="40rpx" label="标题" placeholder="请输入内容"></yr-ui-textarea>
+    <view class="yr-ui-section__title">输入长度计数、双向绑定</view>
+    <yr-ui-textarea isCounter placeholder="请输入内容" model:value="{{text}}"></yr-ui-textarea>
+    <view class="yr-ui-section__title">带边框</view>
+    <view class="yr-ui-textarea__box">
+      <yr-ui-textarea textareaBorder placeholder="请输入简介"></yr-ui-textarea>
+    </view>
+    <view class="yr-ui-section__title">设置圆角</view>
+			<view class="yr-ui-textarea__box">
+				<yr-ui-textarea radius="{{24}}" textareaBorder border-color="#FFB703" background-color="#f8f8f8" placeholder="请输入内容"></yr-ui-textarea>
+			</view>
+  </view>
+</view>

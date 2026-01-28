@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "宫格",
+  "backgroundColorTop": "#FFFFFF",
+  "backgroundColorBottom": "#FFFFFF",
+  "backgroundColor": "#FFFFFF",
+  "usingComponents": {
+    "yr-ui-grid": "/components/yr-ui/yr-ui-grid/yr-ui-grid",
+    "yr-ui-grid-item": "/components/yr-ui/yr-ui-grid-item/yr-ui-grid-item"
+  }
+}

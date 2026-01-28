@@ -1,0 +1,58 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Tag</view>
+    <view class="yr-ui-page__desc">Tag 标签，用于标记或分类。</view>
+  </view>
+  <view class="yr-ui-page__bd yr-ui-page__spacing">
+    <view class="yr-ui-section__title">基础使用</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-tag text="标签一" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签二" type="danger" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签三" type="success" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签四" type="warning" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签五" type="purple" margin="0 0 24rpx"></yr-ui-tag>
+    </view>
+    <view class="yr-ui-section__title">浅色调</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-tag text="标签一" margin="0 24rpx 24rpx 0" theme="light"></yr-ui-tag>
+      <yr-ui-tag text="标签二" type="danger" theme="light" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签三" type="success" theme="light" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签四" type="warning" theme="light" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签五" type="purple" theme="light" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+    </view>
+    <view class="yr-ui-section__title">空心</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-tag text="标签一" margin="0 24rpx 24rpx 0" theme="plain"></yr-ui-tag>
+      <yr-ui-tag text="标签二" type="danger" theme="plain" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签三" type="success" theme="plain" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签四" type="warning" theme="plain" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签五" type="purple" theme="plain" margin="0 0 24rpx"></yr-ui-tag>
+    </view>
+    <view class="yr-ui-section__title">带关闭按钮</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-tag text="标签一" theme="light" margin="0 24rpx 0 0" padding="12rpx 20rpx">
+        <view class="yr-ui-close__icon">
+          <yr-ui-icon name="close" color="#465CFF" size="{{32}}"></yr-ui-icon>
+        </view>
+      </yr-ui-tag>
+      <yr-ui-tag text="标签二" type="danger" theme="light" margin="0 24rpx 0 0" padding="12rpx 20rpx">
+        <view class="yr-ui-close__icon">
+          <yr-ui-icon name="clear" color="#FF2B2B" size="{{32}}"></yr-ui-icon>
+        </view>
+      </yr-ui-tag>
+      <yr-ui-tag text="标签三" type="success" theme="light" margin="0 24rpx 0 0" padding="12rpx 20rpx">
+        <view class="yr-ui-close__icon">
+          <yr-ui-icon name="clear-fill" color="#09BE4F" size="{{32}}"></yr-ui-icon>
+        </view>
+      </yr-ui-tag>
+    </view>
+    <view class="yr-ui-section__title">自定义颜色、大小</view>
+    <view class="yr-ui-align__center">
+      <yr-ui-tag text="标签一" background="rgba(255, 43, 43, .05)" color="#333" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签二" background="#CCCCCC" color="#fff" margin="0 24rpx 24rpx 0"></yr-ui-tag>
+      <yr-ui-tag text="标签三" background="rgba(255, 183, 3, .1)" color="#FF2B2B" margin="0 24rpx 24rpx 0" scaleRatio="{{0.8}}"></yr-ui-tag>
+      <yr-ui-tag text="标签四" background="rgba(104, 49, 255, .05)" color="#181818" margin="0 24rpx 24rpx 0" padding="20rpx 40rpx"></yr-ui-tag>
+      <yr-ui-tag text="标签五" background="rgba(9, 190, 79, .05)" color="#181818" margin="0 0 24rpx" padding="12rpx 24rpx"></yr-ui-tag>
+    </view>
+  </view>
+</view>

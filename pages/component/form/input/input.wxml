@@ -1,0 +1,54 @@
+<view class="yr-ui-wrap">
+  <view class="yr-ui-page__hd">
+    <view class="yr-ui-page__title">Input</view>
+    <view class="yr-ui-page__desc">Input 输入框，该组件是对原生input组件的增强，内置了常用布局样式，同时包含 input 所有功能。</view>
+  </view>
+  <view class="yr-ui-page__bd">
+    <view class="yr-ui-section__title">基本使用</view>
+    <yr-ui-input borderTop placeholder="请输入用户名"></yr-ui-input>
+    <yr-ui-input bottomLeft="{{0}}" placeholder="请输入手机号码" maxlength="11"></yr-ui-input>
+    <view class="yr-ui-section__title">带标题</view>
+    <yr-ui-input label="标题" borderTop placeholder="这是一个输入框"></yr-ui-input>
+    <yr-ui-input label="标题文字" bottomLeft="{{0}}" placeholder="请输入文本"></yr-ui-input>
+    <view class="yr-ui-section__title">密码框</view>
+			<yr-ui-input borderTop :padding="['20rpx','32rpx']" placeholder="请输入密码" password="{{password}}" bindinput="input">
+				<yr-ui-icon name="{{password?'invisible':'visible'}}" color="#B2B2B2" size="{{50}}" bindclick="change"></yr-ui-icon>
+			</yr-ui-input>
+    <view class="yr-ui-section__title">带清除按钮、双向绑定</view>
+    <yr-ui-input label="标题" bottomLeft="{{0}}" borderTop placeholder="请输入文本" clearable model:value="{{text}}"></yr-ui-input>
+    <view class="yr-ui-section__title">显示边框</view>
+    <view class="yr-ui-page__spacing">
+      <yr-ui-input label="标题" inputBorder placeholder="请输入文本"></yr-ui-input>
+      <yr-ui-input marginTop="{{24}}" isFillet inputBorder placeholder="请输入文本"></yr-ui-input>
+      <yr-ui-input marginTop="24" radius="24" border-color="#FFB703" inputBorder placeholder="请输入文本"></yr-ui-input>
+    </view>
+    <view class="yr-ui-section__title">必填项</view>
+    <yr-ui-input required label="标题" borderTop placeholder="请输入文本"></yr-ui-input>
+    <yr-ui-input required label="标题文字" bottomLeft="{{0}}" placeholder="请输入文本内容"></yr-ui-input>
+    <view class="yr-ui-section__title">输入文本右对齐</view>
+    <yr-ui-input text-align="right" label="身高" borderTop placeholder="请输入身高">
+      <text>cm</text>
+    </yr-ui-input>
+    <yr-ui-input text-align="right" label="体重" bottomLeft="{{0}}" placeholder="请输入体重">
+      <text>kg</text>
+    </yr-ui-input>
+    <view class="yr-ui-section__title">禁用状态</view>
+    <yr-ui-input label="标题" bottomLeft="{{0}}" borderTop placeholder="这是一个被禁用的输入框" disabled></yr-ui-input>
+    <view class="yr-ui-section__title">右侧加按钮</view>
+    <yr-ui-input padding="20rpx 32rpx" label="验证码" bottomLeft="{{0}}" placeholder="请输入手机验证码">
+      <yr-ui-button type="gray" bold width="200rpx" height="64rpx" size="{{28}}" text="获取验证码"></yr-ui-button>
+    </yr-ui-input>
+    <view class="yr-ui-section__title">左侧加图标</view>
+    <yr-ui-input placeholder="请输入手机号">
+      <view class="yr-ui-left__icon" slot="left">
+        <yr-ui-icon name="mobile" color="#333" size="{{48}}"></yr-ui-icon>
+      </view>
+    </yr-ui-input>
+    <yr-ui-input padding="20rpx 32rpx" placeholder="请输入验证码" bottomLeft="{{0}}">
+      <view class="yr-ui-left__icon" slot="left">
+        <yr-ui-icon name="captcha" size="{{48}}"></yr-ui-icon>
+      </view>
+      <yr-ui-button type="gray" bold width="200rpx" height="64rpx" size="{{28}}" text="获取验证码"></yr-ui-button>
+    </yr-ui-input>
+  </view>
+</view>

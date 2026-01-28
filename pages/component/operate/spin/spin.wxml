@@ -1,0 +1,75 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Spin <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Spin 旋转动画。</view>
+		</view>
+		<view class="yr-ui-page__bd yr-ui-page__spacing">
+			<view class="yr-ui-section__title">基础使用</view>
+			<yr-ui-grid>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>旋转</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<view class="yr-ui-loading"></view>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<view class="yr-ui-loading2"></view>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<yr-ui-icon name="loading" color="#FFB703"></yr-ui-icon>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<yr-ui-icon name="moments" color="#09BE4F"></yr-ui-icon>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<yr-ui-icon name="aftersale" color="#FF2B2B"></yr-ui-icon>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<image src="/static/images/component/loading_gray.png" class="yr-ui-icon__img"></image>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<image src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAFoAAABaCAMAAAAPdrEwAAAAM1BMVEUAAACPj4+IiIiIiIiIiIiIiIiKioqHh4eHh4eHh4eHh4eIiIiIiIiJiYmIiIiJiYmIiIi8awvKAAAAEHRSTlMAEEDw4NAwwKAgYICQULBwL0wVnQAAAmpJREFUWMPtmOmO4yAQhLlvMO//tDuyjfAaCEcj7UqTT5o/iafSVLcLY/TldyHID8fPH94oir2TLD6QyugdxVoeazAnYPUaFtsws+yNVjR+htolcWz/luHyhL7F55XNQ0Narx+L8TY8bSGTXsiYUB5V8A+zHJ4rud+p3GI+PiwqCXv0Ec+T42awf3L8+iMtzwwp36UEPHR1SIYPKueS+xxJe1CZiYkooNmTvjLHUzHDR7TVgnI2UXR9k/OhQHslieKCcb87reRnB5fCzMeTVp5cUbeY8O6arEYknYs60CJXK21zOvot7DSK4lrR51eA7dQ1y1bFF9MT2Chb358DsLHeLJeKhpZdDgkDFp1jQtRGXiEYOtZU1PLdUt7OFT84gnJUHNE5XOCO2PLnCALDzl21HD2Yam4ZRU9kER8Qs/V7IQ7BIWVqp10TTCFN0gdgwvumJmkcwWDFgigsQtv4Sv8baZ2lt5Pn+n+Wfm+CMsUsHFIJQ7VH+l2hSXsaHFUbEb1l2GRt5zFb/FC1nSfskGam+lSP4cqmks10jyOc1fditiGMXD1G4DekTH5sf14gkTeD1QOdbrRLXodGAKb1hC7gh5nmvzvgI0NoHyswA1niP7WKQE4dmtYHDH4MwzxS3T2MmCWje5OL2aK26j9EC7qkrVIk97XtrM+RYzSoHSZmUCTlLoLNvTs+aFLug+XEu2Mt59boRl9+4vk7gbD79fXnii2dsS6Xc4lb3fx5lX1bfKfPD1HJInetS64lJQnxhkrryV2+INbxeCHXN1PtaGxClUYgvGJ1XY82IA7Fn7IyFO7DIDcYfflN/AFNdjdeDj7M+wAAAABJRU5ErkJggg==" class="yr-ui-icon__img"></image>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+				<yr-ui-grid-item highlight="{{false}}">
+					<view class="yr-ui-load__item">
+						<yr-ui-spin>
+							<image src="/static/images/common/img_logo.png" class="yr-ui-icon__img yr-ui-circle"></image>
+						</yr-ui-spin>
+					</view>
+				</yr-ui-grid-item>
+			</yr-ui-grid>
+
+		</view>
+	</view>

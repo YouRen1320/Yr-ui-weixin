@@ -1,0 +1,24 @@
+<view class="yr-ui-wrap">
+		<view class="yr-ui-page__hd">
+			<view class="yr-ui-page__title yr-ui-align__center" bindtap="vip">Table <image
+					src="/static/images/index/light/icon_member_3x.png"></image>
+			</view>
+			<view class="yr-ui-page__desc">Table 表格，用于展示多条结构类似的数据。</view>
+		</view>
+		<view class="yr-ui-page__bd">
+			<view class="yr-ui-section__title">基础使用</view>
+			<yr-ui-table itemList="{{tableData}}" header="{{headerData}}"></yr-ui-table>
+			<view class="yr-ui-section__title">横向铺满/斑马纹</view>
+			<yr-ui-table full stripe itemList="{{tableData}}" header="{{headerData}}"></yr-ui-table>
+			<view class="yr-ui-section__title">行列固定/排序</view>
+			<yr-ui-table id="sortTable" fixed height="600" itemList="{{itemList}}" header="{{header}}" bindclick="detail" bind:sortChange="sortChange"></yr-ui-table>
+      <view class="yr-ui-section__title">多选/禁用选择/默认选中</view>
+			<!--如果需要初始化时触发 bind:selectionChange 事件，将属性 initEmitChange 设为true-->
+			<yr-ui-table id="table" selection full itemList="{{tableData}}" header="{{headerData}}"	bindselectionChange="change"></yr-ui-table>
+
+			<view class="yr-ui-flex__center yr-ui-flex__column">
+				<yr-ui-button type="gray" btn-size="medium" text="切换第三行选中状态" bold margin="48rpx 0 24rpx" bindclick="toggleSelection"></yr-ui-button>
+        <yr-ui-button type="gray" btn-size="medium" text="取消所有选择" bold bindclick="clearSelection"></yr-ui-button>
+			</view>
+		</view>
+	</view>

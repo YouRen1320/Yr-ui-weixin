@@ -1,0 +1,13 @@
+page {
+  background-color: #fff;
+}
+
+.yr-ui-align__center {
+  flex-wrap: wrap;
+}
+
+.yr-ui-close__icon {
+  display: flex;
+  align-items: center;
+  padding: 6rpx 0 4rpx 24rpx;
+}

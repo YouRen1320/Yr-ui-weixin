@@ -1,0 +1,10 @@
+{
+  "navigationBarTitleText": "组件",
+  "usingComponents": {
+    "yr-ui-tabbar": "/components/yr-ui/yr-ui-tabbar/yr-ui-tabbar",
+    "page-a": "./pageA/pageA",
+    "page-b": "./pageB/pageB",
+    "page-c": "./pageC/pageC",
+    "page-d": "./pageD/pageD"
+  }
+}
