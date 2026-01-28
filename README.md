@@ -3,6 +3,11 @@
 <p align="center">
   <img src="https://img.shields.io/npm/v/yr-ui-weixin.svg" alt="npm version">
   <img src="https://img.shields.io/npm/l/yr-ui-weixin.svg" alt="license">
+  <a href="https://github.com/YouRen1320/Yr-ui-weixin"><img src="https://img.shields.io/github/stars/YouRen1320/Yr-ui-weixin?style=social" alt="GitHub stars"></a>
+</p>
+
+<p align="center">
+  <a href="https://youren1320.github.io/Yr-ui-weixin/">📖 在线文档 / Documentation</a>
 </p>
 
 <p align="center">
@@ -89,7 +94,7 @@ page {
 
 ### 📚 Documentation
 
-Detailed documentation: [Yr-ui Docs](https://docs.yr-ui.cn) (Coming Soon)
+Detailed documentation: [Yr-ui Docs](https://youren1320.github.io/Yr-ui-weixin/)
 
 ---
 
@@ -173,7 +178,7 @@ page {
 
 ### 📚 文档
 
-详细文档请参考：[Yr-ui 文档](https://docs.yr-ui.cn) (待上线)
+详细文档请参考：[Yr-ui 文档](https://youren1320.github.io/Yr-ui-weixin/)
 
 ## 📄 License
 
